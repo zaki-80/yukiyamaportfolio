@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: #1b1f1e;
+    font-family: "Noto Sans Japanese", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    background-color: #fff;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1b1f1e;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+/*-------------------
+
+top-pc
+
+--------------------*/
+.top {
+    background-color: #a5c3bc;
+    color: #fff;
+}
