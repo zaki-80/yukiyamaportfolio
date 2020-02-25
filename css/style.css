@@ -49,6 +49,10 @@ a {
     padding: 240px 0 32px;
 }
 
+.barcode {
+    padding-bottom: 64px;
+    mix-blend-mode: screen;
+}
 
 /*-------------------
 
@@ -67,6 +71,7 @@ top-pc
 }
 
 .header {
+    z-index: 100;
     color: #fff;
     position: sticky;
     top: 0;
@@ -76,9 +81,13 @@ top-pc
 }
 
 .biography {
-    background-color: tan;
     flex-basis: 33.33%;
-    padding: 20px;
+    padding: 20px 0 0 20px;
+}
+
+h1 {
+    font-weight: 300;
+    padding-bottom: 16px;
 }
 
 .mail {
@@ -88,26 +97,89 @@ top-pc
 
 .nav-menu {
     flex-basis: 33.33%;
-    background-color: red;
     text-align: right;
+    padding-top: 20px;
+    padding-left: 260px;
 }
 
 .nav-list li {
     text-align: left;
 }
 
-.nav-item {}
+.nav-item {
+    padding-bottom: 16px
+}
 
 .top-container {
+    position: relative;
     background-color: #a5c3bc;
     margin: 20px;
     height: 100vh;
 }
 
-.barcode {
-    padding-bottom: 64px;
+.music {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100vh;
 }
 
+.browser {
+    position: absolute;
+    top: 110px;
+    right: 60px;
+    margin: auto;
+    width: 32vh;
+}
+
+.pointer {
+    position: absolute;
+    top: 160px;
+    right: 80px;
+    margin: auto;
+    width: 5vh;
+    animation-name: anime1;
+    animation-duration: 2s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1 {
+    0% {
+        transform: translate(0px)
+    }
+
+    20% {
+        transform: translate(-10px, -6px)
+    }
+
+    50% {
+        transform: translate(-64px, 8px)
+    }
+
+    60% {
+        transform: translate(-32px, -4px)
+    }
+
+    80% {
+        transform: translate(-10px, 8px)
+    }
+
+    100% {
+        transform: translate(0px)
+    }
+}
+
+
+.gameboy {
+    position: absolute;
+    top: 240px;
+    right: 20%;
+    margin: auto;
+    width: 30vh;
+}
 
 /*-------------------
 
@@ -123,9 +195,20 @@ works-pc
 profile-pc
 
 --------------------*/
+.bg {
+    background-color: #a5c3bc;
+    color: #fff;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.bg .section-header {
+    -webkit-text-stroke: 1px #fff;
+}
+
 .profile-info {
     text-align: left;
-    font-size: 28px;
+    font-size: 24px;
     width: 70%;
     margin: 0 auto;
 }
@@ -169,12 +252,15 @@ contact-pc
     padding-bottom: 20px;
 }
 
+.contact a {
+    color: #fff;
+    font-size: 24px;
+}
+
 .contact-container {
-    width: 240px;
+    width: 320px;
     margin: 0 auto;
     padding-bottom: 140px;
 }
 
-.copy {
-    padding-bottom: 20px;
-}
+.copy {}
