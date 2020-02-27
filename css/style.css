@@ -146,6 +146,8 @@ h1 {
     animation-iteration-count: infinite;
 }
 
+
+
 @keyframes anime1 {
     0% {
         transform: translate(0px)
@@ -172,14 +174,54 @@ h1 {
     }
 }
 
+.gameboy-box {
+    position: relative;
+    background-color: red;
+    width: 100%;
+    height: 0;
+}
 
 .gameboy {
+    z-index: 2;
     position: absolute;
-    top: 240px;
-    right: 20%;
+    top: 80px;
+    right: 16%;
     margin: auto;
-    width: 30vh;
+    width: 28vh;
 }
+
+.mirror {
+    position: absolute;
+    top: -80px;
+    right: 16%;
+    margin: auto;
+    width: 20vh;
+}
+
+.jeans {
+    position: absolute;
+    bottom: 60px;
+    left: 20%;
+    margin: auto;
+    width: 20vh;
+}
+
+.stitch {
+    position: absolute;
+    bottom: 180px;
+    left: 10%;
+    margin: auto;
+    width: 45vh;
+}
+
+.parka {
+    position: absolute;
+    top: 50px;
+    left: 28%;
+    margin: auto;
+    width: 32vh;
+}
+
 
 /*-------------------
 
