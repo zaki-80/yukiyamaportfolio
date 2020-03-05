@@ -46,12 +46,16 @@ a {
     color: rgba(0, 0, 0, 0);
     font-family: Termina;
     -webkit-text-stroke: 1px #1b1f1e;
-    padding: 240px 0 32px;
+    padding: 240px 0 160px;
 }
 
 .barcode {
-    padding-bottom: 64px;
+    position: absolute;
+    top: -190px;
+    left: -78px;
+    width: 200px;
     mix-blend-mode: screen;
+    transform: rotate(-90deg);
 }
 
 /*-------------------
@@ -121,10 +125,10 @@ h1 {
     height: 100vh;
 }
 
-.music {
+.cdjacket {
     position: absolute;
-    top: 26vh;
-    left: 0;
+    top: 22vh;
+    left: 10px;
     right: 0;
     margin: auto;
     width: 100vh;
@@ -252,32 +256,6 @@ h1 {
     left: 28%;
     margin: auto;
     width: 18vh;
-    animation-name: anime3;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes anime3 {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    25% {
-        transform: rotate(-1deg)
-    }
-
-    50% {
-        transform: rotate(0deg)
-    }
-
-    75% {
-        transform: rotate(1deg)
-    }
-
-    100% {
-        transform: rotate(0deg)
-    }
 }
 
 .dotdog {
@@ -352,15 +330,8 @@ works-pc
 
 .work01 {}
 
-.work02 {
-    background-color: #2fa762;
-}
+.work02 {}
 
-.work02 img {
-    padding: 10%;
-    width: 60%;
-    height: auto;
-}
 
 .work03 {
     object-fit: cover;
@@ -370,7 +341,7 @@ works-pc
 
 .work05 {
     width: 100%;
-    height: 200px;
+    height: 400px;
     background-color: lightgray;
 }
 
@@ -387,32 +358,6 @@ works-pc
 
 }
 
-.work10 img {}
-
-
-.div7 {
-    grid-area: 3 / 1 / 4 / 2;
-}
-
-.div8 {
-    grid-area: 3 / 2 / 4 / 3;
-}
-
-.div9 {
-    grid-area: 3 / 3 / 4 / 4;
-}
-
-.div10 {
-    grid-area: 4 / 1 / 5 / 2;
-}
-
-.div11 {
-    grid-area: 4 / 2 / 5 / 3;
-}
-
-.div12 {
-    grid-area: 4 / 3 / 5 / 4;
-}
 
 /*-------------------
 
@@ -471,8 +416,12 @@ profile-pc
 contact-pc
 
 --------------------*/
+
 .contact p {
     text-align: left;
+    display: block;
+    width: 25%;
+    margin: 0 auto;
     padding-bottom: 20px;
 }
 
@@ -482,9 +431,10 @@ contact-pc
 }
 
 .contact-container {
-    width: 320px;
+    position: relative;
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 140px;
+    padding-bottom: 240px;
 }
 
 .copy {}
