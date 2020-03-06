@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 * {
     box-sizing: border-box;
 }
@@ -39,6 +38,7 @@ a {
     text-align: center;
 }
 
+
 .section-header {
     font-size: 160px;
     font-weight: bold;
@@ -55,7 +55,6 @@ a {
     left: -78px;
     width: 200px;
     mix-blend-mode: screen;
-    transform: rotate(-90deg);
 }
 
 /*-------------------
@@ -136,7 +135,7 @@ h1 {
 
 .browser {
     position: absolute;
-    top: 14%;
+    top: 22%;
     right: 22%;
     margin: auto;
     width: 38vh;
@@ -438,3 +437,241 @@ contact-pc
 }
 
 .copy {}
+
+
+
+
+/*-------------------
+
+□□□ sp □□□
+
+--------------------*/
+@media (max-width: 800px) {
+    .section-header {
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        color: rgba(0, 0, 0, 0);
+        font-family: Termina;
+        -webkit-text-stroke: 0.7px #1b1f1e;
+        padding: 240px 0 160px;
+    }
+
+    /*-------------------
+
+top-sp
+
+--------------------*/
+    .header {
+        font-size: 14px;
+
+    }
+
+    .biography {
+        flex-basis: 80%;
+        line-height: 1.4;
+    }
+
+    h1 {
+        padding-bottom: 10px;
+    }
+
+    .mail {
+        display: none;
+    }
+
+    .nav-menu {
+        flex-basis: 20%;
+        text-align: right;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-list {
+        display: inline-block;
+    }
+
+    .nav-list li {
+        text-align: left;
+    }
+
+    .nav-item {
+        padding-bottom: 16px;
+    }
+
+    .cdjacket {
+        position: absolute;
+        top: 22vh;
+        left: 10px;
+        right: 0;
+        margin: auto;
+        width: 90%;
+    }
+
+    .browser {
+        position: absolute;
+        top: 18%;
+        right: 10%;
+        margin: auto;
+        width: 25%;
+    }
+
+    .pointer {
+        position: absolute;
+        top: 26%;
+        right: 12%;
+        margin: auto;
+        width: 3%;
+        animation-name: anime1;
+        animation-duration: 2s;
+        animation-timing-function: step-start;
+        animation-iteration-count: infinite;
+    }
+
+
+
+    @keyframes anime1 {
+        0% {
+            transform: translate(0px)
+        }
+
+        20% {
+            transform: translate(-10px, -6px)
+        }
+
+        50% {
+            transform: translate(-64px, 8px)
+        }
+
+        60% {
+            transform: translate(-32px, -4px)
+        }
+
+        80% {
+            transform: translate(-10px, 8px)
+        }
+
+        100% {
+            transform: translate(0px)
+        }
+    }
+
+
+    .statue {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 32vh;
+    }
+
+    .jeans {
+        position: absolute;
+        bottom: 28%;
+        left: 4%;
+        margin: auto;
+        width: 10vh;
+    }
+
+    .stitch {
+        position: absolute;
+        bottom: 38%;
+        right: 8%;
+        margin: auto;
+        width: 18vh;
+    }
+
+    .parka {
+        position: absolute;
+        top: 14%;
+        left: 14%;
+        margin: auto;
+        width: 14vh;
+    }
+
+    .shape {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        margin: auto;
+        width: 30vh;
+        animation-name: anime2;
+        animation-duration: 3.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes anime2 {
+        0% {
+            transform: rotate(0deg)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+    .year {
+        position: absolute;
+        bottom: 8%;
+        left: 14%;
+        font-family: Neue Haas Grotesk Display Pro;
+        font-size: 10vh;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke: 1px #fff;
+    }
+
+    .sneaker {
+        position: absolute;
+        top: 38%;
+        left: 12%;
+        margin: auto;
+        width: 10vh;
+    }
+
+    .dotdog {
+        position: absolute;
+        bottom: 14%;
+        left: 4%;
+        margin: auto;
+        width: 12vh;
+    }
+
+    .circle {
+        position: absolute;
+        bottom: 22%;
+        left: 22%;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: linear-gradient(#ffd26c, #dd9696);
+    }
+
+    .clouds {
+        position: absolute;
+        bottom: 18%;
+        right: 4%;
+        margin: auto;
+        width: 14vh;
+    }
+
+    .hqvision {
+        position: absolute;
+        top: 18%;
+        right: 28%;
+        margin: auto;
+        width: 24vh;
+    }
+
+    .ff {
+        position: absolute;
+        bottom: 18%;
+        right: 10%;
+        margin: auto;
+        width: 16vh;
+    }
+}
