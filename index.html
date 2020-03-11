@@ -8,10 +8,22 @@
     <title>yuki yamazaki portfolio</title>
     <link rel="stylesheet" href="css/html5reset-1.6.1.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+
+
 </head>
 
 <body>
     <section class="top">
+        <button class="hamburger">
+            <span class="hamburger__line hamburger__line1"></span>
+            <span class="hamburger__line hamburger__line2"></span>
+            <span class="hamburger__line hamburger__line3"></span>
+        </button>
+
         <div class="top-container">
             <header class="header">
                 <div class="biography">
@@ -21,13 +33,30 @@
                 <div class="mail text-center">
                     <p><a href="mailto:yyamazaki160&#64;gmail.com">yyamazaki160&#64;gmail.com</a></p>
                 </div>
-                <div class="nav-menu hamburger-btn">
-                    <ul class="nav-list hamburger-list">
-                        <li class="nav-item">top</li>
-                        <li class="nav-item">works</li>
-                        <li class="nav-item">profile</li>
-                        <li class="nav-item">contact</li>
-                    </ul>
+                <div class="menu">
+                    <nav class="nav-menu">
+                        <ul class="menu-list">
+                            <li class="menu-item"><a href="index.html">
+                                    top
+                                </a>
+                                <div class="card list-top"></div>
+                            </li>
+                            <li class="menu-item"><a href="#">
+                                    about</a>
+                                <div class="card list-about"></div>
+                            </li>
+                            <li class="menu-item"><a href="#">
+                                    profile
+                                </a>
+                                <div class="card list-profile"></div>
+                            </li>
+                            <li class="menu-item"><a href="#">
+                                    contact
+                                </a>
+                                <div class="card list-contact"></div>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </header>
             <div class="collage">
@@ -61,28 +90,28 @@
         </h2>
 
 
-        <div class="works-container">
-            <div class="work01 works-item"><img src="images/work01.png" alt="作品01"></div>
-            <div class="work02 works-item"><img src="images/work02.jpg" alt="作品02"></div>
-            <div class="work03 works-item">
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100, "gutter":20}' id="demo1">
+            <div class="work01 grid-item"><img src="images/work01.png" alt="作品01"></div>
+            <div class="work02 grid-item"><img src="images/work02.jpg" alt="作品02"></div>
+            <div class="work03 grid-item">
                 <video id="video" class="video" autoplay loop muted playsinline width="100%">
                     <source src="video/geometric.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="work04 works-item"><img src="images/work04.jpg" alt="作品04"></div>
-            <div class="work05 works-item"><img src="images/work05.jpg" alt="作品05"></div>
-            <div class="work06 works-item"><img src="images/work06.jpg" alt="作品06"></div>
-            <div class="work07 works-item"><img src="images/work07.jpg" alt="作品07"></div>
-            <div class="work08 works-item"><img src="images/work08.jpg" alt="作品08"></div>
-            <div class="work09 works-item">
+            <div class="work04 grid-item"><img src="images/work04.jpg" alt="作品04"></div>
+            <div class="work05 grid-item"><img src="images/work05.jpg" alt="作品05"></div>
+            <div class="work06 grid-item"><img src="images/work06.jpg" alt="作品06"></div>
+            <div class="work07 grid-item"><img src="images/work07.jpg" alt="作品07"></div>
+            <div class="work08 grid-item"><img src="images/work08.jpg" alt="作品08"></div>
+            <div class="work09 grid-item">
                 <video id="video" class="video" autoplay loop muted playsinline width="100%">
                     <source src="video/strangerthings_video_compressed.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="work10 works-item"><img src="images/work10.jpg" alt="作品10"></div>
-            <div class="work11 works-item"><img src="images/work11.jpg" alt="作品11"></div>
-            <div class="work12 works-item"><img src="images/work12.jpg" alt="作品12"></div>
-            <div class="work13 works-item"><img src="images/work13.jpg" alt="作品13"></div>
+            <div class="work10 grid-item"><img src="images/work10.jpg" alt="作品10"></div>
+            <div class="work11 grid-item"><img src="images/work11.jpg" alt="作品11"></div>
+            <div class="work12 grid-item"><img src="images/work12.jpg" alt="作品12"></div>
+            <div class="work13 grid-item"><img src="images/work13.jpg" alt="作品13"></div>
 
         </div>
     </section>
@@ -125,6 +154,32 @@
 
         </section>
     </div>
+    <script>
+        $('.hamburger').on('click', function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $('nav').slideUp();
+            } else {
+                $(this).addClass('active');
+                $('nav').slideDown();
+            }
+        });
+        jQuery(function($) {
+            var $demo1 = $('#demo1'); //コンテナとなる要素を指定
+
+            $demo1.imagesLoaded(function() { //imagesLoadedを使用し、画像が読み込みまれた段階でMasonryの関数を実行させる
+                //Masonryの関数↓
+                $demo1.masonry({ //オプション指定箇所
+                    itemSelector: '.grid-item', //コンテンツを指定
+                    columnWidth: 200, //カラム幅を設定
+                    fitWidth: true, //コンテンツ数に合わせ親の幅を自動調整
+                });
+            });
+        });
+
+    </script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+
 </body>
 
 </html>
