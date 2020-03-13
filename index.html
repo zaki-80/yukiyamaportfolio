@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/html5reset-1.6.1.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+
 
 
 
@@ -90,28 +92,29 @@
         </h2>
 
 
-        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100, "gutter":20}' id="demo1">
-            <div class="work01 grid-item"><img src="images/work01.png" alt="作品01"></div>
-            <div class="work02 grid-item"><img src="images/work02.jpg" alt="作品02"></div>
-            <div class="work03 grid-item">
-                <video id="video" class="video" autoplay loop muted playsinline width="100%">
-                    <source src="video/geometric.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="work04 grid-item"><img src="images/work04.jpg" alt="作品04"></div>
-            <div class="work05 grid-item"><img src="images/work05.jpg" alt="作品05"></div>
-            <div class="work06 grid-item"><img src="images/work06.jpg" alt="作品06"></div>
-            <div class="work07 grid-item"><img src="images/work07.jpg" alt="作品07"></div>
-            <div class="work08 grid-item"><img src="images/work08.jpg" alt="作品08"></div>
-            <div class="work09 grid-item">
+        <div class="grid" id="grid">
+            <div class="grid-item"><img src="images/work01.png" alt="作品01"></div>
+            <div class="grid-item">
                 <video id="video" class="video" autoplay loop muted playsinline width="100%">
                     <source src="video/strangerthings_video_compressed.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="work10 grid-item"><img src="images/work10.jpg" alt="作品10"></div>
-            <div class="work11 grid-item"><img src="images/work11.jpg" alt="作品11"></div>
-            <div class="work12 grid-item"><img src="images/work12.jpg" alt="作品12"></div>
-            <div class="work13 grid-item"><img src="images/work13.jpg" alt="作品13"></div>
+            <div class="grid-item"><img src="images/work03.jpg" alt="作品03"></div>
+            <div class="grid-item">
+                <video id="video" class="video" autoplay loop muted playsinline width="100%">
+                    <source src="video/geometric.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="grid-item"><img src="images/work04.jpg" alt="作品04"></div>
+            <div class="grid-item"><img src="images/work05.jpg" alt="作品05"></div>
+            <div class="grid-item"><img src="images/work06.jpg" alt="作品06"></div>
+            <div class="grid-item"><img src="images/work07.jpg" alt="作品07"></div>
+            <div class="grid-item"><img src="images/work08.jpg" alt="作品08"></div>
+
+            <div class="grid-item"><img src="images/work10.jpg" alt="作品10"></div>
+            <div class="grid-item"><img src="images/work11.jpg" alt="作品11"></div>
+            <div class="grid-item"><img src="images/work12.jpg" alt="作品12"></div>
+            <div class="grid-item"><img src="images/work13.jpg" alt="作品13"></div>
 
         </div>
     </section>
@@ -164,21 +167,22 @@
                 $('nav').slideDown();
             }
         });
-        jQuery(function($) {
-            var $demo1 = $('#demo1'); //コンテナとなる要素を指定
 
-            $demo1.imagesLoaded(function() { //imagesLoadedを使用し、画像が読み込みまれた段階でMasonryの関数を実行させる
-                //Masonryの関数↓
-                $demo1.masonry({ //オプション指定箇所
-                    itemSelector: '.grid-item', //コンテンツを指定
-                    columnWidth: 200, //カラム幅を設定
-                    fitWidth: true, //コンテンツ数に合わせ親の幅を自動調整
-                });
-            });
+    </script>
+    <script>
+        var $grid = $('.grid').masonry({ //オプション指定箇所
+            itemSelector: '.grid-item', //コンテンツを指定
+            columnWidth: 440, //カラム幅を設定
+            isFitWidth: true, //カラムレイアウトの幅を要素全体の幅に追従
+            isAnimated: true,
+            isResizable: true,
+            percentPosition: true
+        });
+        $grid.imagesLoaded().progress(function() {
+            $grid.masonry('layout');
         });
 
     </script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
 
 </body>
 
