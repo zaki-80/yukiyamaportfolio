@@ -16,6 +16,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -39,23 +40,22 @@
                     <nav class="nav-menu">
                         <ul class="menu-list">
                             <li class="menu-item"><a href="index.html">
-                                    top
+                                    <span class="card list-top">top </span>
                                 </a>
-                                <div class="card list-top"></div>
+
                             </li>
                             <li class="menu-item"><a href="#">
-                                    about</a>
-                                <div class="card list-about"></div>
+                                    <span class="card list-about"> about</span></a>
                             </li>
                             <li class="menu-item"><a href="#">
-                                    profile
+                                    <span class="card list-profile">profile</span>
                                 </a>
-                                <div class="card list-profile"></div>
+
                             </li>
                             <li class="menu-item"><a href="#">
-                                    contact
+                                    <span class="card list-contact">contact</span>
                                 </a>
-                                <div class="card list-contact"></div>
+
                             </li>
                         </ul>
                     </nav>
@@ -63,8 +63,6 @@
             </header>
             <div class="collage">
                 <img src="images/statue.jpg" srcset="images/statue.jpg 750w,images/statue@2x.jpg 960w" class="statue" alt="像の画像">
-                <!--
-                <div class="circle"></div>-->
                 <img src="images/shape.svg" class="shape" alt="3Dシェイプの画像">
                 <img src="images/HQVISION.svg" class="hqvision" alt="HQビジョンのイメージ画像">
                 <img src="images/stitch.png" srcset="images/stitch.png 750w,images/stitch@2x.png 960w" class="stitch" alt="刺繍の画像">
@@ -73,10 +71,6 @@
                     <img src="images/pointer.svg" class="pointer" alt="ポインタの画像">
                 </div>
                 <p class="year">1992</p>
-                <!--
-                <img src="images/ff.svg" class="ff" alt="早送りマークの画像">-->
-                <!--
-                <img src="images/cdjacket.svg" class="cdjacket" alt="イヤホンとジャケットの画像"> -->
                 <img src="images/jeans.png" srcset="images/jeans.png 750w,images/jeans@2x.png 960w" class="jeans" alt="ジーンズの画像">
                 <img src="images/sneaker2.png" srcset="images/sneaker2.png 750w,images/sneaker2.png 960w" class="sneaker" alt="スニーカーの画像">
                 <img src="images/parka.png" srcset="images/parka.png 750w,images/parka@2x.png 960w" class="parka" alt="パーカーの画像">
@@ -121,11 +115,10 @@
         <section class="profile text-center">
 
             <h2 class="section-header text-center">profile
-                <!--<img src="images/code_profile.png" alt="バーコードの画像" class="barcode">-->
             </h2>
 
             <div class="profile-info">
-                <p class="name">山崎 祐貴 | ヤマザキ ユウキ</p>
+                <p class="name">山崎 祐貴<span class="space">|</span>yuki yamazaki</p>
                 <p class="aboutme">
                     5年ほどIT企業に勤務したのち、自分の手で何かものづくりがしたいと思い<br class="onlypc">
                     webデザインを学びました。<br class="onlypc">
@@ -149,8 +142,6 @@
             <div class="contact-container">
                 <p class="contact-mail"><a href="mailto:yyamazaki160&#64;gmail.com">mail:yyamazaki160&#64;gmail.com</a></p>
                 <p class="twitter"><a href="https://twitter.com/zaki80design">twitter:@zaki80design</a></p>
-                <!--
-                <img src="images/code_contact.png" alt="バーコードの画像" class="barcode">-->
             </div>
             <small class="copy">©︎2020 yuki yamazaki all rights reserved.</small>
 
@@ -169,13 +160,16 @@
 
     </script>
     <script>
-        var $grid = $('.grid').masonry({ //オプション指定箇所
-            itemSelector: '.grid-item', //コンテンツを指定
-            columnWidth: 440, //カラム幅を設定
-            isFitWidth: true, //カラムレイアウトの幅を要素全体の幅に追従
-        });
-        $grid.imagesLoaded().progress(function() {
-            $grid.masonry('layout');
+        $(function() {
+            $('#grid').imagesLoaded(function() {
+                $('#grid').masonry({
+                    itemSelector: '.grid-item', //整理される要素のclassを指定
+                    columnWidth: 360, //一列の幅サイズを指定
+                    isAnimated: true, //スムースアニメーション設定
+                    isFitWidth: true, //親要素の幅サイズがピッタリ
+                    isResizable: true //ウィンドウサイズが変更された時に並び替え
+                });
+            });
         });
 
     </script>

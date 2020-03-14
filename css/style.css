@@ -15,7 +15,6 @@ body {
     font-family: "Noto Sans Japanese", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
     background-color: #fff;
     font-weight: 300;
-
 }
 
 img {
@@ -51,13 +50,6 @@ a {
     padding: 240px 0 160px;
 }
 
-.barcode {
-    position: absolute;
-    top: -190px;
-    left: -78px;
-    width: 200px;
-    mix-blend-mode: screen;
-}
 
 /*-------------------
 
@@ -76,7 +68,7 @@ top-pc
 }
 
 .header {
-    z-index: 100;
+    z-index: 4;
     color: #fff;
     position: sticky;
     top: 0;
@@ -98,6 +90,10 @@ h1 {
 .mail {
     flex-basis: 33.33%;
     padding: 20px;
+}
+
+.hamburger {
+    display: none;
 }
 
 .menu {
@@ -135,17 +131,6 @@ h1 {
     right: 0;
     left: 0;
     margin: auto;
-}
-
-
-.cdjacket {
-    z-index: 2;
-    position: absolute;
-    top: 40px;
-    left: 10px;
-    right: 0;
-    margin: auto;
-    width: 600px;
 }
 
 .browser {
@@ -225,7 +210,6 @@ h1 {
 }
 
 .parka {
-    z-index: 0;
     position: absolute;
     top: 8%;
     left: -14%;
@@ -268,7 +252,7 @@ h1 {
 }
 
 .sneaker {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     top: 32%;
     left: 8%;
@@ -284,19 +268,9 @@ h1 {
     width: 120px;
 }
 
-.circle {
-    position: absolute;
-    bottom: 40px;
-    left: -10%;
-    margin: auto;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background: linear-gradient(#ffd26c, #dd9696);
-}
 
 .clouds {
-    z-index: 2;
+    z-index: 4;
     position: absolute;
     bottom: 10%;
     right: -10%;
@@ -310,14 +284,6 @@ h1 {
     right: 8%;
     margin: auto;
     width: 260px;
-}
-
-.ff {
-    position: absolute;
-    bottom: 48%;
-    right: -4%;
-    margin: auto;
-    width: 100px;
 }
 
 
@@ -356,15 +322,23 @@ works-pc
 }
 
 .grid-item {
-    width: 400px;
+    width: 320px;
     height: auto;
     margin: 20px;
 
 }
 
 .grid-item img {
-    width: 100%;
+    width: 320px;
+    height: auto;
 }
+
+.grid-item video {
+    width: 320px;
+    height: auto;
+}
+
+
 
 /*-------------------
 
@@ -415,7 +389,14 @@ profile-pc
     padding-bottom: 80px;
 }
 
+.space {
+    letter-spacing: 0.6em;
+}
 
+.space:before {
+    content: " ";
+    letter-spacing: 0.6em;
+}
 
 
 /*-------------------
@@ -427,7 +408,7 @@ contact-pc
 .contact p {
     text-align: left;
     display: block;
-    width: 25%;
+    width: 30%;
     margin: 0 auto;
     padding-bottom: 20px;
 }
@@ -505,12 +486,12 @@ top-sp
 
     .menu-list li {
         text-align: left;
-        padding-bottom: 28px;
+        padding-bottom: 42px;
+        position: relative;
     }
 
     .menu-list a {
-        z-index: 1;
-        position: relative;
+        z-index: 5;
         color: #000;
     }
 
@@ -520,6 +501,7 @@ top-sp
         right: 16px;
         width: 60px;
         height: 30px;
+        padding: 8px;
         background: #fff;
         transform: rotate(16deg);
 
@@ -527,30 +509,33 @@ top-sp
 
     .list-about {
         position: absolute;
-        top: 64px;
+        top: 10px;
         right: 12px;
         width: 60px;
         height: 30px;
+        padding: 8px;
         background: #fff;
         transform: rotate(-2deg);
     }
 
     .list-profile {
         position: absolute;
-        top: 120px;
+        top: 8px;
         right: 18px;
         width: 60px;
         height: 30px;
+        padding: 8px;
         background: #fff;
         transform: rotate(-12deg);
     }
 
     .list-contact {
         position: absolute;
-        top: 176px;
-        right: 12px;
-        width: 60px;
+        top: 10px;
+        right: 8px;
+        width: 64px;
         height: 30px;
+        padding: 8px 6px;
         background: #fff;
         transform: rotate(6deg);
     }
@@ -571,8 +556,10 @@ top-sp
 
 
 
+
     .hamburger {
-        z-index: 500;
+        z-index: 4;
+        display: block;
         position: fixed;
         top: 0px;
         right: 0px;
@@ -767,7 +754,7 @@ top-sp
     }
 
     .year {
-        z-index: 1;
+        z-index: 2;
         position: absolute;
         bottom: -28%;
         left: 2%;
@@ -842,7 +829,7 @@ works-sp
 
 
     .grid-item {
-        width: 90%;
+        width: 95%;
         margin: 5%;
 
     }
@@ -872,10 +859,16 @@ profile-sp
         width: 90%;
         margin: 0 auto;
         letter-spacing: 0.08em;
+        line-height: 1.6;
     }
 
     .name {
         letter-spacing: 0.14em;
+    }
+
+    .name:before {
+        content: "";
+        letter-spacing: 0.24em;
     }
 
     .profile-sub {
@@ -915,8 +908,8 @@ contact-sp
 
     .contact p {
         width: 100%;
+        letter-spacing: 0.1em;
         padding-bottom: 20px;
-
     }
 
     .contact a {
@@ -926,8 +919,7 @@ contact-sp
 
     .contact-container {
         position: relative;
-        width: 60%;
-        height: auto;
+        width: 270px;
         margin: 0 auto;
         padding-bottom: 160px;
     }
@@ -959,19 +951,20 @@ works-tab
 --------------------*/
 
     .grid {
-        width: 700px;
+        width: 750px;
         padding-bottom: 120px;
     }
 
     .grid-item {
         width: 100%;
+        height: auto;
         margin: 20px 0;
+
     }
 
     .grid-item img {
-        width: 700px;
+        width: 750px;
     }
-
 
 
 
@@ -1000,8 +993,5 @@ contact-tab
     .contact a {
         font-size: 2.4rem;
     }
-
-
-
 
 }
