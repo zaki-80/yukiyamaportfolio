@@ -94,20 +94,19 @@
 
         <div class="grid" id="grid">
             <div class="grid-item"><img src="images/work01.png" alt="作品01"></div>
+            <div class="grid-item"><img src="images/work02.jpg" alt="作品02"></div>
             <div class="grid-item">
                 <video id="video" class="video" autoplay loop muted playsinline width="100%">
                     <source src="video/strangerthings_video_compressed.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="grid-item"><img src="images/work03.jpg" alt="作品03"></div>
+            <div class="grid-item"><img src="images/work04.jpg" alt="作品04"></div>
+            <div class="grid-item"><img src="images/work05.jpg" alt="作品05"></div>
             <div class="grid-item">
                 <video id="video" class="video" autoplay loop muted playsinline width="100%">
                     <source src="video/geometric.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="grid-item"><img src="images/work04.jpg" alt="作品04"></div>
-            <div class="grid-item"><img src="images/work05.jpg" alt="作品05"></div>
-            <div class="grid-item"><img src="images/work06.jpg" alt="作品06"></div>
             <div class="grid-item"><img src="images/work07.jpg" alt="作品07"></div>
             <div class="grid-item"><img src="images/work08.jpg" alt="作品08"></div>
 
@@ -126,7 +125,7 @@
             </h2>
 
             <div class="profile-info">
-                <p class="name">山崎 祐貴</p>
+                <p class="name">山崎 祐貴 | ヤマザキ ユウキ</p>
                 <p class="aboutme">
                     5年ほどIT企業に勤務したのち、自分の手で何かものづくりがしたいと思い<br class="onlypc">
                     webデザインを学びました。<br class="onlypc">
@@ -174,9 +173,6 @@
             itemSelector: '.grid-item', //コンテンツを指定
             columnWidth: 440, //カラム幅を設定
             isFitWidth: true, //カラムレイアウトの幅を要素全体の幅に追従
-            isAnimated: true,
-            isResizable: true,
-            percentPosition: true
         });
         $grid.imagesLoaded().progress(function() {
             $grid.masonry('layout');
