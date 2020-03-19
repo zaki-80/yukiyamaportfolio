@@ -116,10 +116,10 @@ h1 {
 }
 
 .glitch:hover {
-    color: #fff;
+    color: #000;
     font-size: 1.6rem;
     position: relative;
-    width: 352px;
+    width: 60px;
     margin: 0 auto;
 }
 
@@ -315,14 +315,63 @@ h1 {
 .glitch:hover:before {
     content: attr(data-text);
     position: absolute;
-    left: -0.7px;
-    text-shadow: 0.7px 0 blue;
+    left: -0.9px;
+    text-shadow: 0.9px 0 blue;
     top: 0;
     color: #fff;
     background: #000;
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim-2 2.8s infinite linear alternate-reverse;
+}
+
+@media (hover: none) {
+    .glitch:hover {
+        color: #000;
+        font-size: 1.4rem;
+        position: absolute;
+        margin: 0 auto;
+    }
+
+    .glitch:hover {
+        color: #000;
+    }
+    .glitch:hover:after {
+        content: none;
+        position: absolute;
+        text-shadow: none;
+        top: 0px;
+        color: #fff;
+        background: #000;
+        overflow: inherit;
+        clip: inherit;
+        animation: none;
+    }
+
+    .glitch:hover:before {
+        content: none;
+        position: absolute;
+        text-shadow: none;
+        top: 0;
+        color: #fff;
+        background: rgba(0, 0, 0, 0);
+        overflow: inherit;
+        clip: inherit;
+        animation: none;
+    }
+
+    .glitch-large:hover {
+        font-size: 2.4rem;
+    }
+
+    .list-contact:hover {
+        width: 64px;
+    }
+
+    .contact p:hover {
+        width: 100%;
+    }
+
 }
 
 .top-container {
@@ -617,10 +666,11 @@ contact-pc
 
 .contact p {
     text-align: left;
-    display: block;
-    width: 30%;
+    display: inline-block;
+    width: 40%;
     margin: 0 auto;
     padding-bottom: 20px;
+    white-space: nowrap;
 }
 
 .contact a {
@@ -1040,8 +1090,8 @@ works-sp
 
 
     .grid-item {
-        width: 95%;
-        margin: 5%;
+        width: 96%;
+        margin: 4%;
 
     }
 
@@ -1175,8 +1225,13 @@ works-tab
 
     .grid-item img {
         width: 750px;
+        height: auto;
     }
 
+    .grid-item video {
+        width: 750px;
+        height: auto;
+    }
 
 
 
