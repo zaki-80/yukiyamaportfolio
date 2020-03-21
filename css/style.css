@@ -53,8 +53,97 @@ a {
 
 
 
+/*-------------------
 
+ホバールール
+
+--------------------*/
 @media (hover: hover) {
+    .grid-item:hover {
+        animation: skew 3s infinite,
+            flash .03s infinite;
+        overflow: hidden;
+    }
+
+    @keyframes flash {
+        0% {
+            background-color: rgba(0, 0, 0, 0.55);
+        }
+
+        100% {
+            background-color: rgba(0, 0, 0, 0.58);
+        }
+    }
+
+
+    @keyframes skew {
+        0% {
+            transform: none;
+        }
+
+        33% {
+            transform: none;
+        }
+
+        33.3% {
+            transform: skewX(30deg);
+        }
+
+        33.6% {
+            transform: skewX(-30deg);
+        }
+
+        33.9% {
+            transform: none;
+        }
+
+        66% {
+            transform: none;
+        }
+
+        66.3% {
+            transform: skewX(5deg);
+        }
+
+        66.6% {
+            transform: skewX(-5deg);
+        }
+
+        66.9% {
+            transform: none;
+        }
+
+        77% {
+            transform: none;
+        }
+
+        77.3% {
+            transform: skewX(15deg);
+        }
+
+        77.6% {
+            transform: skewX(-15deg);
+        }
+
+        77.9% {
+            transform: none;
+        }
+    }
+
+
+    .grid-item:before {
+        /* 透過した黒を重ねる */
+        background-color: rgba(0, 0, 0, 0);
+        /* どの範囲に重ねるかを指定 */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: ' ';
+    }
+
+
     .glitch:hover {
         color: #fff;
         font-size: 1.6rem;
@@ -64,10 +153,9 @@ a {
     }
 
     .glitch-large:hover {
-        width: 40%;
         font-size: 2.4rem;
+        width: 40%;
     }
-
 
     @keyframes noise-anim {
         0% {
@@ -153,35 +241,6 @@ a {
         100% {
             clip: rect(14px, 9999px, 57px, 0);
         }
-
-        /* spサイズになった時に崩れるホバー対応 */
-        @media (max-width: 767px) {
-            .glitch-large:hover {
-                width: 100%;
-                font-size: 1.6rem;
-            }
-
-            .list-contact:hover {
-                width: 64px;
-            }
-
-            .list-top:hover {
-                position: absolute;
-            }
-
-            .list-about:hover {
-                position: absolute;
-            }
-
-            .list-profile:hover {
-                position: absolute;
-            }
-
-            .list-contact:hover {
-                position: absolute;
-            }
-
-        }
     }
 
     .glitch:hover:after {
@@ -189,12 +248,12 @@ a {
         position: absolute;
         left: 0.7px;
         text-shadow: -0.7px 0 red;
-        top: 0;
+        top: 0.1;
         color: #fff;
         background: #000;
         overflow: hidden;
         clip: rect(0, 900px, 0, 0);
-        animation: noise-anim 2s infinite linear alternate-reverse;
+        animation: noise-anim 1.8s infinite linear alternate-reverse;
     }
 
     @keyframes noise-anim-2 {
@@ -293,76 +352,61 @@ a {
         background: #000;
         overflow: hidden;
         clip: rect(0, 900px, 0, 0);
-        animation: noise-anim-2 2.8s infinite linear alternate-reverse;
+        animation: noise-anim-2 1.5s infinite linear alternate-reverse;
     }
 
+    /* spサイズになった時に崩れるホバー対応 */
+    @media (max-width: 767px) {
+        .glitch-menu:hover {
+            font-size: 1.4rem;
+            color: #fff;
+        }
+
+        .glitch-menu:hover:after {
+            color: #fff;
+            left: 7.2px;
+            text-shadow: -0.7px 0 red;
+            top: 8.0;
+        }
+
+        .glitch-menu:hover:before {
+            color: #fff;
+            left: 6.6px;
+            text-shadow: 0.9px 0 blue;
+            top: 7.6px;
+        }
+
+        .glitch-large:hover {
+            width: 100%;
+            font-size: 1.6rem;
+        }
+
+        .list-top:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(16deg);
+        }
+
+        .list-about:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(-2deg);
+        }
+
+        .list-profile:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(-12deg);
+        }
+
+        .list-contact:hover {
+            position: absolute;
+            background: #000;
+            width: 64px;
+            transform: rotate(6deg);
+        }
+    }
 }
-
-
-
-
-
-
-@media (hover: none) {
-    .glitch:hover {
-        color: #000;
-        font-size: 1.4rem;
-        position: relative;
-        margin: 0 auto;
-    }
-
-
-    .glitch:hover:after {
-        content: none;
-        position: absolute;
-        text-shadow: none;
-        top: 0px;
-        color: #fff;
-        background: #000;
-        overflow: inherit;
-        clip: inherit;
-        animation: none;
-    }
-
-    .glitch:hover:before {
-        content: none;
-        position: absolute;
-        text-shadow: none;
-        top: 0;
-        color: #fff;
-        background: rgba(0, 0, 0, 0);
-        overflow: inherit;
-        clip: inherit;
-        animation: none;
-    }
-
-    .glitch-large:hover {
-        font-size: 1.6rem;
-        width: 100%;
-    }
-
-    .list-contact:hover {
-        width: 64px;
-    }
-
-    .list-top:hover {
-        position: absolute;
-    }
-
-    .list-about:hover {
-        position: absolute;
-    }
-
-    .list-profile:hover {
-        position: absolute;
-    }
-
-    .list-contact:hover {
-        position: absolute;
-    }
-
-}
-
 
 
 
@@ -643,8 +687,10 @@ works-pc
     width: 320px;
     height: auto;
     margin: 20px;
-
+    background: #000;
+    overflow: hidden;
 }
+
 
 .grid-item img {
     width: 320px;
@@ -1128,13 +1174,6 @@ top-sp
         width: 160px;
     }
 
-    .ff {
-        position: absolute;
-        bottom: 18%;
-        right: 10%;
-        margin: auto;
-        width: 16%;
-    }
 
     /*-------------------
 
@@ -1245,55 +1284,57 @@ contact-sp
     .copy {
         font-size: 1.2rem;
     }
+}
 
+
+
+
+/*-------------------
+
+□□□ tablet □□□
+
+--------------------*/
+@media (min-width: 768px) and (max-width: 959px) {
+    .section-header {
+        font-size: 16vw;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
 
 
 
     /*-------------------
 
-□□□ tablet □□□
-
---------------------*/
-    @media (min-width: 768px) and (max-width: 959px) {
-        .section-header {
-            font-size: 16vw;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-
-
-        /*-------------------
-
 works-tab
 
 --------------------*/
 
-        .grid {
-            width: 750px;
-            padding-bottom: 120px;
-        }
+    .grid {
+        width: 720px;
+        padding-bottom: 120px;
+    }
 
-        .grid-item {
-            width: 100%;
-            height: auto;
-            margin: 20px 0;
+    .grid-item {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
 
-        }
-
-        .grid-item img {
-            width: 750px;
-            height: auto;
-        }
-
-        .grid-item video {
-            width: 750px;
-            height: auto;
-        }
+    }
 
 
+    .grid-item img {
+        width: 720px;
+        height: auto;
+    }
 
-        /*-------------------
+    .grid-item video {
+        width: 720px;
+        height: auto;
+    }
+
+
+
+    /*-------------------
 
 profile-tab
 
@@ -1301,21 +1342,21 @@ profile-tab
 
 
 
-        /*-------------------
+    /*-------------------
 
 contact-tab
 
 --------------------*/
 
 
-        .contact p {
-            width: 40%;
-            margin: 0 auto;
-            padding-bottom: 20px;
-        }
-
-        .contact a {
-            font-size: 2.4rem;
-        }
-
+    .contact p {
+        width: 40%;
+        margin: 0 auto;
+        padding-bottom: 20px;
     }
+
+    .contact a {
+        font-size: 2.4rem;
+    }
+
+}
