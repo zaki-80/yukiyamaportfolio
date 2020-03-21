@@ -2,6 +2,10 @@
 
 * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
 }
 
 html {
@@ -53,359 +57,386 @@ a {
 
 
 
+
+
 /*-------------------
 
 ホバールール
 
 --------------------*/
 @media (hover: hover) {
-    .grid-item:hover {
-        animation: skew 3s infinite,
-            flash .03s infinite;
-        overflow: hidden;
+
+    .grid-item img:hover,
+    .grid-item video:hover {
+        animation: skew 4s infinite,
+            flash .02s infinite;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0.36;
     }
 
-    @keyframes flash {
-        0% {
-            background-color: rgba(0, 0, 0, 0.55);
-        }
+    100% {
+        opacity: 0.4;
+    }
+}
 
-        100% {
-            background-color: rgba(0, 0, 0, 0.58);
-        }
+
+@keyframes skew {
+    0% {
+        transform: none;
     }
 
-
-    @keyframes skew {
-        0% {
-            transform: none;
-        }
-
-        33% {
-            transform: none;
-        }
-
-        33.3% {
-            transform: skewX(30deg);
-        }
-
-        33.6% {
-            transform: skewX(-30deg);
-        }
-
-        33.9% {
-            transform: none;
-        }
-
-        66% {
-            transform: none;
-        }
-
-        66.3% {
-            transform: skewX(5deg);
-        }
-
-        66.6% {
-            transform: skewX(-5deg);
-        }
-
-        66.9% {
-            transform: none;
-        }
-
-        77% {
-            transform: none;
-        }
-
-        77.3% {
-            transform: skewX(15deg);
-        }
-
-        77.6% {
-            transform: skewX(-15deg);
-        }
-
-        77.9% {
-            transform: none;
-        }
+    33% {
+        transform: none;
     }
 
+    33.3% {
+        transform: skewX(30deg);
+    }
 
-    .grid-item:before {
-        /* 透過した黒を重ねる */
-        background-color: rgba(0, 0, 0, 0);
-        /* どの範囲に重ねるかを指定 */
-        position: absolute;
+    33.6% {
+        transform: skewX(-30deg);
+    }
+
+    33.9% {
+        transform: none;
+    }
+
+    66% {
+        transform: none;
+    }
+
+    66.3% {
+        transform: skewX(5deg);
+    }
+
+    66.6% {
+        transform: skewX(-5deg);
+    }
+
+    66.9% {
+        transform: none;
+    }
+
+    77% {
+        transform: none;
+    }
+
+    77.3% {
+        transform: skewX(15deg);
+    }
+
+    77.6% {
+        transform: skewX(-15deg);
+    }
+
+    77.9% {
+        transform: none;
+    }
+}
+
+.grid-item:hover::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: rgba(000, 255, 255, 0.2);
+    animation: line 4s ease infinite;
+}
+
+@keyframes line {
+    0% {
         top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        content: ' ';
+        background: rgba(000, 100, 100, 0.08);
     }
 
+    25% {
+        top: 200px;
+        background: rgba(000, 100, 100, 0.04);
+        height: 4px;
+    }
 
-    .glitch:hover {
+    50% {
+        top: -40px;
+        background: rgba(000, 100, 100, 0.05);
+        height: 8px;
+    }
+
+    100% {
+        top: 500px;
+        background: rgba(000, 100, 100, 0.01);
+        height: 1px;
+    }
+}
+
+
+.glitch:hover {
+    color: #fff;
+    font-size: 1.6rem;
+    position: relative;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.glitch-large:hover {
+    font-size: 2.4rem;
+    width: 40%;
+}
+
+@keyframes noise-anim {
+    0% {
+        clip: rect(77px, 9999px, 6px, 0);
+    }
+
+    5% {
+        clip: rect(65px, 9999px, 70px, 0);
+    }
+
+    10% {
+        clip: rect(82px, 9999px, 82px, 0);
+    }
+
+    15% {
+        clip: rect(32px, 9999px, 35px, 0);
+    }
+
+    20% {
+        clip: rect(31px, 9999px, 49px, 0);
+    }
+
+    25% {
+        clip: rect(18px, 9999px, 46px, 0);
+    }
+
+    30% {
+        clip: rect(94px, 9999px, 64px, 0);
+    }
+
+    35% {
+        clip: rect(69px, 9999px, 31px, 0);
+    }
+
+    40% {
+        clip: rect(6px, 9999px, 72px, 0);
+    }
+
+    45% {
+        clip: rect(25px, 9999px, 35px, 0);
+    }
+
+    50% {
+        clip: rect(82px, 9999px, 26px, 0);
+    }
+
+    55% {
+        clip: rect(7px, 9999px, 92px, 0);
+    }
+
+    60% {
+        clip: rect(54px, 9999px, 30px, 0);
+    }
+
+    65% {
+        clip: rect(86px, 9999px, 90px, 0);
+    }
+
+    70% {
+        clip: rect(38px, 9999px, 65px, 0);
+    }
+
+    75% {
+        clip: rect(41px, 9999px, 66px, 0);
+    }
+
+    80% {
+        clip: rect(31px, 9999px, 37px, 0);
+    }
+
+    85% {
+        clip: rect(8px, 9999px, 12px, 0);
+    }
+
+    90% {
+        clip: rect(50px, 9999px, 69px, 0);
+    }
+
+    95% {
+        clip: rect(7px, 9999px, 42px, 0);
+    }
+
+    100% {
+        clip: rect(14px, 9999px, 57px, 0);
+    }
+}
+
+.glitch:hover::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0.7px;
+    text-shadow: -0.7px 0 red;
+    top: 0.1;
+    color: #fff;
+    background: #000;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 1.8s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+    0% {
+        clip: rect(18px, 9999px, 13px, 0);
+    }
+
+    5% {
+        clip: rect(74px, 9999px, 51px, 0);
+    }
+
+    10% {
+        clip: rect(33px, 9999px, 65px, 0);
+    }
+
+    15% {
+        clip: rect(64px, 9999px, 66px, 0);
+    }
+
+    20% {
+        clip: rect(75px, 9999px, 6px, 0);
+    }
+
+    25% {
+        clip: rect(40px, 9999px, 49px, 0);
+    }
+
+    30% {
+        clip: rect(71px, 9999px, 1px, 0);
+    }
+
+    35% {
+        clip: rect(42px, 9999px, 73px, 0);
+    }
+
+    40% {
+        clip: rect(92px, 9999px, 57px, 0);
+    }
+
+    45% {
+        clip: rect(4px, 9999px, 33px, 0);
+    }
+
+    50% {
+        clip: rect(4px, 9999px, 34px, 0);
+    }
+
+    55% {
+        clip: rect(49px, 9999px, 25px, 0);
+    }
+
+    60% {
+        clip: rect(24px, 9999px, 44px, 0);
+    }
+
+    65% {
+        clip: rect(31px, 9999px, 99px, 0);
+    }
+
+    70% {
+        clip: rect(54px, 9999px, 83px, 0);
+    }
+
+    75% {
+        clip: rect(57px, 9999px, 97px, 0);
+    }
+
+    80% {
+        clip: rect(3px, 9999px, 15px, 0);
+    }
+
+    85% {
+        clip: rect(84px, 9999px, 34px, 0);
+    }
+
+    90% {
+        clip: rect(100px, 9999px, 88px, 0);
+    }
+
+    95% {
+        clip: rect(91px, 9999px, 59px, 0);
+    }
+
+    100% {
+        clip: rect(10px, 9999px, 87px, 0);
+    }
+}
+
+.glitch:hover::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -0.9px;
+    text-shadow: 0.9px 0 blue;
+    top: 0;
+    color: #fff;
+    background: #000;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 1.5s infinite linear alternate-reverse;
+}
+
+/* spサイズになった時に崩れるホバー対応 */
+@media (max-width: 767px) {
+    .glitch-menu:hover {
+        font-size: 1.4rem;
         color: #fff;
-        font-size: 1.6rem;
-        position: relative;
-        width: 60px;
-        margin: 0 auto;
+    }
+
+    .glitch-menu:hover::after {
+        color: #fff;
+        left: 7.2px;
+        text-shadow: -0.7px 0 red;
+        top: 8.0;
+    }
+
+    .glitch-menu:hover::before {
+        color: #fff;
+        left: 6.6px;
+        text-shadow: 0.9px 0 blue;
+        top: 7.6px;
     }
 
     .glitch-large:hover {
-        font-size: 2.4rem;
-        width: 40%;
+        width: 100%;
+        font-size: 1.6rem;
     }
 
-    @keyframes noise-anim {
-        0% {
-            clip: rect(77px, 9999px, 6px, 0);
-        }
-
-        5% {
-            clip: rect(65px, 9999px, 70px, 0);
-        }
-
-        10% {
-            clip: rect(82px, 9999px, 82px, 0);
-        }
-
-        15% {
-            clip: rect(32px, 9999px, 35px, 0);
-        }
-
-        20% {
-            clip: rect(31px, 9999px, 49px, 0);
-        }
-
-        25% {
-            clip: rect(18px, 9999px, 46px, 0);
-        }
-
-        30% {
-            clip: rect(94px, 9999px, 64px, 0);
-        }
-
-        35% {
-            clip: rect(69px, 9999px, 31px, 0);
-        }
-
-        40% {
-            clip: rect(6px, 9999px, 72px, 0);
-        }
-
-        45% {
-            clip: rect(25px, 9999px, 35px, 0);
-        }
-
-        50% {
-            clip: rect(82px, 9999px, 26px, 0);
-        }
-
-        55% {
-            clip: rect(7px, 9999px, 92px, 0);
-        }
-
-        60% {
-            clip: rect(54px, 9999px, 30px, 0);
-        }
-
-        65% {
-            clip: rect(86px, 9999px, 90px, 0);
-        }
-
-        70% {
-            clip: rect(38px, 9999px, 65px, 0);
-        }
-
-        75% {
-            clip: rect(41px, 9999px, 66px, 0);
-        }
-
-        80% {
-            clip: rect(31px, 9999px, 37px, 0);
-        }
-
-        85% {
-            clip: rect(8px, 9999px, 12px, 0);
-        }
-
-        90% {
-            clip: rect(50px, 9999px, 69px, 0);
-        }
-
-        95% {
-            clip: rect(7px, 9999px, 42px, 0);
-        }
-
-        100% {
-            clip: rect(14px, 9999px, 57px, 0);
-        }
-    }
-
-    .glitch:hover:after {
-        content: attr(data-text);
+    .list-top:hover {
         position: absolute;
-        left: 0.7px;
-        text-shadow: -0.7px 0 red;
-        top: 0.1;
-        color: #fff;
         background: #000;
-        overflow: hidden;
-        clip: rect(0, 900px, 0, 0);
-        animation: noise-anim 1.8s infinite linear alternate-reverse;
+        transform: rotate(16deg);
     }
 
-    @keyframes noise-anim-2 {
-        0% {
-            clip: rect(18px, 9999px, 13px, 0);
-        }
-
-        5% {
-            clip: rect(74px, 9999px, 51px, 0);
-        }
-
-        10% {
-            clip: rect(33px, 9999px, 65px, 0);
-        }
-
-        15% {
-            clip: rect(64px, 9999px, 66px, 0);
-        }
-
-        20% {
-            clip: rect(75px, 9999px, 6px, 0);
-        }
-
-        25% {
-            clip: rect(40px, 9999px, 49px, 0);
-        }
-
-        30% {
-            clip: rect(71px, 9999px, 1px, 0);
-        }
-
-        35% {
-            clip: rect(42px, 9999px, 73px, 0);
-        }
-
-        40% {
-            clip: rect(92px, 9999px, 57px, 0);
-        }
-
-        45% {
-            clip: rect(4px, 9999px, 33px, 0);
-        }
-
-        50% {
-            clip: rect(4px, 9999px, 34px, 0);
-        }
-
-        55% {
-            clip: rect(49px, 9999px, 25px, 0);
-        }
-
-        60% {
-            clip: rect(24px, 9999px, 44px, 0);
-        }
-
-        65% {
-            clip: rect(31px, 9999px, 99px, 0);
-        }
-
-        70% {
-            clip: rect(54px, 9999px, 83px, 0);
-        }
-
-        75% {
-            clip: rect(57px, 9999px, 97px, 0);
-        }
-
-        80% {
-            clip: rect(3px, 9999px, 15px, 0);
-        }
-
-        85% {
-            clip: rect(84px, 9999px, 34px, 0);
-        }
-
-        90% {
-            clip: rect(100px, 9999px, 88px, 0);
-        }
-
-        95% {
-            clip: rect(91px, 9999px, 59px, 0);
-        }
-
-        100% {
-            clip: rect(10px, 9999px, 87px, 0);
-        }
-    }
-
-    .glitch:hover:before {
-        content: attr(data-text);
+    .list-about:hover {
         position: absolute;
-        left: -0.9px;
-        text-shadow: 0.9px 0 blue;
-        top: 0;
-        color: #fff;
         background: #000;
-        overflow: hidden;
-        clip: rect(0, 900px, 0, 0);
-        animation: noise-anim-2 1.5s infinite linear alternate-reverse;
+        transform: rotate(-2deg);
     }
 
-    /* spサイズになった時に崩れるホバー対応 */
-    @media (max-width: 767px) {
-        .glitch-menu:hover {
-            font-size: 1.4rem;
-            color: #fff;
-        }
-
-        .glitch-menu:hover:after {
-            color: #fff;
-            left: 7.2px;
-            text-shadow: -0.7px 0 red;
-            top: 8.0;
-        }
-
-        .glitch-menu:hover:before {
-            color: #fff;
-            left: 6.6px;
-            text-shadow: 0.9px 0 blue;
-            top: 7.6px;
-        }
-
-        .glitch-large:hover {
-            width: 100%;
-            font-size: 1.6rem;
-        }
-
-        .list-top:hover {
-            position: absolute;
-            background: #000;
-            transform: rotate(16deg);
-        }
-
-        .list-about:hover {
-            position: absolute;
-            background: #000;
-            transform: rotate(-2deg);
-        }
-
-        .list-profile:hover {
-            position: absolute;
-            background: #000;
-            transform: rotate(-12deg);
-        }
-
-        .list-contact:hover {
-            position: absolute;
-            background: #000;
-            width: 64px;
-            transform: rotate(6deg);
-        }
+    .list-profile:hover {
+        position: absolute;
+        background: #000;
+        transform: rotate(-12deg);
     }
+
+    .list-contact:hover {
+        position: absolute;
+        background: #000;
+        width: 64px;
+        transform: rotate(6deg);
+    }
+}
 }
 
 
@@ -687,8 +718,10 @@ works-pc
     width: 320px;
     height: auto;
     margin: 20px;
-    background: #000;
+    background: #fff;
     overflow: hidden;
+
+
 }
 
 
@@ -757,7 +790,7 @@ profile-pc
     letter-spacing: 0.6em;
 }
 
-.space:before {
+.space::before {
     content: " ";
     letter-spacing: 0.6em;
 }
@@ -1225,7 +1258,7 @@ profile-sp
         letter-spacing: 0.14em;
     }
 
-    .name:before {
+    .name::before {
         content: "";
         letter-spacing: 0.24em;
     }
