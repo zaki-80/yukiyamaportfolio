@@ -1,5 +1,49 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+    color: #1b1f1e;
+    font-family: "Noto Sans Japanese", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    background-color: #fff;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1b1f1e;
+    outline: none;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
 .section-header {
     font-size: 16rem;
     font-weight: bold;
@@ -9,6 +53,7 @@
     -webkit-text-stroke: 1px #1b1f1e;
     padding: 240px 0 160px;
 }
+
 
 
 
@@ -163,6 +208,268 @@
     }
 
 
+    .glitch:hover {
+        color: #fff;
+        font-size: 1.6rem;
+        position: relative;
+        width: 60px;
+        margin: 0 auto;
+    }
+
+    .glitch-large:hover {
+        font-size: 2.4rem;
+        width: 40%;
+    }
+
+    @keyframes noise-anim {
+        0% {
+            clip: rect(77px, 9999px, 6px, 0);
+        }
+
+        5% {
+            clip: rect(65px, 9999px, 70px, 0);
+        }
+
+        10% {
+            clip: rect(82px, 9999px, 82px, 0);
+        }
+
+        15% {
+            clip: rect(32px, 9999px, 35px, 0);
+        }
+
+        20% {
+            clip: rect(31px, 9999px, 49px, 0);
+        }
+
+        25% {
+            clip: rect(18px, 9999px, 46px, 0);
+        }
+
+        30% {
+            clip: rect(94px, 9999px, 64px, 0);
+        }
+
+        35% {
+            clip: rect(69px, 9999px, 31px, 0);
+        }
+
+        40% {
+            clip: rect(6px, 9999px, 72px, 0);
+        }
+
+        45% {
+            clip: rect(25px, 9999px, 35px, 0);
+        }
+
+        50% {
+            clip: rect(82px, 9999px, 26px, 0);
+        }
+
+        55% {
+            clip: rect(7px, 9999px, 92px, 0);
+        }
+
+        60% {
+            clip: rect(54px, 9999px, 30px, 0);
+        }
+
+        65% {
+            clip: rect(86px, 9999px, 90px, 0);
+        }
+
+        70% {
+            clip: rect(38px, 9999px, 65px, 0);
+        }
+
+        75% {
+            clip: rect(41px, 9999px, 66px, 0);
+        }
+
+        80% {
+            clip: rect(31px, 9999px, 37px, 0);
+        }
+
+        85% {
+            clip: rect(8px, 9999px, 12px, 0);
+        }
+
+        90% {
+            clip: rect(50px, 9999px, 69px, 0);
+        }
+
+        95% {
+            clip: rect(7px, 9999px, 42px, 0);
+        }
+
+        100% {
+            clip: rect(14px, 9999px, 57px, 0);
+        }
+    }
+
+    .glitch:hover::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 0.7px;
+        text-shadow: -0.7px 0 red;
+        top: 0.1;
+        color: #fff;
+        background: #000;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim 1.8s infinite linear alternate-reverse;
+    }
+
+    @keyframes noise-anim-2 {
+        0% {
+            clip: rect(18px, 9999px, 13px, 0);
+        }
+
+        5% {
+            clip: rect(74px, 9999px, 51px, 0);
+        }
+
+        10% {
+            clip: rect(33px, 9999px, 65px, 0);
+        }
+
+        15% {
+            clip: rect(64px, 9999px, 66px, 0);
+        }
+
+        20% {
+            clip: rect(75px, 9999px, 6px, 0);
+        }
+
+        25% {
+            clip: rect(40px, 9999px, 49px, 0);
+        }
+
+        30% {
+            clip: rect(71px, 9999px, 1px, 0);
+        }
+
+        35% {
+            clip: rect(42px, 9999px, 73px, 0);
+        }
+
+        40% {
+            clip: rect(92px, 9999px, 57px, 0);
+        }
+
+        45% {
+            clip: rect(4px, 9999px, 33px, 0);
+        }
+
+        50% {
+            clip: rect(4px, 9999px, 34px, 0);
+        }
+
+        55% {
+            clip: rect(49px, 9999px, 25px, 0);
+        }
+
+        60% {
+            clip: rect(24px, 9999px, 44px, 0);
+        }
+
+        65% {
+            clip: rect(31px, 9999px, 99px, 0);
+        }
+
+        70% {
+            clip: rect(54px, 9999px, 83px, 0);
+        }
+
+        75% {
+            clip: rect(57px, 9999px, 97px, 0);
+        }
+
+        80% {
+            clip: rect(3px, 9999px, 15px, 0);
+        }
+
+        85% {
+            clip: rect(84px, 9999px, 34px, 0);
+        }
+
+        90% {
+            clip: rect(100px, 9999px, 88px, 0);
+        }
+
+        95% {
+            clip: rect(91px, 9999px, 59px, 0);
+        }
+
+        100% {
+            clip: rect(10px, 9999px, 87px, 0);
+        }
+    }
+
+    .glitch:hover::before {
+        content: attr(data-text);
+        position: absolute;
+        left: -0.9px;
+        text-shadow: 0.9px 0 blue;
+        top: 0;
+        color: #fff;
+        background: #000;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim-2 1.5s infinite linear alternate-reverse;
+    }
+
+    /* spサイズになった時に崩れるホバー対応 */
+    @media (max-width: 767px) {
+        .glitch-menu:hover {
+            font-size: 1.4rem;
+            color: #fff;
+        }
+
+        .glitch-menu:hover::after {
+            color: #fff;
+            left: 7.2px;
+            text-shadow: -0.7px 0 red;
+            top: 8.0;
+        }
+
+        .glitch-menu:hover::before {
+            color: #fff;
+            left: 6.6px;
+            text-shadow: 0.9px 0 blue;
+            top: 7.6px;
+        }
+
+        .glitch-large:hover {
+            width: 100%;
+            font-size: 1.6rem;
+        }
+
+        .list-top:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(16deg);
+        }
+
+        .list-about:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(-2deg);
+        }
+
+        .list-profile:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(-12deg);
+        }
+
+        .list-contact:hover {
+            position: absolute;
+            background: #000;
+            width: 64px;
+            transform: rotate(6deg);
+        }
+    }
 }
 
 
@@ -179,6 +486,60 @@ top-pc
     height: 100%;
     margin-bottom: 20px;
 }
+
+.top a {
+    color: #fff;
+}
+
+.header {
+    z-index: 5;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.biography {
+    flex-basis: 33.33%;
+    padding: 20px 0 0 20px;
+    line-height: 1.4;
+}
+
+h1 {
+    font-weight: 300;
+    padding-bottom: 16px;
+}
+
+.mail {
+    flex-basis: 33.33%;
+    padding: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.menu {
+    flex-basis: 33.33%;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.menu-list {
+    display: inline-block;
+}
+
+.menu-list li {
+    text-align: left;
+}
+
+.menu-item {
+    padding-bottom: 16px;
+}
+
 
 .top-container {
     background: linear-gradient(#4ca1af, #a5c3bc);
@@ -311,7 +672,7 @@ top-pc
     left: 16%;
     font-family: Neue Haas Grotesk Display Pro;
     font-size: 800%;
-    font-weight: 400;
+    font-weight: normal;
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke: 1px #fff;
 }
@@ -410,7 +771,7 @@ works-pc
     left: 0px;
     width: 100%;
     height: 100%;
-    padding: 8%;
+    padding: 20px;
 }
 
 
@@ -421,7 +782,7 @@ works-pc
     text-align: left;
     color: #232323;
     font-size: 1.2rem;
-    padding-bottom: 6%;
+    padding-bottom: 16px;
 }
 
 
@@ -431,7 +792,7 @@ works-pc
     text-align: left;
     color: #232323;
     font-size: 1.2rem;
-    padding-bottom: 6%;
+    padding-bottom: 16px;
 }
 
 .work-info dt,
@@ -440,7 +801,7 @@ works-pc
 }
 
 .work-info .work-name {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 
@@ -473,7 +834,7 @@ profile-pc
 }
 
 .profile-sub dt {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .profile-sub dd {
@@ -541,7 +902,7 @@ contact-pc
 @media (max-width: 767px) {
     .section-header {
         font-size: 16vw;
-        font-weight: 600;
+        font-weight: bold;
         letter-spacing: 2px;
         color: rgba(0, 0, 0, 0);
         font-family: Termina;
@@ -559,6 +920,178 @@ contact-pc
 top-sp
 
 --------------------*/
+    .header {
+        font-size: 1.4rem;
+    }
+
+    .biography {
+        padding: 4% 0 0 4%;
+        flex-basis: 70%;
+        line-height: 1.4;
+    }
+
+    h1 {
+        padding-bottom: 10px;
+    }
+
+    .mail {
+        display: none;
+    }
+
+    .menu {
+        flex-basis: 30%;
+        text-align: right;
+        padding-top: 0;
+        padding-right: 0;
+    }
+
+    .menu-list {
+        display: block;
+        background: #000;
+    }
+
+    .menu-list li {
+        text-align: left;
+        padding-bottom: 42px;
+        position: relative;
+    }
+
+    .menu-list a {
+        z-index: 7;
+        color: #000;
+    }
+
+    .list-top {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 60px;
+        height: 30px;
+        padding: 8px;
+        background: #fff;
+        transform: rotate(16deg);
+    }
+
+    .list-about {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        width: 60px;
+        height: 30px;
+        padding: 8px;
+        background: #fff;
+        transform: rotate(-2deg);
+    }
+
+    .list-profile {
+        position: absolute;
+        top: 8px;
+        right: 18px;
+        width: 60px;
+        height: 30px;
+        padding: 8px;
+        background: #fff;
+        transform: rotate(-12deg);
+    }
+
+    .list-contact {
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        width: 64px;
+        height: 30px;
+        padding: 8px 6px;
+        background: #fff;
+        transform: rotate(6deg);
+    }
+
+
+    .nav-menu {
+        position: fixed;
+        top: 42px;
+        right: 0;
+        display: none;
+        width: 86px;
+    }
+
+    .menu-item {
+        padding: 14px 16px;
+        background: #000;
+    }
+
+
+
+
+    .hamburger {
+        z-index: 6;
+        display: block;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 86px;
+        height: 44px;
+        background: #000;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        appearance: none;
+    }
+
+    .hamburger__line {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 56px;
+        height: 1px;
+        background-color: #fff;
+        transition: all .5s .2s;
+    }
+
+    .hamburger__line1 {
+        top: 15px;
+        right: 15px;
+    }
+
+    .hamburger__line2 {
+        top: 20px;
+        right: 15px;
+    }
+
+    .hamburger__line3 {
+        top: 25px;
+        right: 15px;
+    }
+
+    .hamburger.active span {
+        background-color: #fff;
+    }
+
+    .hamburger span:nth-of-type(1) {
+        top: 16px;
+    }
+
+    .hamburger.active span:nth-of-type(1) {
+        transform: translateY(8px) rotate(-20deg);
+    }
+
+    .hamburger span:nth-of-type(2) {
+        top: 22px;
+    }
+
+    .hamburger.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .hamburger span:nth-of-type(3) {
+        top: 28px;
+    }
+
+    .hamburger.active span:nth-of-type(3) {
+        transform: translateY(-4px) rotate(20deg);
+    }
+
+
+
     .top-container {
         margin: 4%;
         height: 600px;
@@ -694,7 +1227,7 @@ top-sp
         left: 2%;
         font-family: Neue Haas Grotesk Display Pro;
         font-size: 8rem;
-        font-weight: 400;
+        font-weight: normal;
         color: rgba(0, 0, 0, 0);
         -webkit-text-stroke: 1px #fff;
     }
@@ -804,7 +1337,7 @@ profile-sp
     }
 
     .profile-sub dt {
-        font-weight: 600;
+        font-weight: bold;
     }
 
     .profile-sub dd {
@@ -865,7 +1398,7 @@ contact-sp
 @media (min-width: 768px) and (max-width: 959px) {
     .section-header {
         font-size: 16vw;
-        font-weight: 600;
+        font-weight: bold;
         letter-spacing: 2px;
     }
 
