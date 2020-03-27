@@ -1,16 +1,27 @@
 @charset "UTF-8";
 
-/*-------------------
-
-top-pc
-
---------------------*/
 .header {
+    position: static;
     color: #000;
+    margin: 20px;
 }
 
 h1 {
     font-size: 1.6rem;
+}
+
+h2 {
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-weight: 300;
+    padding-bottom: 14px;
+    font-size: 2rem;
+}
+
+h4 {
+    padding-bottom: 4px;
 }
 
 .header a {
@@ -27,19 +38,63 @@ project-summary-pc
 --------------------*/
 .work-detail {
     display: flex;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin: 0 20px 20px;
 }
 
 .project-summary {
-    padding: 20px;
-    font-size: 1.4rem;
+    position: fixed;
+    padding: 0 2% 0;
     width: 35%;
+    height: 100%;
 }
 
 .project-detail {
     width: 65%;
+    padding: 0 2% 0;
+    margin-left: 37%;
 }
 
 
+dl {
+    padding-bottom: 48px;
+}
+
+.category {
+    padding-bottom: 32px;
+}
+
+.back {
+    padding: 20px 0;
+}
+
+.lt::before {
+    content: "<";
+}
+
+.barcode {
+    position: absolute;
+    bottom: 30%;
+    right: 4%;
+}
+
+/*-------------------
+
+project-detail-pc
+
+--------------------*/
+.project-intention p {
+    padding-bottom: 16px;
+}
+
+
+
+
+.references {
+    font-size: 1.0px;
+    padding: 120px 0 0;
+}
 
 /*-------------------
 

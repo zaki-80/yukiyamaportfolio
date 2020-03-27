@@ -352,7 +352,7 @@ h1 {
 
 .mail {
     flex-basis: 33.33%;
-    padding: 20px;
+    padding: 20px 0 0 0;
 }
 
 .hamburger {
