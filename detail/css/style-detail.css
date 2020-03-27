@@ -30,13 +30,13 @@ project-summary-pc
 }
 
 .project-summary {
-    padding-left: 20px;
+    padding: 20px;
     font-size: 1.4rem;
-    width: 30%;
+    width: 35%;
 }
 
 .project-detail {
-    width: 70%;
+    width: 65%;
 }
 
 
