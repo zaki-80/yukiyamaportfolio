@@ -6,7 +6,17 @@
     margin: 20px;
 }
 
+.header-container {
+    position: fixed;
+}
+
+
+.mail {
+    margin-left: 400px;
+}
+
 h1 {
+
     font-size: 1.6rem;
 }
 
@@ -45,14 +55,14 @@ project-summary-pc
 
 .project-summary {
     position: fixed;
-    padding: 0 2% 0;
+    padding: 0 6% 0 2%;
     width: 35%;
     height: 100%;
 }
 
 .project-detail {
     width: 65%;
-    padding: 0 2% 0;
+    padding: 0 6% 0;
     margin-left: 37%;
 }
 
@@ -88,6 +98,9 @@ project-detail-pc
     padding-bottom: 16px;
 }
 
+.intention-box {
+    padding-bottom: 24px;
+}
 
 
 
