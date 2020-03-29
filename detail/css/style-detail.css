@@ -3,7 +3,7 @@
 .header {
     position: static;
     color: #000;
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .header-container {
@@ -49,7 +49,7 @@ project-summary-pc
 .work-detail {
     display: flex;
     font-size: 1.4rem;
-    line-height: 1.8;
+    line-height: 1.6;
     margin: 0 20px 20px;
 }
 
@@ -57,7 +57,7 @@ project-summary-pc
     position: fixed;
     padding: 0 6% 0 2%;
     width: 35%;
-    height: 100%;
+    height: 100vh;
 }
 
 .project-detail {
@@ -68,15 +68,17 @@ project-summary-pc
 
 
 dl {
-    padding-bottom: 48px;
+    padding-bottom: 4vh;
 }
 
 .category {
-    padding-bottom: 32px;
+    padding-bottom: 6vh;
 }
 
 .back {
-    padding: 20px 0;
+    position: absolute;
+    bottom: 32vh;
+    left: 6%;
 }
 
 .lt::before {
@@ -85,7 +87,7 @@ dl {
 
 .barcode {
     position: absolute;
-    bottom: 30%;
+    bottom: 28vh;
     right: 4%;
 }
 
@@ -94,6 +96,10 @@ dl {
 project-detail-pc
 
 --------------------*/
+.project-img img {
+    padding-bottom: 80px;
+}
+
 .project-intention p {
     padding-bottom: 16px;
 }
