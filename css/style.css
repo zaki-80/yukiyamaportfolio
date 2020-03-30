@@ -21,7 +21,7 @@
 --------------------*/
 @media (hover: hover) {
     .work-info:hover::after {
-        position: absolute;
+        position: relative;
         display: block;
         top: 0;
         right: 0;
@@ -150,6 +150,11 @@
         transition: 0.3s ease;
         animation: skew 4s infinite,
             flash .02s infinite;
+    }
+
+    .grid-item:hover img,
+    .grid-item:hover video {
+        animation: skew 4s infinite;
     }
 
     .work-info:hover p {
@@ -412,8 +417,6 @@ works-pc
     height: 100%;
     padding: 8%;
 }
-
-
 
 .work-info p {
     z-index: -1;

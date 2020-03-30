@@ -96,8 +96,17 @@ dl {
 project-detail-pc
 
 --------------------*/
-.project-img img {
+.project-img {
     padding-bottom: 80px;
+}
+
+.project-video {
+    padding-bottom: 80px;
+
+}
+
+.project-video video {
+    width: 100%;
 }
 
 .project-intention p {
@@ -111,8 +120,8 @@ project-detail-pc
 
 
 .references {
-    font-size: 1.0px;
-    padding: 120px 0 0;
+    font-size: 1rem;
+    padding: 200px 0 0;
 }
 
 /*-------------------
@@ -127,7 +136,7 @@ project-detail-pc
         letter-spacing: 2px;
         color: rgba(0, 0, 0, 0);
         font-family: Termina;
-        -webkit-text-stroke: 0.7px #1b1f1e;
+        -webkit-text-stroke: 0.7px #1ba1f1e;
         padding: 120px 0 72px;
     }
 
