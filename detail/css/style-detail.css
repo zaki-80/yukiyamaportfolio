@@ -56,14 +56,14 @@ project-summary-pc
 
 .project-summary {
     position: fixed;
-    padding: 0 6% 0 2%;
+    padding: 0 5% 0 2%;
     width: 35%;
     height: 100vh;
 }
 
 .project-detail {
     width: 65%;
-    padding: 0 6% 0;
+    padding: 0 5% 0;
     margin-left: 37%;
 }
 
@@ -77,6 +77,10 @@ dt {
 }
 
 .category {
+    padding-bottom: 4vh;
+}
+
+.summary {
     padding-bottom: 6vh;
 }
 
@@ -93,7 +97,7 @@ dt {
 .barcode {
     position: absolute;
     bottom: 28vh;
-    right: 6%;
+    right: 8%;
 }
 
 /*-------------------
@@ -134,321 +138,7 @@ project-detail-pc
 □□□ sp □□□
 
 --------------------*/
-@media (max-width: 767px) {
-    .section-header {
-        font-size: 16vw;
-        font-weight: 600;
-        letter-spacing: 2px;
-        color: rgba(0, 0, 0, 0);
-        font-family: Termina;
-        -webkit-text-stroke: 0.7px #1ba1f1e;
-        padding: 120px 0 72px;
-    }
-
-    .onlypc {
-        display: none;
-    }
-
-
-    /*-------------------
-
-top-sp
-
---------------------*/
-    .top-container {
-        margin: 4%;
-        height: 600px;
-        overflow: hidden;
-    }
-
-    .collage {
-        position: relative;
-        width: 180px;
-        height: 180px;
-        top: 20%;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-
-    .cdjacket {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        width: 480px;
-    }
-
-    .browser {
-        position: absolute;
-        top: -20%;
-        right: -38%;
-        margin: auto;
-        width: 100px;
-    }
-
-    .pointer {
-        position: absolute;
-        top: -4%;
-        right: -36%;
-        margin: auto;
-        width: 6%;
-    }
-
-
-
-    @keyframes anime1 {
-        0% {
-            transform: translate(0px)
-        }
-
-        20% {
-            transform: translate(-10px, -6px)
-        }
-
-        50% {
-            transform: translate(-52px, 6px)
-        }
-
-        60% {
-            transform: translate(-30px, -4px)
-        }
-
-        80% {
-            transform: translate(-10px, 6px)
-        }
-
-        100% {
-            transform: translate(0px)
-        }
-    }
-
-
-    .statue {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        width: 180px;
-    }
-
-    .jeans {
-        position: absolute;
-        bottom: 8%;
-        left: -28%;
-        margin: auto;
-        width: 52px;
-    }
-
-    .stitch {
-        position: absolute;
-        bottom: 38%;
-        right: -34%;
-        margin: auto;
-        width: 120px;
-    }
-
-    .parka {
-        position: absolute;
-        top: -8%;
-        left: -32%;
-        margin: auto;
-        width: 80px;
-    }
-
-    .shape {
-        position: absolute;
-        top: -22%;
-        left: -40%;
-        margin: auto;
-        width: 280px;
-        animation-name: anime2;
-        animation-duration: 3.5s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes anime2 {
-        0% {
-            transform: rotate(0deg)
-        }
-
-        100% {
-            transform: rotate(360deg)
-        }
-    }
-
-    .year {
-        z-index: 2;
-        position: absolute;
-        bottom: -28%;
-        left: 2%;
-        font-family: Neue Haas Grotesk Display Pro;
-        font-size: 8rem;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 0);
-        -webkit-text-stroke: 1px #fff;
-    }
-
-    .sneaker {
-        position: absolute;
-        top: 32%;
-        left: -8%;
-        margin: auto;
-        width: 60px;
-    }
-
-    .dotdog {
-        position: absolute;
-        bottom: -4%;
-        left: -32%;
-        margin: auto;
-        width: 100px;
-    }
-
-    .circle {
-        position: absolute;
-        bottom: 22%;
-        left: 22%;
-        margin: auto;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: linear-gradient(#ffd26c, #dd9696);
-    }
-
-    .clouds {
-        position: absolute;
-        bottom: 0%;
-        right: -24%;
-        margin: auto;
-        width: 60px;
-    }
-
-    .hqvision {
-        position: absolute;
-        top: -34%;
-        right: 2%;
-        margin: auto;
-        width: 160px;
-    }
-
-
-    /*-------------------
-
-works-sp
-
---------------------*/
-    .grid {
-        max-width: 100%;
-        padding-bottom: 120px;
-
-    }
-
-
-    .grid-item {
-        width: 96%;
-        margin: 4%;
-
-    }
-
-
-
-
-
-    /*-------------------
-
-profile-sp
-
---------------------*/
-    .bg {
-        background: linear-gradient(#a5c3bc, #4ca1af);
-        color: #fff;
-        margin: 4%;
-        padding-bottom: 20px;
-    }
-
-    .bg .section-header {
-        -webkit-text-stroke: 0.7px #fff;
-    }
-
-    .profile-info {
-        font-size: 1.6rem;
-        width: 90%;
-        margin: 0 auto;
-        letter-spacing: 0.08em;
-        line-height: 1.6;
-    }
-
-    .name {
-        letter-spacing: 0.14em;
-    }
-
-    .name::before {
-        content: "";
-        letter-spacing: 0.24em;
-    }
-
-    .profile-sub {
-        font-size: 1.4rem;
-        line-height: 1.6;
-    }
-
-    .profile-sub dt {
-        font-weight: 600;
-    }
-
-    .profile-sub dd {
-        padding-bottom: 32px;
-    }
-
-    .profile-sub dd:last-child {
-        padding-bottom: 0;
-    }
-
-    .name {
-        padding-bottom: 32px;
-    }
-
-    .aboutme {
-        line-height: 1.4;
-        padding-bottom: 48px;
-    }
-
-
-    /*-------------------
-
-contact-sp
-
---------------------*/
-
-    .contact p {
-        width: 100%;
-        letter-spacing: 0.1em;
-        padding-bottom: 20px;
-    }
-
-    .contact a {
-        color: #fff;
-        font-size: 1.6rem;
-    }
-
-    .contact-container {
-        position: relative;
-        width: 270px;
-        margin: 0 auto;
-        padding-bottom: 160px;
-    }
-
-    .copy {
-        font-size: 1.2rem;
-    }
-}
+@media (max-width: 767px) {}
 
 
 
@@ -458,69 +148,4 @@ contact-sp
 □□□ tablet □□□
 
 --------------------*/
-@media (min-width: 768px) and (max-width: 959px) {
-    .section-header {
-        font-size: 16vw;
-        font-weight: 600;
-        letter-spacing: 2px;
-    }
-
-
-
-    /*-------------------
-
-works-tab
-
---------------------*/
-
-    .grid {
-        width: 720px;
-        padding-bottom: 120px;
-    }
-
-    .grid-item {
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
-
-    }
-
-
-    .grid-item img {
-        width: 720px;
-        height: auto;
-    }
-
-    .grid-item video {
-        width: 720px;
-        height: auto;
-    }
-
-
-
-    /*-------------------
-
-profile-tab
-
---------------------*/
-
-
-
-    /*-------------------
-
-contact-tab
-
---------------------*/
-
-
-    .contact p {
-        width: 40%;
-        margin: 0 auto;
-        padding-bottom: 20px;
-    }
-
-    .contact a {
-        font-size: 2.4rem;
-    }
-
-}
+@media (min-width: 768px) and (max-width: 959px) {}

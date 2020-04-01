@@ -15,9 +15,9 @@ html {
 
 body {
     font-size: 1.6rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     color: #1b1f1e;
-    font-family: "Noto Sans Japanese", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     background-color: #fff;
     font-weight: 300;
     font-feature-settings: "palt";

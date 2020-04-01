@@ -39,15 +39,15 @@
                                 </a>
 
                             </li>
-                            <li class="menu-item"><a href="#">
-                                    <span class="card list-about glitch glitch-menu" data-text="about">about</span></a>
+                            <li class="menu-item"><a href="#works">
+                                    <span class="card list-works glitch glitch-menu" data-text="works">works</span></a>
                             </li>
-                            <li class="menu-item"><a href="#">
+                            <li class="menu-item"><a href="#profile">
                                     <span class="card list-profile glitch glitch-menu" data-text="profile">profile</span>
                                 </a>
 
                             </li>
-                            <li class="menu-item"><a href="#">
+                            <li class="menu-item"><a href="#contact">
                                     <span class="card list-contact glitch glitch-menu" data-text="contact">contact</span>
                                 </a>
 
@@ -112,7 +112,7 @@
                     <source src="video/strangerthings_video_compressed.mp4" type="video/mp4">
                 </video>
                 <div class="work-info">
-                    <p class="work-name">My own Strangerthings design</p>
+                    <p class="work-name">My Strangerthings design</p>
                     <p>webデザイン</p>
                     <dl>
                         <dt>使用ツール・言語：</dt>
@@ -229,7 +229,7 @@
     </section>
     <div class="bg">
         <section class="profile text-center">
-            <h2 class="section-header text-center">profile
+            <h2 class="section-header text-center" id="profile">profile
             </h2>
 
             <div class="profile-info">
@@ -252,7 +252,7 @@
         </section>
 
         <section class="contact text-center">
-            <h2 class="section-header">contact</h2>
+            <h2 class="section-header" id="contact">contact</h2>
 
             <div class="contact-container">
                 <p class="contact-mail hover glitch glitch-large" data-text="mail: yyamazaki160&#64;gmail.com"><a href="mailto:yyamazaki160&#64;gmail.com">mail: yyamazaki160&#64;gmail.com</a></p><br>
@@ -275,7 +275,7 @@
 
     </script>
     <script>
-        $(function() {
+        $(window).on('load', function() {
             $('#grid').imagesLoaded(function() {
                 $(this).masonry('reload');
                 $('#grid').masonry({
