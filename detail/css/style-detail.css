@@ -21,7 +21,8 @@ h1 {
 }
 
 h2 {
-    padding-bottom: 8px;
+    font-size: 2.2rem;
+    padding-bottom: 4px;
 }
 
 h3 {
@@ -71,6 +72,10 @@ dl {
     padding-bottom: 4vh;
 }
 
+dt {
+    font-weight: 600;
+}
+
 .category {
     padding-bottom: 6vh;
 }
@@ -88,7 +93,7 @@ dl {
 .barcode {
     position: absolute;
     bottom: 28vh;
-    right: 4%;
+    right: 6%;
 }
 
 /*-------------------
@@ -110,7 +115,7 @@ project-detail-pc
 }
 
 .project-intention p {
-    padding-bottom: 16px;
+    padding-bottom: 24px;
 }
 
 .intention-box {
