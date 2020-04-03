@@ -146,6 +146,18 @@
             </div>
         </div>
     </section>
+    <script>
+        $('.hamburger').on('click', function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $('nav').slideUp();
+            } else {
+                $(this).addClass('active');
+                $('nav').slideDown();
+            }
+        });
+
+    </script>
 </body>
 
 </html>

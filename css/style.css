@@ -20,16 +20,6 @@
 
 --------------------*/
 @media (hover: hover) {
-    .work-info:hover::after {
-        position: relative;
-        display: block;
-        top: 0;
-        right: 0;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.1);
-    }
 
     .work-info:hover::before {
         position: absolute;
@@ -167,7 +157,8 @@
         opacity: 0.85;
     }
 
-
+    /* spサイズになった時に崩れるホバー対応 */
+    @media (min-width: 768px) and (max-width: 959px) {}
 }
 
 
@@ -754,19 +745,21 @@ works-sp
     .grid {
         max-width: 100%;
         padding-bottom: 120px;
-
     }
 
 
     .grid-item {
         width: 96%;
         margin: 4%;
-
     }
 
+    @media (min-width: 720px) and (max-width: 767px) {
 
-
-
+        .grid-item {
+            width: 38%;
+            margin: 4%;
+        }
+    }
 
     /*-------------------
 
@@ -903,7 +896,9 @@ works-tab
         height: auto;
     }
 
-
+    .work-info {
+        padding-bottom: 12%;
+    }
 
     /*-------------------
 
