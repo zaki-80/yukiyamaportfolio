@@ -56,15 +56,20 @@ a {
 @media (hover: hover) {
     .glitch:hover {
         color: #fff;
+        display: inline-block;
         font-size: 1.6rem;
         position: relative;
         width: 60px;
         margin: 0 auto;
+        padding: 2px;
+        background: #000;
     }
 
     .glitch-large:hover {
-        font-size: 2.4rem;
-        width: 40%;
+        font-size: 2.2rem;
+        width: 30%;
+        margin: 0 auto;
+
     }
 
     @keyframes noise-anim {
@@ -367,6 +372,7 @@ h1 {
 }
 
 .menu-list {
+    width: 68px;
     display: inline-block;
 }
 

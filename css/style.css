@@ -20,7 +20,6 @@
 
 --------------------*/
 @media (hover: hover) {
-
     .work-info:hover::before {
         position: absolute;
         top: 0;
@@ -506,7 +505,6 @@ contact-pc
 .contact p {
     text-align: left;
     display: inline-block;
-    width: 40%;
     margin: 0 auto;
     padding-bottom: 20px;
     white-space: nowrap;
@@ -514,12 +512,11 @@ contact-pc
 
 .contact a {
     color: #fff;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 .contact-container {
     position: relative;
-    width: 100%;
     margin: 0 auto;
     padding-bottom: 240px;
 }
@@ -750,14 +747,14 @@ works-sp
 
     .grid-item {
         width: 96%;
-        margin: 4%;
+        margin: 2%;
     }
 
     @media (min-width: 720px) and (max-width: 767px) {
 
         .grid-item {
-            width: 38%;
-            margin: 4%;
+            width: 45%;
+            margin-bottom: 4%;
         }
     }
 
@@ -879,7 +876,7 @@ works-tab
     }
 
     .grid-item {
-        width: 100%;
+        width: 320px;
         height: auto;
         margin: 20px 0;
 
@@ -887,12 +884,12 @@ works-tab
 
 
     .grid-item img {
-        width: 720px;
+        width: 320px;
         height: auto;
     }
 
     .grid-item video {
-        width: 720px;
+        width: 320px;
         height: auto;
     }
 

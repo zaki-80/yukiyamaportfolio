@@ -42,6 +42,47 @@ h4 {
 
 
 
+
+/*----------
+
+ホバースタイル
+
+----------*/
+.glitch:hover {
+    color: #fff;
+    font-size: 1.6rem;
+    position: relative;
+    width: 60px;
+    margin: 0 auto;
+    background: #000;
+}
+
+.glitch:hover::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -0.9px;
+    text-shadow: 0.9px 0 blue;
+    top: 0;
+    color: #fff;
+    background: #000;
+}
+
+.glitch:hover::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0.7px;
+    text-shadow: -0.7px 0 red;
+    top: 0.1;
+    color: #fff;
+    background: #000;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 1.8s infinite linear alternate-reverse;
+}
+
+
+
+
 /*-------------------
 
 project-summary-pc
