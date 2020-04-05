@@ -59,17 +59,16 @@ a {
         display: inline-block;
         font-size: 1.6rem;
         position: relative;
-        width: 60px;
         margin: 0 auto;
-        padding: 2px;
         background: #000;
     }
 
-    .glitch-large:hover {
+    .glitch-22:hover {
         font-size: 2.2rem;
-        width: 30%;
+        width: 310px;
         margin: 0 auto;
-
+        display: inline-block;
+        margin-bottom: 20px;
     }
 
     @keyframes noise-anim {
@@ -372,7 +371,6 @@ h1 {
 }
 
 .menu-list {
-    width: 68px;
     display: inline-block;
 }
 
@@ -381,10 +379,12 @@ h1 {
 }
 
 .menu-item {
-    padding-bottom: 16px;
+    padding: 8px 2px;
 }
 
-
+.menu-item a {
+    padding: 2px;
+}
 
 
 /*-------------------
@@ -435,7 +435,7 @@ top-sp
 
     .menu-list li {
         text-align: left;
-        padding-bottom: 42px;
+        padding-bottom: 36px;
         position: relative;
     }
 
@@ -498,7 +498,7 @@ top-sp
     }
 
     .menu-item {
-        padding: 14px 16px;
+        padding: 8px 12px;
         background: #000;
     }
 
