@@ -59,16 +59,12 @@ a {
         display: inline-block;
         font-size: 1.6rem;
         position: relative;
-        margin: 0 auto;
         background: #000;
     }
 
-    .glitch-22:hover {
-        font-size: 2.2rem;
-        width: 310px;
-        margin: 0 auto;
+    .glitch-20:hover {
+        font-size: 2rem;
         display: inline-block;
-        margin-bottom: 20px;
     }
 
     @keyframes noise-anim {
@@ -290,9 +286,8 @@ a {
             top: 7.6px;
         }
 
-        .glitch-large:hover {
-            width: 100%;
-            font-size: 1.6rem;
+        .glitch-20:hover {
+            font-size: 2rem;
         }
 
         .list-top:hover {
