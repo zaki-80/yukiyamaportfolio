@@ -190,14 +190,163 @@ project-detail-pc
 □□□ sp □□□
 
 --------------------*/
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .mail {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        padding-bottom: 4px;
+    }
+
+    h3 {
+        font-weight: 300;
+        padding: 40px 0;
+        font-size: 2rem;
+    }
+
+    h4 {
+        padding-bottom: 4px;
+    }
+
+    .header {
+        margin: 0;
+        display: block;
+    }
+
+    .header-container {
+        position: static;
+    }
+
+    .header a {
+        color: #000;
+    }
 
 
 
 
-/*-------------------
+    /*-------------------
+
+project-summary-sp
+
+--------------------*/
+    .work-detail {
+        display: block;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        margin: 0 4% 20px;
+    }
+
+    .project-summary {
+        position: static;
+        width: 100%;
+        padding: 72% 0 0;
+    }
+
+    .project-detail {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .project-img img {
+        padding-bottom: 20px;
+    }
+
+    .first-img {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 4%;
+        opacity: 0.5;
+    }
+
+    dl {
+        padding-bottom: 4vh;
+    }
+
+    dt {
+        font-weight: 600;
+    }
+
+    dd a {
+        padding: 0 0.4px;
+    }
+
+    .category {
+        padding-bottom: 4vh;
+    }
+
+    .summary {
+        padding-bottom: 6vh;
+    }
+
+    .back {
+        position: absolute;
+        bottom: 0;
+        left: 6%;
+    }
+
+    .lt::before {
+        content: "<";
+    }
+
+    .barcode {
+        position: absolute;
+        bottom: 28vh;
+        right: 8%;
+    }
+
+    .biography {
+        display: block;
+    }
+
+
+    /*-------------------
+
+project-detail-sp
+
+--------------------*/
+    .project-img {
+        padding-bottom: 40px;
+    }
+
+    .project-video {
+        padding-bottom: 40px;
+
+    }
+
+    .project-video video {
+        width: 100%;
+    }
+
+    .project-intention p {
+        padding-bottom: 24px;
+    }
+
+    .intention-box {
+        padding-bottom: 24px;
+    }
+
+
+
+    .references {
+        font-size: 1rem;
+        padding: 200px 0 0;
+        word-wrap: break-word;
+    }
+
+
+
+
+    /*-------------------
 
 □□□ tablet □□□
 
 --------------------*/
-@media (min-width: 768px) and (max-width: 959px) {}
+    @media (min-width: 768px) and (max-width: 959px) {}
