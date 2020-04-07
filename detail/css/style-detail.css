@@ -10,13 +10,15 @@
     position: fixed;
 }
 
+.biography {
+    max-width: 360px;
+}
 
 .mail {
     margin-left: 400px;
 }
 
 h1 {
-
     font-size: 1.6rem;
 }
 
@@ -66,7 +68,7 @@ h4 {
         background: #000;
         overflow: hidden;
         clip: rect(0, 900px, 0, 0);
-        animation: noise-anim 1.8s infinite linear alternate-reverse;
+        animation: noise-anim-2 1.5s infinite linear alternate-reverse;
     }
 
     .glitch:hover::after {
@@ -86,7 +88,61 @@ h4 {
         font-size: 1.4rem;
     }
 
+    /* spサイズになった時に崩れるホバー対応 */
+    @media (max-width: 767px) {
+        .glitch-menu:hover {
+            font-size: 1.4rem;
+            color: #fff;
+            position: absolute;
+            width: 60px;
+            height: 30px;
+            padding: 8px;
+            background: #fff;
+        }
+
+        .glitch-menu:hover::after {
+            color: #fff;
+            left: 2px;
+            text-shadow: -0.7px 0 red;
+            top: 0.2px;
+            padding: 8px;
+        }
+
+        .glitch-menu:hover::before {
+            color: #fff;
+            left: 0.6px;
+            text-shadow: 0.9px 0 blue;
+            top: 0.6px;
+            padding: 8px;
+        }
+
+        .list-top:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(16deg);
+        }
+
+        .list-works:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(-2deg);
+        }
+
+        .list-profile:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(-12deg);
+        }
+
+        .list-contact:hover {
+            position: absolute;
+            background: #000;
+            width: 64px;
+            transform: rotate(6deg);
+        }
+    }
 }
+
 
 
 
@@ -182,7 +238,7 @@ project-detail-pc
 
 .references {
     font-size: 1rem;
-    padding: 200px 0 0;
+    padding: 160px 0 0;
 }
 
 /*-------------------
@@ -195,25 +251,6 @@ project-detail-pc
         display: none;
     }
 
-    h1 {
-        font-size: 1.6rem;
-    }
-
-    h2 {
-        font-size: 2.2rem;
-        padding-bottom: 4px;
-    }
-
-    h3 {
-        font-weight: 300;
-        padding: 40px 0;
-        font-size: 2rem;
-    }
-
-    h4 {
-        padding-bottom: 4px;
-    }
-
     .header {
         margin: 0;
         display: block;
@@ -223,11 +260,9 @@ project-detail-pc
         position: static;
     }
 
-    .header a {
-        color: #000;
+    .onlysp {
+        display: block;
     }
-
-
 
 
     /*-------------------
@@ -237,8 +272,6 @@ project-summary-sp
 --------------------*/
     .work-detail {
         display: block;
-        font-size: 1.4rem;
-        line-height: 1.6;
         margin: 0 4% 20px;
     }
 
@@ -302,6 +335,8 @@ project-summary-sp
     }
 
 
+
+
     /*-------------------
 
 project-detail-sp
@@ -327,8 +362,6 @@ project-detail-sp
     .intention-box {
         padding-bottom: 24px;
     }
-
-
 
     .references {
         font-size: 1rem;

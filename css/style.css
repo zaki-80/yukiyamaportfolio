@@ -13,7 +13,6 @@
 
 
 
-
 /*-------------------
 
 ホバールール
@@ -156,8 +155,60 @@
         opacity: 0.85;
     }
 
+
     /* spサイズになった時に崩れるホバー対応 */
-    @media (min-width: 768px) and (max-width: 959px) {}
+    @media (max-width: 767px) {
+        .glitch-menu:hover {
+            font-size: 1.4rem;
+            position: absolute;
+            transform: rotate(16deg);
+        }
+
+        .glitch-menu:hover::after {
+            color: #fff;
+            left: 0.2px;
+            text-shadow: -0.7px 0 red;
+            top: 0.2px;
+            padding: 8px;
+        }
+
+        .glitch-menu:hover::before {
+            color: #fff;
+            left: 0.6px;
+            text-shadow: 0.9px 0 blue;
+            top: 0.6px;
+            padding: 8px;
+        }
+
+        .glitch-20:hover {
+            font-size: 2rem;
+        }
+
+        .list-top:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(16deg);
+        }
+
+        .list-works:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(-2deg);
+        }
+
+        .list-profile:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(-12deg);
+        }
+
+        .list-contact:hover {
+            position: absolute;
+            background: #000;
+            width: 64px;
+            transform: rotate(6deg);
+        }
+    }
 }
 
 
@@ -445,6 +496,7 @@ profile-pc
 .profile-sub {
     font-size: 1.8rem;
     line-height: 1.4;
+    padding: 80px 0;
 }
 
 .profile-sub dt {
@@ -465,7 +517,7 @@ profile-pc
 
 .aboutme {
     line-height: 1.4;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 
 .space {
@@ -517,7 +569,7 @@ contact-pc
         font-weight: 600;
         letter-spacing: 2px;
         color: rgba(0, 0, 0, 0);
-        font-family: Termina;
+        font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
         -webkit-text-stroke: 0.7px #1b1f1e;
         padding: 120px 0 72px;
     }
@@ -525,6 +577,8 @@ contact-pc
     .onlypc {
         display: none;
     }
+
+
 
 
     /*-------------------
@@ -716,6 +770,8 @@ top-sp
     }
 
 
+
+
     /*-------------------
 
 works-sp
@@ -726,19 +782,20 @@ works-sp
         padding-bottom: 120px;
     }
 
-
     .grid-item {
         width: 96%;
         margin: 2%;
     }
 
     @media (min-width: 720px) and (max-width: 767px) {
-
         .grid-item {
             width: 45%;
             margin-bottom: 4%;
         }
     }
+
+
+
 
     /*-------------------
 
@@ -778,9 +835,6 @@ profile-sp
         line-height: 1.6;
     }
 
-    .profile-sub dt {
-        font-weight: 600;
-    }
 
     .profile-sub dd {
         padding-bottom: 32px;
@@ -795,9 +849,11 @@ profile-sp
     }
 
     .aboutme {
-        line-height: 1.4;
-        padding-bottom: 48px;
+        line-height: 1.6;
+        padding-bottom: 20px;
     }
+
+
 
 
     /*-------------------
@@ -805,9 +861,6 @@ profile-sp
 contact-sp
 
 --------------------*/
-
-    .contact p {}
-
     .contact a {
         color: #fff;
         font-size: 2rem;
