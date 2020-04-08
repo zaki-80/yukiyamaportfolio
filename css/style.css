@@ -11,8 +11,6 @@
 }
 
 
-
-
 /*-------------------
 
 ホバールール
@@ -237,7 +235,7 @@ top-pc
     position: relative;
     width: 400px;
     height: 400px;
-    top: 0;
+    top: 20%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -391,7 +389,7 @@ top-pc
 
 .hqvision {
     position: absolute;
-    top: -16%;
+    top: -15%;
     right: 8%;
     margin: auto;
     width: 260px;
@@ -476,7 +474,7 @@ profile-pc
 
 --------------------*/
 .bg {
-    background: linear-gradient(#a5c3bc, #4ca1af);
+    background: #CBCBCB;
     color: #fff;
     margin: 20px;
     padding-bottom: 20px;

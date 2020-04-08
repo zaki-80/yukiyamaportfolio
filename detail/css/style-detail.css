@@ -2,7 +2,7 @@
 
 .header {
     position: static;
-    color: #000;
+    color: #4ca1af;
     margin: 0 20px;
 }
 
@@ -348,33 +348,27 @@ project-detail-sp
 
     .project-video {
         padding-bottom: 40px;
-
-    }
-
-    .project-video video {
-        width: 100%;
-    }
-
-    .project-intention p {
-        padding-bottom: 24px;
-    }
-
-    .intention-box {
-        padding-bottom: 24px;
     }
 
     .references {
-        font-size: 1rem;
         padding: 200px 0 0;
         word-wrap: break-word;
     }
+}
 
 
 
-
-    /*-------------------
+/*-------------------
 
 □□□ tablet □□□
 
 --------------------*/
-    @media (min-width: 768px) and (max-width: 959px) {}
+@media (min-width: 768px) and (max-width: 959px) {
+    .biography {
+        max-width: 300px;
+    }
+
+    .mail {
+        margin-left: 300px;
+    }
+}
