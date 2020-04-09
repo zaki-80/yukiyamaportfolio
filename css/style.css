@@ -7,7 +7,7 @@
     color: rgba(0, 0, 0, 0);
     font-family: Termina;
     -webkit-text-stroke: 1px #1b1f1e;
-    padding: 240px 0 160px;
+    padding: 120px 0 160px;
 }
 
 
@@ -225,8 +225,10 @@ top-pc
 }
 
 .top-container {
-    background: linear-gradient(#4ca1af, #a5c3bc);
+    background: #E2E2E2;
+    border: 1px solid #707070;
     margin: 20px;
+    padding: 20px;
     height: 700px;
     overflow: hidden;
 }
@@ -357,7 +359,7 @@ top-pc
     font-size: 800%;
     font-weight: 400;
     color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #aaa;
 }
 
 .sneaker {
@@ -473,15 +475,12 @@ works-pc
 profile-pc
 
 --------------------*/
-.bg {
-    background: #CBCBCB;
-    color: #fff;
-    margin: 20px;
-    padding-bottom: 20px;
-}
-
-.bg .section-header {
-    -webkit-text-stroke: 1px #fff;
+.profile {
+    background: #f2f2f2;
+    color: #404040;
+    margin: 88px;
+    padding-bottom: 120px;
+    border: 1px solid #707070;
 }
 
 .profile-info {
@@ -535,6 +534,14 @@ profile-pc
 contact-pc
 
 --------------------*/
+.contact {
+    background: #f2f2f2;
+    color: #404040;
+    margin: 88px;
+    padding-bottom: 120px;
+    border: 1px solid #707070;
+}
+
 .contact p {
     text-align: left;
     display: inline-block;
@@ -543,7 +550,7 @@ contact-pc
 }
 
 .contact a {
-    color: #fff;
+    color: #2323DD;
     font-size: 2rem;
 }
 
@@ -586,7 +593,7 @@ top-sp
 --------------------*/
     .top-container {
         margin: 4%;
-        height: 600px;
+        height: 720px;
         overflow: hidden;
     }
 
@@ -594,7 +601,7 @@ top-sp
         position: relative;
         width: 180px;
         height: 180px;
-        top: 20%;
+        top: 26%;
         bottom: 0;
         right: 0;
         left: 0;
@@ -805,6 +812,7 @@ profile-sp
         color: #fff;
         margin: 4%;
         padding-bottom: 20px;
+
     }
 
     .bg .section-header {
