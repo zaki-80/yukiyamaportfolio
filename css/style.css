@@ -10,6 +10,14 @@
     padding: 120px 0 160px;
 }
 
+.copy {
+    display: block;
+    padding: 40px;
+}
+
+
+
+
 
 /*-------------------
 
@@ -292,7 +300,6 @@ top-pc
     }
 }
 
-
 .statue {
     z-index: 1;
     position: absolute;
@@ -355,11 +362,11 @@ top-pc
     position: absolute;
     bottom: -16%;
     left: 16%;
-    font-family: Neue Haas Grotesk Display Pro;
+    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     font-size: 800%;
     font-weight: 400;
     color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 1px #aaa;
+    -webkit-text-stroke: 1px #66dddd;
 }
 
 .sneaker {
@@ -396,6 +403,7 @@ top-pc
     margin: auto;
     width: 260px;
 }
+
 
 
 
@@ -470,6 +478,8 @@ works-pc
 }
 
 
+
+
 /*-------------------
 
 profile-pc
@@ -479,7 +489,7 @@ profile-pc
     background: #f2f2f2;
     color: #404040;
     margin: 88px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     border: 1px solid #707070;
 }
 
@@ -535,10 +545,10 @@ contact-pc
 
 --------------------*/
 .contact {
-    background: #f2f2f2;
     color: #404040;
-    margin: 88px;
-    padding-bottom: 120px;
+    margin: 20px;
+    padding-bottom: 80px;
+    background: #f2f2f2;
     border: 1px solid #707070;
 }
 
@@ -557,7 +567,7 @@ contact-pc
 .contact-container {
     position: relative;
     margin: 0 auto;
-    padding-bottom: 240px;
+    padding-bottom: 80px;
 }
 
 
@@ -581,6 +591,10 @@ contact-pc
 
     .onlypc {
         display: none;
+    }
+
+    .copy {
+        font-size: 1.2rem;
     }
 
 
@@ -633,8 +647,6 @@ top-sp
         margin: auto;
         width: 6%;
     }
-
-
 
     @keyframes anime1 {
         0% {
@@ -724,7 +736,7 @@ top-sp
         position: absolute;
         bottom: -28%;
         left: 2%;
-        font-family: Neue Haas Grotesk Display Pro;
+        font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
         font-size: 8rem;
         font-weight: 400;
         color: rgba(0, 0, 0, 0);
@@ -868,7 +880,6 @@ contact-sp
 
 --------------------*/
     .contact a {
-        color: #fff;
         font-size: 2rem;
     }
 
@@ -877,10 +888,6 @@ contact-sp
         width: 320px;
         margin: 0 auto;
         padding-bottom: 160px;
-    }
-
-    .copy {
-        font-size: 1.2rem;
     }
 }
 

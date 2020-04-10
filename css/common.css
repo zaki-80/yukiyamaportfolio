@@ -268,6 +268,11 @@ a {
         animation: noise-anim-2 1.5s infinite linear alternate-reverse;
     }
 
+    .contact a:hover {
+        color: #fff !important;
+
+    }
+
     /* spサイズになった時に崩れるホバー対応 */
     @media (max-width: 767px) {
         .glitch-menu:hover {
@@ -336,12 +341,6 @@ top-pc
     justify-content: space-between;
     width: 100%;
     padding-right: 20px;
-    color: #3C4046;
-    mix-blend-mode: luminosity;
-}
-
-.header a {
-    color: #3C4046;
 }
 
 .biography {
@@ -362,12 +361,9 @@ h1 {
     flex-basis: 20%;
     height: 60px;
     padding: 20px 0;
+    color: #2323DD;
     background: #f2f2f2;
     border: 1px solid #707070;
-}
-
-.mail a {
-    color: #2323DD;
 }
 
 .hamburger {
@@ -399,6 +395,7 @@ h1 {
 
 .menu-item a {
     padding: 2px;
+    color: #2323DD;
 }
 
 
