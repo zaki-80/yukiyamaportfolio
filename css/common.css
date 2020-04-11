@@ -16,7 +16,7 @@ html {
 body {
     font-size: 1.6rem;
     letter-spacing: 0.08em;
-    color: #1b1f1e;
+    color: #3b3f3e;
     font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     background-color: #fff;
     font-weight: 300;
@@ -48,6 +48,7 @@ a {
 .onlysp {
     display: none;
 }
+
 
 
 
@@ -345,11 +346,12 @@ top-pc
 
 .biography {
     flex-basis: 33.33%;
-    height: 100px;
-    padding: 20px 0 0 20px;
+    height: 20%;
+    padding: 20px;
     line-height: 1.4;
     background: #f2f2f2;
     border: 1px solid #707070;
+    box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
 }
 
 h1 {
@@ -360,10 +362,11 @@ h1 {
 .mail {
     flex-basis: 20%;
     height: 60px;
-    padding: 20px 0;
+    padding: 20px;
     color: #2323DD;
     background: #f2f2f2;
     border: 1px solid #707070;
+    box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
 }
 
 .hamburger {
@@ -380,9 +383,10 @@ h1 {
 .menu-list {
     display: inline-block;
     margin-right: 80px;
-    border: 1px solid #707070;
     background: #f2f2f2;
-    padding: 20px;
+    border: 1px solid #707070;
+    padding: 10px;
+    box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
 }
 
 .menu-list li {
@@ -410,6 +414,7 @@ h1 {
     }
 
 
+
     /*-------------------
 
 top-sp
@@ -422,7 +427,7 @@ top-sp
     }
 
     .biography {
-        padding: 4% 0 0 4%;
+        padding: 4%;
         flex-basis: 70%;
         line-height: 1.4;
     }
@@ -438,6 +443,8 @@ top-sp
     .menu-list {
         display: block;
         background: #000;
+        border: none;
+        margin: 0;
     }
 
     .menu-list li {
@@ -454,7 +461,7 @@ top-sp
     .list-top {
         position: absolute;
         top: 16px;
-        right: 16px;
+        right: 2px;
         width: 60px;
         height: 30px;
         padding: 8px;
@@ -464,8 +471,8 @@ top-sp
 
     .list-works {
         position: absolute;
-        top: 10px;
-        right: 12px;
+        top: 12px;
+        right: 4px;
         width: 60px;
         height: 30px;
         padding: 8px;
@@ -475,8 +482,8 @@ top-sp
 
     .list-profile {
         position: absolute;
-        top: 8px;
-        right: 18px;
+        top: 10px;
+        right: 4px;
         width: 60px;
         height: 30px;
         padding: 8px;
@@ -486,8 +493,8 @@ top-sp
 
     .list-contact {
         position: absolute;
-        top: 10px;
-        right: 8px;
+        top: 16px;
+        right: 2px;
         width: 64px;
         height: 30px;
         padding: 8px 6px;
@@ -576,4 +583,28 @@ top-sp
     .hamburger.active span:nth-of-type(3) {
         transform: translateY(-4px) rotate(20deg);
     }
+}
+
+
+@media (min-width: 768px) and (max-width: 959px) {
+
+    .biography {
+        flex-basis: 33.33%;
+        height: 120px;
+        padding: 20px;
+        line-height: 1.4;
+        background: #f2f2f2;
+        border: 1px solid #707070;
+    }
+
+    .mail {
+        flex-basis: 20%;
+        height: 60px;
+        margin-left: 20px;
+        padding: 20px;
+        color: #2323DD;
+        background: #f2f2f2;
+        border: 1px solid #707070;
+    }
+
 }

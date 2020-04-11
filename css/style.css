@@ -5,7 +5,7 @@
     font-weight: bold;
     letter-spacing: 6.4px;
     color: rgba(0, 0, 0, 0);
-    font-family: Termina;
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     -webkit-text-stroke: 1px #1b1f1e;
     padding: 120px 0 160px;
 }
@@ -235,9 +235,9 @@ top-pc
 .top-container {
     background: #E2E2E2;
     border: 1px solid #707070;
-    margin: 20px;
-    padding: 20px;
-    height: 700px;
+    margin: 18px 40px;
+    padding: 12px;
+    height: 720px;
     overflow: hidden;
 }
 
@@ -245,7 +245,7 @@ top-pc
     position: relative;
     width: 400px;
     height: 400px;
-    top: 20%;
+    top: 28%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -366,7 +366,7 @@ top-pc
     font-size: 800%;
     font-weight: 400;
     color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 1px #66dddd;
+    -webkit-text-stroke: 1px #777;
 }
 
 .sneaker {
@@ -474,7 +474,7 @@ works-pc
 }
 
 .work-info .work-name {
-    font-weight: 600;
+    color: #0000ff;
 }
 
 
@@ -546,8 +546,8 @@ contact-pc
 --------------------*/
 .contact {
     color: #404040;
-    margin: 20px;
-    padding-bottom: 80px;
+    margin: 88px;
+    padding-bottom: 160px;
     background: #f2f2f2;
     border: 1px solid #707070;
 }
@@ -566,8 +566,10 @@ contact-pc
 
 .contact-container {
     position: relative;
+    display: inline-block;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding: 40px 40px 20px;
+    border: 1px solid #707070;
 }
 
 
@@ -586,7 +588,7 @@ contact-pc
         color: rgba(0, 0, 0, 0);
         font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
         -webkit-text-stroke: 0.7px #1b1f1e;
-        padding: 120px 0 72px;
+        padding: 80px 0 72px;
     }
 
     .onlypc {
@@ -607,7 +609,7 @@ top-sp
 --------------------*/
     .top-container {
         margin: 4%;
-        height: 720px;
+        height: 640px;
         overflow: hidden;
     }
 
@@ -740,7 +742,6 @@ top-sp
         font-size: 8rem;
         font-weight: 400;
         color: rgba(0, 0, 0, 0);
-        -webkit-text-stroke: 1px #fff;
     }
 
     .sneaker {
@@ -819,16 +820,18 @@ works-sp
 profile-sp
 
 --------------------*/
-    .bg {
-        background: linear-gradient(#a5c3bc, #4ca1af);
-        color: #fff;
-        margin: 4%;
+    .profile {
+        background: #f2f2f2;
+        color: #404040;
+        margin: 40px 4%;
         padding-bottom: 20px;
+        border: 1px solid #707070;
 
     }
 
-    .bg .section-header {
-        -webkit-text-stroke: 0.7px #fff;
+    .profile .section-header {
+        -webkit-text-stroke: 0.7px #1b1f1e;
+
     }
 
     .profile-info {
@@ -879,6 +882,14 @@ profile-sp
 contact-sp
 
 --------------------*/
+    .contact {
+        background: #f2f2f2;
+        color: #404040;
+        margin: 40px 4%;
+        padding-bottom: 120px;
+        border: 1px solid #707070;
+    }
+
     .contact a {
         font-size: 2rem;
     }
@@ -887,7 +898,7 @@ contact-sp
         position: relative;
         width: 320px;
         margin: 0 auto;
-        padding-bottom: 160px;
+        padding: 40px 20px 20px;
     }
 }
 
@@ -901,7 +912,7 @@ contact-sp
 --------------------*/
 @media (min-width: 768px) and (max-width: 959px) {
     .section-header {
-        font-size: 16vw;
+        font-size: 14vw;
         font-weight: 600;
         letter-spacing: 2px;
     }
@@ -925,7 +936,6 @@ works-tab
         margin: 20px 0;
     }
 
-
     .grid-item img {
         width: 320px;
         height: auto;
@@ -945,7 +955,9 @@ works-tab
 profile-tab
 
 --------------------*/
-
+    .profile {
+        margin: 40px 4%;
+    }
 
 
     /*-------------------
@@ -955,7 +967,9 @@ contact-tab
 --------------------*/
 
 
-    .contact p {}
+    .contact {
+        margin: 40px 4%;
+    }
 
     .contact a {
         font-size: 2rem;
