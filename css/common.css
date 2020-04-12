@@ -337,7 +337,7 @@ top-pc
 --------------------*/
 .header {
     z-index: 5;
-    position: fixed;
+    position: ;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -363,6 +363,7 @@ h1 {
     flex-basis: 20%;
     height: 60px;
     padding: 20px;
+    margin-left: 40px;
     color: #2323DD;
     background: #f2f2f2;
     border: 1px solid #707070;
@@ -382,7 +383,8 @@ h1 {
 
 .menu-list {
     display: inline-block;
-    margin-right: 80px;
+    position: fixed;
+    right: 60px;
     background: #f2f2f2;
     border: 1px solid #707070;
     padding: 10px;

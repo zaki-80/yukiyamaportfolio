@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
 .header {
-    position: static;
-    color: #4ca1af;
-    margin: 0 20px;
+    color: #404040;
+    margin: 20px;
 }
 
 .header-container {
@@ -14,8 +13,12 @@
     max-width: 360px;
 }
 
+.biography a {
+    color: #000;
+}
+
 .mail {
-    margin-left: 400px;
+    margin-left: 440px;
 }
 
 h1 {
@@ -155,19 +158,21 @@ project-summary-pc
     display: flex;
     font-size: 1.4rem;
     line-height: 1.6;
-    margin: 0 20px 20px;
+    margin: 0 0 20px;
 }
 
 .project-summary {
     position: fixed;
-    padding: 0 5% 0 2%;
+    padding: 10% 5% 0 40px;
     width: 35%;
     height: 100vh;
 }
 
+
+
 .project-detail {
     width: 65%;
-    padding: 0 5% 0;
+    padding: 10% 5% 0;
     margin-left: 37%;
 }
 
@@ -194,8 +199,8 @@ dd a {
 
 .back {
     position: absolute;
-    bottom: 32vh;
-    left: 6%;
+    bottom: 26vh;
+    left: 40px;
 }
 
 .lt::before {
@@ -204,7 +209,7 @@ dd a {
 
 .barcode {
     position: absolute;
-    bottom: 28vh;
+    bottom: 24vh;
     right: 8%;
 }
 
@@ -294,7 +299,7 @@ project-summary-sp
 
     .first-img {
         position: absolute;
-        top: 80px;
+        top: 120px;
         left: 0;
         padding: 4%;
     }
@@ -332,6 +337,8 @@ project-summary-sp
 
     .biography {
         display: block;
+        padding: 20px;
+        margin: 4%;
     }
 
 
@@ -366,9 +373,10 @@ project-detail-sp
 @media (min-width: 768px) and (max-width: 959px) {
     .biography {
         max-width: 300px;
+        margin: 4%;
     }
 
     .mail {
-        margin-left: 300px;
+        margin-left: 340px;
     }
 }

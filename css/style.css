@@ -245,7 +245,7 @@ top-pc
     position: relative;
     width: 400px;
     height: 400px;
-    top: 28%;
+    top: 10%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -474,7 +474,7 @@ works-pc
 }
 
 .work-info .work-name {
-    color: #0000ff;
+    font-weight: 600;
 }
 
 
@@ -491,6 +491,7 @@ profile-pc
     margin: 88px;
     padding-bottom: 80px;
     border: 1px solid #707070;
+    box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
 }
 
 .profile-info {
@@ -550,6 +551,7 @@ contact-pc
     padding-bottom: 160px;
     background: #f2f2f2;
     border: 1px solid #707070;
+    box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
 }
 
 .contact p {
@@ -826,7 +828,6 @@ profile-sp
         margin: 40px 4%;
         padding-bottom: 20px;
         border: 1px solid #707070;
-
     }
 
     .profile .section-header {
