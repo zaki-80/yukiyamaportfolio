@@ -186,8 +186,8 @@
             padding: 8px;
         }
 
-        .glitch-20:hover {
-            font-size: 2rem;
+        .glitch-18:hover {
+            font-size: 1.8rem;
         }
 
         .list-top:hover {
@@ -415,6 +415,7 @@ works-pc
 .grid {
     max-width: 100%;
     margin: 0 auto;
+    padding-bottom: 80px;
 
 }
 
@@ -486,17 +487,17 @@ profile-pc
 
 --------------------*/
 .profile {
+    position: relative;
     background: #f2f2f2;
     color: #404040;
     margin: 88px;
     padding-bottom: 80px;
     border: 1px solid #707070;
-    box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
 }
 
 .profile-info {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 70%;
     margin: 0 auto;
 }
@@ -537,8 +538,19 @@ profile-pc
     letter-spacing: 0.6em;
 }
 
+.hand01 {
+    position: absolute;
+    top: -66px;
+    left: -220px;
+    width: 450px;
+}
 
-
+.hand02 {
+    position: absolute;
+    top: -66px;
+    right: -219.5px;
+    width: 450px;
+}
 
 /*-------------------
 
@@ -546,12 +558,12 @@ contact-pc
 
 --------------------*/
 .contact {
+    position: relative;
     color: #404040;
     margin: 88px;
     padding-bottom: 160px;
     background: #f2f2f2;
     border: 1px solid #707070;
-    box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
 }
 
 .contact p {
@@ -563,7 +575,7 @@ contact-pc
 
 .contact a {
     color: #2323DD;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .contact-container {
@@ -875,6 +887,20 @@ profile-sp
         padding-bottom: 20px;
     }
 
+    .hand01 {
+        position: absolute;
+        top: -44px;
+        left: -147px;
+        width: 300px;
+    }
+
+    .hand02 {
+        position: absolute;
+        top: -44px;
+        right: -147px;
+        width: 300px;
+    }
+
 
 
 
@@ -892,7 +918,7 @@ contact-sp
     }
 
     .contact a {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .contact-container {
@@ -973,7 +999,7 @@ contact-tab
     }
 
     .contact a {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 20px;
     }
 

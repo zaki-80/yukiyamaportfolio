@@ -6,7 +6,6 @@
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
-
 }
 
 html {
@@ -22,6 +21,10 @@ body {
     font-weight: 300;
     font-feature-settings: "palt";
     -webkit-font-feature-settings: "palt";
+}
+
+.wrapper {
+    overflow: hidden;
 }
 
 img {
@@ -66,8 +69,8 @@ a {
         background: #000;
     }
 
-    .glitch-20:hover {
-        font-size: 2rem;
+    .glitch-18:hover {
+        font-size: 1.8rem;
         display: inline-block;
     }
 
@@ -296,8 +299,8 @@ a {
             top: 0.6px;
         }
 
-        .glitch-20:hover {
-            font-size: 2rem;
+        .glitch-18:hover {
+            font-size: 1.8rem;
         }
 
         .list-top:hover {
@@ -346,7 +349,7 @@ top-pc
 
 .biography {
     flex-basis: 33.33%;
-    height: 20%;
+    display: inline-block;
     padding: 20px;
     line-height: 1.4;
     background: #f2f2f2;
@@ -382,7 +385,6 @@ h1 {
 }
 
 .menu-list {
-    display: inline-block;
     position: fixed;
     right: 60px;
     background: #f2f2f2;
@@ -429,6 +431,7 @@ top-sp
     }
 
     .biography {
+        display: inline-block;
         padding: 4%;
         flex-basis: 70%;
         line-height: 1.4;
@@ -443,10 +446,9 @@ top-sp
     }
 
     .menu-list {
-        display: block;
         background: #000;
         border: none;
-        margin: 0;
+        right: 0;
     }
 
     .menu-list li {
@@ -589,10 +591,13 @@ top-sp
 
 
 @media (min-width: 768px) and (max-width: 959px) {
+    .header {
+        font-size: 1.6rem;
+    }
 
     .biography {
-        flex-basis: 33.33%;
-        height: 120px;
+        flex-basis: 50%;
+        display: inline-block;
         padding: 20px;
         line-height: 1.4;
         background: #f2f2f2;
@@ -600,13 +605,8 @@ top-sp
     }
 
     .mail {
-        flex-basis: 20%;
-        height: 60px;
-        margin-left: 20px;
-        padding: 20px;
-        color: #2323DD;
-        background: #f2f2f2;
-        border: 1px solid #707070;
+        display: none;
     }
+
 
 }
