@@ -387,6 +387,7 @@ h1 {
 .menu-list {
     position: fixed;
     right: 60px;
+    width: 86px;
     background: #f2f2f2;
     border: 1px solid #707070;
     padding: 10px;
@@ -448,6 +449,7 @@ top-sp
     .menu-list {
         background: #000;
         border: none;
+        box-shadow: none;
         right: 0;
     }
 
@@ -510,9 +512,9 @@ top-sp
     .nav-menu {
         position: fixed;
         top: 42px;
+        height: 82px;
         right: 0;
         display: none;
-        width: 86px;
     }
 
     .menu-item {
@@ -587,7 +589,20 @@ top-sp
     .hamburger.active span:nth-of-type(3) {
         transform: translateY(-4px) rotate(20deg);
     }
+
+    nav {
+        display: block;
+        height: 250px;
+        position: relative;
+    }
+
+    .menu-list {
+        display: block;
+        height: 250px;
+    }
 }
+
+
 
 
 @media (min-width: 768px) and (max-width: 959px) {

@@ -32,6 +32,7 @@
                     <div class="mail text-center">
                         <p><a href="mailto:yyamazaki160&#64;gmail.com" class="glitch" data-text="yyamazaki160&#64;gmail.com">yyamazaki160&#64;gmail.com</a></p>
                     </div>
+
                     <div class="menu">
                         <nav class="nav-menu">
                             <ul class="menu-list">
@@ -262,15 +263,12 @@
         </section>
         <small class="copy text-center">©︎2020 yuki yamazaki all rights reserved.</small>
     </div>
+
     <script>
-        $('.hamburger').on('click', function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $('nav').slideUp();
-            } else {
-                $(this).addClass('active');
-                $('nav').slideDown();
-            }
+        $(function() {
+            $('.hamburger').click(function() {
+                $('nav').slideToggle();
+            });
         });
 
     </script>
