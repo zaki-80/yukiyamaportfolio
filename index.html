@@ -17,12 +17,6 @@
 <body>
     <div class="wrapper">
         <section class="top">
-            <button class="hamburger">
-                <span class="hamburger__line hamburger__line1"></span>
-                <span class="hamburger__line hamburger__line2"></span>
-                <span class="hamburger__line hamburger__line3"></span>
-            </button>
-
             <div class="top-container">
                 <header class="header">
                     <div class="biography">
@@ -34,6 +28,11 @@
                     </div>
 
                     <div class="menu">
+                        <button class="hamburger">
+                            <span class="hamburger__line hamburger__line1"></span>
+                            <span class="hamburger__line hamburger__line2"></span>
+                            <span class="hamburger__line hamburger__line3"></span>
+                        </button>
                         <nav class="nav-menu">
                             <ul class="menu-list">
                                 <li class="menu-item"><a href="index.html">
@@ -134,17 +133,6 @@
                         <p>2020</p>
                     </div>
                 </div>
-                <div class="grid-item"><img src="images/work05.jpg" alt="作品05">
-                    <div class="work-info">
-                        <p class="work-name">天気予報アプリのアイコン</p>
-                        <p>ロゴデザイン</p>
-                        <dl>
-                            <dt>使用ツール・言語：</dt>
-                            <dd>AdobeXD,Photoshop</dd>
-                        </dl>
-                        <p>2020</p>
-                    </div>
-                </div>
                 <div class="grid-item">
                     <video id="video" class="video" autoplay loop muted playsinline width="100%">
                         <source src="video/geometric.mp4" type="video/mp4">
@@ -159,7 +147,7 @@
                         <p>2020</p>
                     </div>
                 </div>
-                <div class="grid-item"><img src="images/work07.jpg" alt="作品07">
+                <div class="grid-item"><img src="images/work06.jpg" alt="作品06">
                     <div class="work-info">
                         <p class="work-name">メッセージアプリの画面</p>
                         <p>UIデザイン</p>
@@ -170,7 +158,7 @@
                         <p>2020</p>
                     </div>
                 </div>
-                <div class="grid-item"><img src="images/work08.jpg" alt="作品08">
+                <div class="grid-item"><img src="images/work07.jpg" alt="作品07">
                     <div class="work-info">
                         <p class="work-name">「MAKE VR」LP</p>
                         <p>コーディング</p>
@@ -182,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item"><img src="images/work10.jpg" alt="作品10">
+                <div class="grid-item"><img src="images/work08.jpg" alt="作品08">
                     <div class="work-info">
                         <p class="work-name">音楽アプリの新規登録画面</p>
                         <p>UIデザイン</p>
@@ -193,18 +181,7 @@
                         <p>2020</p>
                     </div>
                 </div>
-                <div class="grid-item"><img src="images/work11.jpg" alt="作品11">
-                    <div class="work-info">
-                        <p class="work-name">料理アプリの検索画面</p>
-                        <p>UIデザイン</p>
-                        <dl>
-                            <dt>使用ツール・言語：</dt>
-                            <dd>AdobeXD</dd>
-                        </dl>
-                        <p>2020</p>
-                    </div>
-                </div>
-                <div class="grid-item"><img src="images/work12.jpg" alt="作品12">
+                <div class="grid-item"><img src="images/work09.jpg" alt="作品09">
                     <div class="work-info">
                         <p class="work-name">「8HOURS」コーポレートサイト</p>
                         <p>コーディング</p>
@@ -215,18 +192,6 @@
                         <p>2020</p>
                     </div>
                 </div>
-                <div class="grid-item"><img src="images/work13.jpg" alt="作品13">
-                    <div class="work-info">
-                        <p class="work-name">Bootstrap tutorial</p>
-                        <p>コーディング</p>
-                        <dl>
-                            <dt>使用ツール・言語：</dt>
-                            <dd>HTML、CSS、Bootstrap</dd>
-                        </dl>
-                        <p>2020</p>
-                    </div>
-                </div>
-
             </div>
         </section>
         <section class="profile text-center">
@@ -234,7 +199,9 @@
             </h2>
 
             <div class="profile-info">
-                <p class="name">山崎 祐貴<span class="space">|</span>yuki yamazaki</p>
+                <p class="name">zaki
+                    <!--<span class="space">|</span>name name-->
+                </p>
                 <p class="aboutme">
                     5年ほどIT企業に勤務。<br class="onlypc">その後自分の手でものづくりがしたいという思いから、<br class="onlypc">独学・スクールでの学習を通してwebデザインを学びました。<br class="onlypc">
                 </p>
@@ -265,10 +232,22 @@
     </div>
 
     <script>
-        $(function() {
-            $('.hamburger').click(function() {
-                $('nav').slideToggle();
-            });
+        $('.hamburger').on('click', function() {
+            if ($('.nav-menu').is(':visible')) {
+                $(this).removeClass('active');
+                // Close menu
+                $('nav > *').slideUp(function() {
+                    $(this).parent().hide();
+                });
+            } else {
+                $(this).addClass('active');
+                $(this).addClass('active');
+                // Open menu
+                $('.nav-menu > *')
+                    .hide()
+                    .parent().show().end()
+                    .slideDown();
+            }
         });
 
     </script>

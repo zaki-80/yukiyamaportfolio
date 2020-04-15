@@ -156,12 +156,20 @@
     </section>
     <script>
         $('.hamburger').on('click', function() {
-            if ($(this).hasClass('active')) {
+            if ($('.nav-menu').is(':visible')) {
                 $(this).removeClass('active');
-                $('nav').slideUp();
+                // Close menu
+                $('nav > *').slideUp(function() {
+                    $(this).parent().hide();
+                });
             } else {
                 $(this).addClass('active');
-                $('nav').slideDown();
+                $(this).addClass('active');
+                // Open menu
+                $('.nav-menu > *')
+                    .hide()
+                    .parent().show().end()
+                    .slideDown();
             }
         });
 

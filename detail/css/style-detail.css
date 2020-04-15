@@ -57,6 +57,8 @@ h4 {
 }
 
 
+
+
 /*----------
 
 ホバースタイル
@@ -351,6 +353,9 @@ project-summary-sp
         margin: 4%;
     }
 
+    .menu-list .glitch {
+        color: #000;
+    }
 
 
 
