@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/delighters.min.js"></script>
 </head>
 
 <body>
@@ -194,16 +195,14 @@
                 </div>
             </div>
         </section>
-        <section class="profile text-center">
+        <section class="profile text-center foo-profile" data-delighter>
             <h2 class="section-header text-center" id="profile">profile
             </h2>
 
             <div class="profile-info">
-                <p class="name">zaki
-                    <!--<span class="space">|</span>name name-->
-                </p>
-                <p class="aboutme">
-                    5年ほどIT企業に勤務。<br class="onlypc">その後自分の手でものづくりがしたいという思いから、<br class="onlypc">独学・スクールでの学習を通してwebデザインを学びました。<br class="onlypc">
+                <p class="name">山崎 祐貴
+                    <span class="space">|</span>yuki yamazaki</p>
+                <p class="aboutme">独学とスクールでの学習を通してwebデザインを学びました。
                 </p>
                 <p class="aboutme">
                     音楽や映画などのカルチャーをフィルターとして、<br class="onlypc">
@@ -219,8 +218,8 @@
             <div class="hand01"><img src="images/hand01.png" alt="手の画像"></div>
         </section>
 
-        <section class="contact text-center">
-            <h2 class="section-header" id="contact">contact</h2>
+        <section class="contact text-center foo-contact" data-delighter>
+            <h2 class=" section-header" id="contact">contact</h2>
             <div class="contact-container">
                 <p class="contact-mail glitch glitch-18" data-text="mail : yyamazaki160&#64;gmail.com"><a href="mailto:yyamazaki160&#64;gmail.com">mail : yyamazaki160&#64;gmail.com</a></p><br>
                 <p class="twitter glitch glitch-18" data-text="twitter : @zaki80design"><a href="https://twitter.com/zaki80design">twitter : @zaki80design</a></p>
@@ -229,43 +228,42 @@
             <div class="hand02"><img src="images/hand02.png" alt="手の画像"></div>
         </section>
         <small class="copy text-center">©︎2020 yuki yamazaki all rights reserved.</small>
-    </div>
 
-    <script>
-        $('.hamburger').on('click', function() {
-            if ($('.nav-menu').is(':visible')) {
-                $(this).removeClass('active');
-                // Close menu
-                $('nav > *').slideUp(function() {
-                    $(this).parent().hide();
-                });
-            } else {
-                $(this).addClass('active');
-                $(this).addClass('active');
-                // Open menu
-                $('.nav-menu > *')
-                    .hide()
-                    .parent().show().end()
-                    .slideDown();
-            }
-        });
+        <script>
+            $('.hamburger').on('click', function() {
+                if ($('.nav-menu').is(':visible')) {
+                    $(this).removeClass('active');
+                    // Close menu
+                    $('nav > *').slideUp(function() {
+                        $(this).parent().hide();
+                    });
+                } else {
+                    $(this).addClass('active');
+                    $(this).addClass('active');
+                    // Open menu
+                    $('.nav-menu > *')
+                        .hide()
+                        .parent().show().end()
+                        .slideDown();
+                }
+            });
 
-    </script>
-    <script>
-        $(window).on('load', function() {
-            $('#grid').imagesLoaded(function() {
-                $(this).masonry('reload');
-                $('#grid').masonry({
-                    itemSelector: '.grid-item', //整理される要素のclassを指定
-                    columnWidth: 360, //一列の幅サイズを指定
-                    isAnimated: true, //スムースアニメーション設定
-                    isFitWidth: true, //親要素の幅サイズがピッタリ
-                    isResizable: true //ウィンドウサイズが変更された時に並び替え
+        </script>
+        <script>
+            $(window).on('load', function() {
+                $('#grid').imagesLoaded(function() {
+                    $(this).masonry('reload');
+                    $('#grid').masonry({
+                        itemSelector: '.grid-item', //整理される要素のclassを指定
+                        columnWidth: 360, //一列の幅サイズを指定
+                        isAnimated: true, //スムースアニメーション設定
+                        isFitWidth: true, //親要素の幅サイズがピッタリ
+                        isResizable: true //ウィンドウサイズが変更された時に並び替え
+                    });
                 });
             });
-        });
 
-    </script>
+        </script>
 
 </body>
 

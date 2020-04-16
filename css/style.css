@@ -7,12 +7,12 @@
     color: rgba(0, 0, 0, 0);
     font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     -webkit-text-stroke: 1px #1b1f1e;
-    padding: 120px 0 160px;
+    padding: 120px 0 120px;
 }
 
 .copy {
     display: block;
-    padding: 40px;
+    padding: 0 0 40px;
 }
 
 
@@ -490,7 +490,7 @@ profile-pc
     position: relative;
     background: #f2f2f2;
     color: #404040;
-    margin: 88px;
+    margin: 160px 88px 0px;
     padding-bottom: 80px;
     border: 1px solid #707070;
 }
@@ -505,7 +505,7 @@ profile-pc
 .profile-sub {
     font-size: 1.8rem;
     line-height: 1.4;
-    padding: 80px 0;
+    padding: 40px 0 80px;
 }
 
 .profile-sub dt {
@@ -521,6 +521,7 @@ profile-pc
 }
 
 .name {
+    font-size: 2rem;
     padding-bottom: 40px;
 }
 
@@ -560,7 +561,7 @@ contact-pc
 .contact {
     position: relative;
     color: #404040;
-    margin: 88px;
+    margin: 0px 88px;
     padding-bottom: 160px;
     background: #f2f2f2;
     border: 1px solid #707070;
@@ -586,7 +587,38 @@ contact-pc
     border: 1px solid #707070;
 }
 
+.foo-profile.delighter {
+    transition: all 0.8s ease-out;
+    transform: translate(-10%, 10%);
+    opacity: 0.5;
+}
 
+.foo-contact.delighter {
+    transition: all 0.6s ease-out;
+    transform: translate(10%, 10%);
+    opacity: 0.5;
+}
+
+/* スクロールしてターゲットが画面上部（初期設定）から75%（初期設定）の位置にきた際 .started が設定されます。*/
+
+.foo-profile.delighter.started {
+    z-index: 2;
+    transform: translateY(-100px);
+    opacity: 1;
+}
+
+
+
+/* スクロールしてターゲットが画面上部（初期設定）から75%（初期設定）の位置にきた際 .started が設定されます。*/
+.foo-contact.delighter.started {
+    z-index: 2;
+    transform: translateY(-200px);
+    opacity: 1;
+}
+
+/* スクロールしてターゲットが画面下部（初期設定）から75%（初期設定）の位置にきた際 .ended が設定されます。 */
+
+.foo-contact.delighter.started.ended {}
 
 
 /*-------------------
@@ -611,6 +643,7 @@ contact-pc
 
     .copy {
         font-size: 1.2rem;
+        margin-top: -120px;
     }
 
 
@@ -838,7 +871,7 @@ profile-sp
         background: #f2f2f2;
         color: #404040;
         margin: 40px 4%;
-        padding-bottom: 20px;
+        padding-bottom: 8%;
         border: 1px solid #707070;
     }
 
@@ -883,7 +916,7 @@ profile-sp
     }
 
     .aboutme {
-        line-height: 1.6;
+        line-height: 1.7;
         padding-bottom: 20px;
     }
 
@@ -901,6 +934,13 @@ profile-sp
         width: 300px;
     }
 
+    /* スクロールしてターゲットが画面下部（初期設定）から75%（初期設定）の位置にきた際 .ended が設定されます。 */
+    .foo-profile.delighter.started.ended {
+        transform: translateY(100px) scale(0.95, 0.95);
+        background: rgba(230, 230, 230);
+        opacity: 0.6;
+    }
+
 
 
 
@@ -912,20 +952,24 @@ contact-sp
     .contact {
         background: #f2f2f2;
         color: #404040;
-        margin: 40px 4%;
-        padding-bottom: 120px;
+        margin: 0 4%;
+        padding-bottom: 80px;
         border: 1px solid #707070;
     }
 
     .contact a {
-        font-size: 1.8rem;
+        font-size: 3.8vw;
+    }
+
+    .contact p {
+        margin: 0 0 8%;
     }
 
     .contact-container {
         position: relative;
-        width: 320px;
+        width: 90%;
         margin: 0 auto;
-        padding: 40px 20px 20px;
+        padding: 8% 4% 2%;
     }
 }
 
@@ -983,7 +1027,7 @@ profile-tab
 
 --------------------*/
     .profile {
-        margin: 40px 4%;
+        margin: 0 4%;
     }
 
 
@@ -995,7 +1039,7 @@ contact-tab
 
 
     .contact {
-        margin: 40px 4%;
+        margin: 0 4%;
     }
 
     .contact a {
