@@ -386,7 +386,7 @@ h1 {
 
 .menu-list {
     position: fixed;
-    right: 60px;
+    right: 32px;
     width: 86px;
     background: #f2f2f2;
     border: 1px solid #707070;
@@ -450,7 +450,7 @@ top-sp
         background: #000;
         border: none;
         box-shadow: none;
-        right: 0;
+        right: 32px;
     }
 
     .menu-list li {

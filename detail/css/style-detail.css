@@ -18,7 +18,7 @@
 }
 
 .mail {
-    margin-left: 440px;
+    margin-left: 42%;
 }
 
 h1 {
@@ -391,7 +391,7 @@ project-detail-sp
         margin: 4%;
     }
 
-    .mail {
-        margin-left: 340px;
+    .project-summary {
+        padding: 16% 2% 0 40px;
     }
 }

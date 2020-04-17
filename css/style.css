@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .section-header {
-    font-size: 16rem;
+    font-size: 12rem;
     font-weight: bold;
     letter-spacing: 6.4px;
     color: rgba(0, 0, 0, 0);
@@ -186,8 +186,10 @@
             padding: 8px;
         }
 
+
         .glitch-18:hover {
-            font-size: 1.8rem;
+            font-size: 3vw;
+
         }
 
         .list-top:hover {
@@ -235,7 +237,7 @@ top-pc
 .top-container {
     background: #E2E2E2;
     border: 1px solid #707070;
-    margin: 18px 40px;
+    margin: 18px 20px;
     padding: 12px;
     height: 720px;
     overflow: hidden;
@@ -490,7 +492,7 @@ profile-pc
     position: relative;
     background: #f2f2f2;
     color: #404040;
-    margin: 160px 88px 0px;
+    margin: 160px 12% 0px;
     padding-bottom: 80px;
     border: 1px solid #707070;
 }
@@ -527,7 +529,6 @@ profile-pc
 
 .aboutme {
     line-height: 1.4;
-    padding-bottom: 20px;
 }
 
 .space {
@@ -561,7 +562,7 @@ contact-pc
 .contact {
     position: relative;
     color: #404040;
-    margin: 0px 88px;
+    margin: -160px 12% 0;
     padding-bottom: 160px;
     background: #f2f2f2;
     border: 1px solid #707070;
@@ -588,14 +589,14 @@ contact-pc
 }
 
 .foo-profile.delighter {
-    transition: all 0.8s ease-out;
-    transform: translate(-10%, 10%);
+    transition: all 0.6s ease-out;
+    transform: translate(-20%, 10%);
     opacity: 0.5;
 }
 
 .foo-contact.delighter {
-    transition: all 0.6s ease-out;
-    transform: translate(10%, 10%);
+    transition: all 0.5s ease-out;
+    transform: translate(20%, 10%);
     opacity: 0.5;
 }
 
@@ -603,8 +604,17 @@ contact-pc
 
 .foo-profile.delighter.started {
     z-index: 2;
-    transform: translateY(-100px);
+    transform: translateY(-10px);
     opacity: 1;
+}
+
+/* スクロールしてターゲットが画面下部（初期設定）から75%（初期設定）の位置にきた際 .ended が設定されます。 */
+
+.foo-profile.delighter.started.ended {
+    z-index: 0;
+    transform: translateY(100px) scale(0.95, 0.95);
+    background: rgba(230, 230, 230);
+    opacity: 0.6;
 }
 
 
@@ -612,7 +622,7 @@ contact-pc
 /* スクロールしてターゲットが画面上部（初期設定）から75%（初期設定）の位置にきた際 .started が設定されます。*/
 .foo-contact.delighter.started {
     z-index: 2;
-    transform: translateY(-200px);
+    transform: translateY(-100px);
     opacity: 1;
 }
 
@@ -628,7 +638,7 @@ contact-pc
 --------------------*/
 @media (max-width: 767px) {
     .section-header {
-        font-size: 16vw;
+        font-size: 14vw;
         font-weight: 600;
         letter-spacing: 2px;
         color: rgba(0, 0, 0, 0);
@@ -643,7 +653,7 @@ contact-pc
 
     .copy {
         font-size: 1.2rem;
-        margin-top: -120px;
+        margin-top: -40px;
     }
 
 
@@ -877,7 +887,6 @@ profile-sp
 
     .profile .section-header {
         -webkit-text-stroke: 0.7px #1b1f1e;
-
     }
 
     .profile-info {
@@ -889,6 +898,7 @@ profile-sp
     }
 
     .name {
+        font-size: 1.6rem;
         letter-spacing: 0.14em;
     }
 
@@ -917,7 +927,6 @@ profile-sp
 
     .aboutme {
         line-height: 1.7;
-        padding-bottom: 20px;
     }
 
     .hand01 {
@@ -958,18 +967,18 @@ contact-sp
     }
 
     .contact a {
-        font-size: 3.8vw;
+        font-size: 3vw;
     }
 
     .contact p {
-        margin: 0 0 8%;
+        margin: 0 0 4%;
     }
 
     .contact-container {
         position: relative;
         width: 90%;
         margin: 0 auto;
-        padding: 8% 4% 2%;
+        padding: 8% 2% 4%;
     }
 }
 
@@ -983,7 +992,7 @@ contact-sp
 --------------------*/
 @media (min-width: 768px) and (max-width: 959px) {
     .section-header {
-        font-size: 14vw;
+        font-size: 12vw;
         font-weight: 600;
         letter-spacing: 2px;
     }
