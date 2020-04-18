@@ -168,6 +168,7 @@ project-summary-pc
 --------------------*/
 .work-detail {
     display: flex;
+    flex-direction: column;
     font-size: 1.4rem;
     line-height: 1.6;
     margin: 0 0 20px;
@@ -179,15 +180,6 @@ project-summary-pc
     width: 35%;
     height: 100vh;
 }
-
-
-
-.project-detail {
-    width: 65%;
-    padding: 10% 5% 0;
-    margin-left: 37%;
-}
-
 
 dl {
     padding-bottom: 4vh;
@@ -230,6 +222,18 @@ dd a {
 project-detail-pc
 
 --------------------*/
+.project-detail {
+    width: 65%;
+    padding: 0% 5% 0;
+    margin-left: 37%;
+}
+
+.first-img-box {
+    width: 65%;
+    padding: 10% 5% 0;
+    margin-left: 37%;
+}
+
 .project-img {
     padding-bottom: 80px;
 }
@@ -288,11 +292,12 @@ project-summary-sp
 
 --------------------*/
     .work-detail {
-        display: block;
+        flex-direction: column;
         margin: 0 4% 20px;
     }
 
     .project-summary {
+        order: 2;
         position: static;
         width: 100%;
         height: auto;
@@ -300,21 +305,24 @@ project-summary-sp
     }
 
     .project-detail {
+        order: 3;
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    .first-img-box {
+        order: 1;
+        width: 100%;
+        margin: 0;
+        padding: 40px 0 0;
     }
 
     .project-img img {
         padding-bottom: 20px;
     }
 
-    .first-img {
-        position: absolute;
-        top: 120px;
-        left: 0;
-        padding: 4%;
-    }
+
 
     dl {
         padding-bottom: 4vh;
@@ -335,7 +343,7 @@ project-summary-sp
 
     .back {
         position: static;
-        padding: 40px 0 0;
+        padding: 0;
     }
 
     .lt::before {
@@ -364,6 +372,14 @@ project-summary-sp
 project-detail-sp
 
 --------------------*/
+    .project-detail {
+        padding-bottom: 10%;
+    }
+
+    .intention-box {
+        padding-bottom: 4%;
+    }
+
     .project-img {
         padding-bottom: 40px;
     }
@@ -373,12 +389,17 @@ project-detail-sp
     }
 
     .references {
-        padding: 200px 0 0;
+        padding: 160px 0 0;
         word-wrap: break-word;
     }
+
+    .project-summary {
+        padding: 4% 2% 10%;
+    }
+
+    .first-img {}
+
 }
-
-
 
 /*-------------------
 

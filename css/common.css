@@ -340,11 +340,9 @@ top-pc
 --------------------*/
 .header {
     z-index: 5;
-    position: ;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-right: 20px;
 }
 
 .biography {
@@ -434,7 +432,7 @@ top-sp
     .biography {
         display: inline-block;
         padding: 4%;
-        flex-basis: 70%;
+        flex-basis: 80%;
         line-height: 1.4;
     }
 
@@ -450,7 +448,7 @@ top-sp
         background: #000;
         border: none;
         box-shadow: none;
-        right: 32px;
+        right: 0px;
     }
 
     .menu-list li {
