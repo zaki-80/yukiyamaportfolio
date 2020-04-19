@@ -1,13 +1,19 @@
 @charset "UTF-8";
 
 .section-header {
-    font-size: 12rem;
+    text-transform: uppercase;
+    font-size: 8rem;
     font-weight: bold;
-    letter-spacing: 6.4px;
-    color: rgba(0, 0, 0, 0);
+    letter-spacing: 0px;
+    line-height: 0.6;
+    color: #777;
     font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    -webkit-text-stroke: 1px #1b1f1e;
-    padding: 120px 0 120px;
+    -webkit-text-stroke: 1px #777;
+    padding: 120px 0 80px;
+}
+
+.sh-2 {
+    color: rgba(0, 0, 0, 0);
 }
 
 .copy {

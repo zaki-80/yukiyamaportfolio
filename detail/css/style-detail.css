@@ -224,14 +224,14 @@ project-detail-pc
 --------------------*/
 .project-detail {
     width: 65%;
-    padding: 0% 5% 0;
-    margin-left: 37%;
+    padding: 0;
+    margin-left: 35%;
 }
 
 .first-img-box {
     width: 65%;
-    padding: 10% 5% 0;
-    margin-left: 37%;
+    padding: 10% 5%0;
+    margin-left: 35%;
 }
 
 .project-img {
@@ -293,7 +293,7 @@ project-summary-sp
 --------------------*/
     .work-detail {
         flex-direction: column;
-        margin: 0 4% 20px;
+        margin: 0 4%;
     }
 
     .project-summary {
@@ -343,7 +343,7 @@ project-summary-sp
 
     .back {
         position: static;
-        padding: 0;
+        padding: 40px 0 80px;
     }
 
     .lt::before {
@@ -373,11 +373,11 @@ project-detail-sp
 
 --------------------*/
     .project-detail {
-        padding-bottom: 10%;
+        padding-bottom: 6%;
     }
 
     .intention-box {
-        padding-bottom: 4%;
+        padding-bottom: 6%;
     }
 
     .project-img {
@@ -389,16 +389,13 @@ project-detail-sp
     }
 
     .references {
-        padding: 160px 0 0;
+        padding: 120px 0 0;
         word-wrap: break-word;
     }
 
     .project-summary {
         padding: 4% 2% 10%;
     }
-
-    .first-img {}
-
 }
 
 /*-------------------
