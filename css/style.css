@@ -1,19 +1,24 @@
 @charset "UTF-8";
 
 .section-header {
+    z-index: 1;
     text-transform: uppercase;
     font-size: 8rem;
     font-weight: bold;
     letter-spacing: 0px;
-    line-height: 0.6;
-    color: #777;
+    line-height: 0.5;
+    color: rgba(205, 205, 205, 0);
     font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    -webkit-text-stroke: 1px #777;
-    padding: 120px 0 80px;
+    -webkit-text-stroke: 1px #000;
+    padding: 160px 0 80px;
 }
 
 .sh-2 {
-    color: rgba(0, 0, 0, 0);
+    color: rgba(205, 205, 205, 0);
+}
+
+.sh-3 {
+    color: rgba(255, 255, 255, 0);
 }
 
 .copy {
@@ -241,7 +246,7 @@ top-pc
 }
 
 .top-container {
-    background: #E2E2E2;
+    background: #D8D8D8;
     border: 1px solid #707070;
     margin: 18px 20px;
     padding: 12px;
