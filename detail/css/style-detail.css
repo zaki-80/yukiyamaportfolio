@@ -2,7 +2,7 @@
 
 .header {
     color: #404040;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0;
 }
 
 .header-container {
@@ -225,13 +225,13 @@ project-detail-pc
 --------------------*/
 .project-detail {
     width: 65%;
-    padding-right: 20px;
+    padding: 0 6% 0;
     margin-left: 35%;
 }
 
 .first-img-box {
     width: 65%;
-    padding: 10% 20px 0;
+    padding: 10% 6% 0;
     margin-left: 35%;
 }
 
