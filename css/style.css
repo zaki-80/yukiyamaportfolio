@@ -508,6 +508,11 @@ profile-pc
     border: 1px solid #707070;
 }
 
+.profile_img {
+    width: 220px;
+    padding-bottom: 80px;
+}
+
 .profile-info {
     text-align: left;
     font-size: 1.8rem;
