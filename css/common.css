@@ -346,6 +346,7 @@ top-pc
 }
 
 .biography {
+    z-index: 10;
     flex-basis: 33.33%;
     display: inline-block;
     padding: 20px;

@@ -10,7 +10,7 @@
     color: rgba(205, 205, 205, 0);
     font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     -webkit-text-stroke: 1px #000;
-    padding: 160px 0 80px;
+    padding: 160px 0 40px;
 }
 
 .sh-2 {
@@ -635,11 +635,12 @@ top-pc
 }
 
 .desert {
+    z-index: 0;
     position: absolute;
-    bottom: -20%;
-    left: -82%;
+    bottom: -260%;
+    left: -140%;
     margin: auto;
-    width: 100%;
+    max-width: 2000px;
 }
 
 .jeans {
@@ -668,10 +669,10 @@ top-pc
 
 .shape {
     position: absolute;
-    top: 14%;
-    left: -30%;
+    top: -18%;
+    left: -50%;
     margin: auto;
-    width: 220px;
+    width: 200px;
     animation-name: anime2;
     animation-duration: 3.5s;
     animation-timing-function: linear;
@@ -697,7 +698,19 @@ top-pc
     font-size: 800%;
     font-weight: 400;
     color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 1px #777;
+    -webkit-text-stroke: 0.7px #fff;
+}
+
+.tree {
+    z-index: 2;
+    position: absolute;
+    bottom: 22%;
+    right: -80%;
+    font-family: serif;
+    font-size: 1200%;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 0.7px #fff;
 }
 
 .sneaker {
@@ -729,10 +742,10 @@ top-pc
 
 .hqvision {
     position: absolute;
-    top: -15%;
-    right: 8%;
+    top: -25%;
+    right: -38%;
     margin: auto;
-    width: 260px;
+    width: 320px;
 }
 
 
@@ -826,9 +839,9 @@ profile-pc
     border: 1px solid #707070;
 }
 
-.profile_img {
-    width: 200px;
-    padding: 40px;
+.profile-img {
+    width: 150px;
+    padding: 40px 0;
     margin-bottom: 80px;
     background: #333;
 }
@@ -917,7 +930,7 @@ contact-pc
 }
 
 .contact-img {
-    width: 200px;
+    width: 150px;
     padding: 40px 0;
     margin-bottom: 80px;
     background: #333;
@@ -1113,7 +1126,7 @@ top-sp
 
     .shape {
         position: absolute;
-        top: -22%;
+        top: -24%;
         left: -40%;
         margin: auto;
         width: 280px;
