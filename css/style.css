@@ -313,6 +313,14 @@ top-pc
     }
 }
 
+.eucaly {
+    position: absolute;
+    bottom: 48%;
+    left: -8%;
+    margin: auto;
+    width: 100px;
+}
+
 .statue {
     z-index: 1;
     position: absolute;
@@ -637,10 +645,10 @@ top-pc
 .desert {
     z-index: 0;
     position: absolute;
-    bottom: -260%;
-    left: -200%;
+    bottom: -280%;
+    left: -180%;
     margin: auto;
-    max-width: 540%;
+    max-width: 550%;
 }
 
 .jeans {
@@ -703,10 +711,10 @@ top-pc
 
 .tower {
     position: absolute;
-    bottom: 10%;
+    bottom: 26%;
     left: -24%;
     margin: auto;
-    width: 100px;
+    width: 90px;
 }
 
 
@@ -831,7 +839,7 @@ profile-pc
     position: relative;
     background: #f2f2f2;
     color: #404040;
-    margin: 160px 12% 0px;
+    margin: 160px 6% 0px;
     padding-bottom: 80px;
     border: 1px solid #707070;
 }
@@ -908,7 +916,7 @@ contact-pc
 .contact {
     position: relative;
     color: #404040;
-    margin: -160px 12% 0;
+    margin: -160px 6% 0;
     padding-bottom: 160px;
     background: #f2f2f2;
     border: 1px solid #707070;
@@ -957,7 +965,7 @@ contact-pc
 
 .foo-profile.delighter.started {
     z-index: 2;
-    transform: translateY(-10px);
+    transform: translateY(-200px);
     opacity: 1;
 }
 
@@ -1032,16 +1040,6 @@ top-sp
         right: 0;
         left: 0;
         margin: auto;
-    }
-
-    .cdjacket {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        width: 480px;
     }
 
     .browser {

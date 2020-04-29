@@ -27,7 +27,6 @@
                     <div class="mail text-center">
                         <p><a href="mailto:yyamazaki160&#64;gmail.com" class="glitch" data-text="yyamazaki160&#64;gmail.com">yyamazaki160&#64;gmail.com</a></p>
                     </div>
-
                     <div class="menu">
                         <button class="hamburger">
                             <span class="hamburger__line hamburger__line1"></span>
@@ -64,6 +63,7 @@
                     <img src="images/tower@1x.png" srcset="images/tower@1x.png 750w,images/tower@2x.png 960w" class="tower" alt="塔の画像">
                     <img src="images/HQVISION.svg" class="hqvision" alt="HQビジョンのイメージ画像">
                     <img src="images/desert@1x.png" srcset="images/desert@1x 750w,images/desert@2x.png 960w" class="desert" alt="砂漠の画像">
+                    <img src="images/eucaly@2x.png" srcset="images/eucaly@2x 750w,images/eucaly@2x.png 960w" class="eucaly" alt="ユーカリの画像">
                     <div class="browser-box">
                         <img src="images/browser.svg" class="browser" alt="ブラウザの画像">
                         <img src="images/pointer.svg" class="pointer" alt="ポインタの画像">
@@ -220,7 +220,7 @@
                 </p>
                 <p class="aboutme">
                     音楽や映画などのカルチャーをフィルターとして、<br class="onlypc">
-                    綺麗だけどどこか尖ったデザインをつくることを目指しています。</p>
+                    どこか尖ったオルタナティブなデザインをつくることを目指しています。</p>
                 <dl class="profile-sub">
                     <dt>主なスキル・ツール</dt>
                     <dd>HTML、CSS、AdobeXD、Photoshop、Illustrator</dd>
@@ -245,43 +245,52 @@
             <div class="hand02"><img src="images/hand02.png" alt="手の画像"></div>
         </section>
         <small class="copy text-center">©︎2020 yuki yamazaki all rights reserved.</small>
+    </div>
+    <div id="stalker"></div>
+    <script>
+        $('.hamburger').on('click', function() {
+            if ($('.nav-menu').is(':visible')) {
+                $(this).removeClass('active');
+                // Close menu
+                $('nav > *').slideUp(function() {
+                    $(this).parent().hide();
+                });
+            } else {
+                $(this).addClass('active');
+                $(this).addClass('active');
+                // Open menu
+                $('.nav-menu > *')
+                    .hide()
+                    .parent().show().end()
+                    .slideDown();
+            }
+        });
 
-        <script>
-            $('.hamburger').on('click', function() {
-                if ($('.nav-menu').is(':visible')) {
-                    $(this).removeClass('active');
-                    // Close menu
-                    $('nav > *').slideUp(function() {
-                        $(this).parent().hide();
-                    });
-                } else {
-                    $(this).addClass('active');
-                    $(this).addClass('active');
-                    // Open menu
-                    $('.nav-menu > *')
-                        .hide()
-                        .parent().show().end()
-                        .slideDown();
-                }
-            });
-
-        </script>
-        <script>
-            $(window).on('load', function() {
-                $('#grid').imagesLoaded(function() {
-                    $(this).masonry('reload');
-                    $('#grid').masonry({
-                        itemSelector: '.grid-item', //整理される要素のclassを指定
-                        columnWidth: 360, //一列の幅サイズを指定
-                        isAnimated: true, //スムースアニメーション設定
-                        isFitWidth: true, //親要素の幅サイズがピッタリ
-                        isResizable: true //ウィンドウサイズが変更された時に並び替え
-                    });
+    </script>
+    <script>
+        $(window).on('load', function() {
+            $('#grid').imagesLoaded(function() {
+                $(this).masonry('reload');
+                $('#grid').masonry({
+                    itemSelector: '.grid-item', //整理される要素のclassを指定
+                    columnWidth: 360, //一列の幅サイズを指定
+                    isAnimated: true, //スムースアニメーション設定
+                    isFitWidth: true, //親要素の幅サイズがピッタリ
+                    isResizable: true //ウィンドウサイズが変更された時に並び替え
                 });
             });
+        });
 
-        </script>
+    </script>
+    <script type="text/javascript">
+        const stalker = document.getElementById('stalker');
 
+        //上記のdivタグをマウスに追従させる処理
+        document.addEventListener('mousemove', function(e) {
+            stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+
+    </script>
 </body>
 
 </html>
