@@ -638,9 +638,9 @@ top-pc
     z-index: 0;
     position: absolute;
     bottom: -260%;
-    left: -140%;
+    left: -200%;
     margin: auto;
-    max-width: 2000px;
+    max-width: 540%;
 }
 
 .jeans {
@@ -701,17 +701,14 @@ top-pc
     -webkit-text-stroke: 0.7px #fff;
 }
 
-.tree {
-    z-index: 2;
+.tower {
     position: absolute;
-    bottom: 22%;
-    right: -80%;
-    font-family: serif;
-    font-size: 1200%;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 0.7px #fff;
+    bottom: 10%;
+    left: -24%;
+    margin: auto;
+    width: 100px;
 }
+
 
 .sneaker {
     z-index: 3;
@@ -742,10 +739,10 @@ top-pc
 
 .hqvision {
     position: absolute;
-    top: -25%;
-    right: -38%;
+    top: -22%;
+    right: -24%;
     margin: auto;
-    width: 320px;
+    width: 280px;
 }
 
 
@@ -1353,8 +1350,29 @@ contact-sp
         letter-spacing: 2px;
     }
 
+    .shape {
+        top: -12%;
+        left: -34%;
+        margin: auto;
+        width: 180px;
+    }
 
+    .tower {
+        position: absolute;
+        bottom: 16%;
+        left: -10%;
+        margin: auto;
+        width: 100px;
+    }
 
+    .desert {
+        bottom: -100%;
+        left: -60%;
+        margin: auto;
+        max-width: 240%;
+    }
+
+    .
     /*-------------------
 
 works-tab
@@ -1394,6 +1412,8 @@ profile-tab
     .profile {
         margin: 0 4%;
     }
+
+
 
 
     /*-------------------
