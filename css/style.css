@@ -13,14 +13,6 @@
     padding: 160px 0 40px;
 }
 
-.sh-2 {
-    color: rgba(205, 205, 205, 0);
-}
-
-.sh-3 {
-    color: rgba(255, 255, 255, 0);
-}
-
 .copy {
     display: block;
     padding: 0 0 40px;
@@ -318,7 +310,7 @@ top-pc
     bottom: 48%;
     left: -8%;
     margin: auto;
-    width: 100px;
+    width: 120px;
 }
 
 .statue {
@@ -721,8 +713,8 @@ top-pc
 .sneaker {
     z-index: 3;
     position: absolute;
-    top: 32%;
-    left: 8%;
+    top: 46%;
+    left: 14%;
     margin: auto;
     width: 80px;
 }
@@ -877,8 +869,13 @@ profile-pc
 }
 
 .name {
-    font-size: 2rem;
+    font-size: 4rem;
     padding-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0);
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    -webkit-text-stroke: 0.7px #1b1f1e;
 }
 
 .aboutme {
@@ -927,11 +924,14 @@ contact-pc
     display: inline-block;
     white-space: nowrap;
     margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 .contact a {
-    color: #2323DD;
     font-size: 1.8rem;
+    color: rgba(0, 0, 255, 1);
 }
 
 .contact-img {
@@ -951,21 +951,21 @@ contact-pc
 
 .foo-profile.delighter {
     transition: all 0.6s ease-out;
-    transform: translate(-20%, 10%);
-    opacity: 0.5;
+    transform: translate(-4%, 4%);
+    opacity: 0.6;
 }
 
 .foo-contact.delighter {
-    transition: all 0.5s ease-out;
-    transform: translate(20%, 10%);
-    opacity: 0.5;
+    transition: all 0.6s ease-out;
+    transform: translate(4%, 10%);
+    opacity: 0.6;
 }
 
 /* スクロールしてターゲットが画面上部（初期設定）から75%（初期設定）の位置にきた際 .started が設定されます。*/
 
 .foo-profile.delighter.started {
     z-index: 2;
-    transform: translateY(-200px);
+    transform: translateY(-100px);
     opacity: 1;
 }
 
@@ -983,7 +983,7 @@ contact-pc
 /* スクロールしてターゲットが画面上部（初期設定）から75%（初期設定）の位置にきた際 .started が設定されます。*/
 .foo-contact.delighter.started {
     z-index: 2;
-    transform: translateY(-100px);
+    transform: translateY(-180px);
     opacity: 1;
 }
 
