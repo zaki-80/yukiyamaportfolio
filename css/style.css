@@ -240,9 +240,10 @@ top-pc
 .top-container {
     background: #D8D8D8;
     border: 1px solid #707070;
-    margin: 18px 20px;
+    margin: 0 auto;
     padding: 12px;
-    height: 720px;
+    width: 60%;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -316,12 +317,12 @@ top-pc
 .statue {
     z-index: 1;
     position: absolute;
-    top: 0;
+    top: 20%;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    width: 300px;
+    width: 220px;
 }
 
 .statue01 {
@@ -637,10 +638,10 @@ top-pc
 .desert {
     z-index: 0;
     position: absolute;
-    bottom: -280%;
-    left: -180%;
+    bottom: -150%;
+    left: -80%;
     margin: auto;
-    max-width: 550%;
+    max-width: 280%;
 }
 
 .jeans {
@@ -669,10 +670,10 @@ top-pc
 
 .shape {
     position: absolute;
-    top: -18%;
-    left: -50%;
+    top: -8%;
+    left: -30%;
     margin: auto;
-    width: 200px;
+    width: 180px;
     animation-name: anime2;
     animation-duration: 3.5s;
     animation-timing-function: linear;
@@ -703,10 +704,10 @@ top-pc
 
 .tower {
     position: absolute;
-    bottom: 26%;
-    left: -24%;
+    bottom: -4%;
+    left: -14%;
     margin: auto;
-    width: 90px;
+    width: 80px;
 }
 
 
