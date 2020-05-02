@@ -3,7 +3,6 @@
 
 .header {
     color: #404040;
-    margin: 20px 0 0;
 }
 
 .header-container {
@@ -12,7 +11,6 @@
 
 .biography {
     max-width: 360px;
-    margin-left: 20px;
 }
 
 .biography a {
@@ -23,17 +21,14 @@
     margin-left: 42%;
 }
 
-h1 {
-    font-size: 1.6rem;
-}
-
 h2 {
     font-size: 2.2rem;
     padding-bottom: 4px;
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 h3 {
-    font-weight: 300;
+    font-weight: 400;
     padding: 40px 0;
     font-size: 2rem;
 }
@@ -42,22 +37,13 @@ h4 {
     padding-bottom: 4px;
 }
 
-.header a {
-    color: #000;
-}
-
-.mail {
-    color: #2323DD;
-}
-
-.mail a {
-    color: #2323DD;
-}
-
 .glitch {
     color: #2323DD;
 }
 
+.onlysp {
+    display: none;
+}
 
 
 
@@ -178,7 +164,7 @@ project-summary-pc
 
 .project-summary {
     position: fixed;
-    padding: 10% 5% 0 40px;
+    padding: 180px 5% 0 40px;
     width: 35%;
     height: 100vh;
 }
@@ -205,8 +191,9 @@ dd a {
 
 .back {
     position: absolute;
-    bottom: 26vh;
-    left: 40px;
+    padding: 16% 20% 0 0;
+    font-weight: 600;
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 .lt::before {
@@ -214,9 +201,10 @@ dd a {
 }
 
 .barcode {
+    display: inline-block;
     position: absolute;
-    bottom: 24vh;
-    right: 8%;
+    right: 0;
+    padding: 16% 0 0 16%;
 }
 
 /*-------------------

@@ -357,37 +357,48 @@ top-pc
 
 --------------------*/
 .header {
+    font-weight: 600;
+    letter-spacing: 1px;
     z-index: 5;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 20px;
 }
 
 .biography {
     z-index: 10;
-    flex-basis: 33.33%;
+    color: #000;
+    - flex-basis: 33.33%;
     display: inline-block;
     padding: 20px;
+    font-weight: 300;
     line-height: 1.4;
     background: #f2f2f2;
     border: 1px solid #707070;
     box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
+    letter-spacing: 0.08em;
+    color: #3b3f3e;
+    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 }
 
 h1 {
-    padding-bottom: 10px;
     font-weight: 300;
+    padding-bottom: 10px;
 }
 
 .mail {
     flex-basis: 20%;
     height: 60px;
     padding: 20px;
-    margin-left: 40px;
     color: #2323DD;
-    background: #f2f2f2;
-    border: 1px solid #707070;
-    box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
+    font-family: Termina,
+        "Helvetica Neue",
+        -apple-system,
+        BlinkMacSystemFont,
+        Arial,
+        sans-serif;
 }
 
 .hamburger {
@@ -404,11 +415,14 @@ h1 {
 .menu-list {
     position: fixed;
     right: 32px;
-    width: 86px;
+    width: 12 0px;
     background: #f2f2f2;
     border: 1px solid #707070;
-    padding: 10px;
+    padding: 10px 16px;
     box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 .menu-list li {
@@ -466,8 +480,9 @@ top-sp
     .menu-list {
         background: #000;
         border: none;
+        width: auto;
         box-shadow: none;
-        right: 0px;
+        right: 0;
     }
 
     .menu-list li {

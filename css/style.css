@@ -232,16 +232,12 @@ top-pc
 --------------------*/
 .top {
     background-color: #fff;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
+    margin: 100px 0 0;
 }
 
 .top-container {
     background: #D8D8D8;
-    border: 1px solid #707070;
     margin: 0 auto;
-    padding: 12px;
     width: 60%;
     height: 600px;
     overflow: hidden;
@@ -249,29 +245,31 @@ top-pc
 
 .collage {
     position: relative;
-    width: 400px;
-    height: 400px;
-    top: 10%;
+    width: 100%;
+    height: 100%;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
+    background: #000;
 }
 
 .browser {
     position: absolute;
     top: 0%;
-    right: -20%;
+    right: 0%;
+    left: 0%;
+    bottom: 10%;
     margin: auto;
     width: 180px;
 }
 
 .pointer {
     position: absolute;
-    top: 16%;
-    right: -14%;
-    margin: auto;
-    width: 4%;
+    right: 16%;
+    bottom: 20%;
+    width: 5%;
     animation-name: anime1;
     animation-duration: 2s;
     animation-timing-function: step-start;
@@ -286,19 +284,19 @@ top-pc
     }
 
     20% {
-        transform: translate(-10px, -6px)
+        transform: translate(-20px, -16px)
     }
 
     50% {
-        transform: translate(-64px, 8px)
+        transform: translate(-164px, 18px)
     }
 
     60% {
-        transform: translate(-32px, -4px)
+        transform: translate(-42px, -14px)
     }
 
     80% {
-        transform: translate(-10px, 8px)
+        transform: translate(-20px, 18px)
     }
 
     100% {
@@ -306,18 +304,10 @@ top-pc
     }
 }
 
-.eucaly {
-    position: absolute;
-    bottom: 48%;
-    left: -8%;
-    margin: auto;
-    width: 120px;
-}
-
 .statue {
     z-index: 1;
     position: absolute;
-    top: 20%;
+    top: 5%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -635,45 +625,13 @@ top-pc
     }
 }
 
-.desert {
-    z-index: 0;
-    position: absolute;
-    bottom: -150%;
-    left: -80%;
-    margin: auto;
-    max-width: 280%;
-}
-
-.jeans {
-    position: absolute;
-    bottom: 14%;
-    left: -12%;
-    margin: auto;
-    width: 100px;
-}
-
-.stitch {
-    position: absolute;
-    bottom: 34%;
-    right: -16%;
-    margin: auto;
-    width: 220px;
-}
-
-.parka {
-    position: absolute;
-    top: 8%;
-    left: -14%;
-    margin: auto;
-    width: 150px;
-}
-
 .shape {
     position: absolute;
-    top: -8%;
-    left: -30%;
+    top: 10%;
+    left: 0%;
+    right: 0;
     margin: auto;
-    width: 180px;
+    width: 100px;
     animation-name: anime2;
     animation-duration: 3.5s;
     animation-timing-function: linear;
@@ -689,27 +647,6 @@ top-pc
         transform: rotate(360deg)
     }
 }
-
-.year {
-    z-index: 2;
-    position: absolute;
-    bottom: -16%;
-    left: 16%;
-    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    font-size: 800%;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 0.7px #fff;
-}
-
-.tower {
-    position: absolute;
-    bottom: -4%;
-    left: -14%;
-    margin: auto;
-    width: 80px;
-}
-
 
 .sneaker {
     z-index: 3;
@@ -846,19 +783,21 @@ profile-pc
 
 .profile-info {
     text-align: left;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     width: 70%;
     margin: 0 auto;
 }
 
 .profile-sub {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.4;
     padding: 40px 0 80px;
 }
 
 .profile-sub dt {
     font-weight: 600;
+    letter-spacing: 1px;
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 .profile-sub dd {
@@ -1026,21 +965,26 @@ contact-pc
 top-sp
 
 --------------------*/
+    .top {
+        margin: 40px 0 0;
+    }
+
     .top-container {
-        margin: 4%;
-        height: 640px;
-        overflow: hidden;
+        margin: 0 auto;
+        width: 90%;
+        height: 500px;
     }
 
     .collage {
         position: relative;
-        width: 180px;
-        height: 180px;
-        top: 26%;
+        width: 100%;
+        height: 100%;
+        top: 0%;
         bottom: 0;
         right: 0;
         left: 0;
         margin: auto;
+        background: #000;
     }
 
     .browser {
@@ -1056,7 +1000,7 @@ top-sp
         top: -4%;
         right: -36%;
         margin: auto;
-        width: 6%;
+        width: 4%;
     }
 
     @keyframes anime1 {
@@ -1065,7 +1009,7 @@ top-sp
         }
 
         20% {
-            transform: translate(-10px, -6px)
+            transform: translate(-20px, -6px)
         }
 
         50% {
@@ -1088,44 +1032,19 @@ top-sp
 
     .statue {
         position: absolute;
-        top: 0;
+        top: 20%;
         right: 0;
-        bottom: 0;
         left: 0;
         margin: auto;
-        width: 180px;
-    }
-
-    .jeans {
-        position: absolute;
-        bottom: 8%;
-        left: -28%;
-        margin: auto;
-        width: 52px;
-    }
-
-    .stitch {
-        position: absolute;
-        bottom: 38%;
-        right: -34%;
-        margin: auto;
-        width: 120px;
-    }
-
-    .parka {
-        position: absolute;
-        top: -8%;
-        left: -32%;
-        margin: auto;
-        width: 80px;
+        width: 200px;
     }
 
     .shape {
         position: absolute;
-        top: -24%;
-        left: -40%;
+        top: -50%;
+        left: -50%;
         margin: auto;
-        width: 280px;
+        width: 140px;
         animation-name: anime2;
         animation-duration: 3.5s;
         animation-timing-function: linear;
@@ -1142,60 +1061,20 @@ top-sp
         }
     }
 
-    .year {
-        z-index: 2;
+    .tower {
         position: absolute;
-        bottom: -28%;
-        left: 2%;
-        font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-        font-size: 8rem;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 0);
-    }
-
-    .sneaker {
-        position: absolute;
-        top: 32%;
-        left: -8%;
+        bottom: -20%;
+        left: -20%;
         margin: auto;
-        width: 60px;
+        width: 70px;
     }
 
-    .dotdog {
-        position: absolute;
-        bottom: -4%;
-        left: -32%;
+    .desert {
+        bottom: -200%;
+        left: -140%;
         margin: auto;
-        width: 100px;
+        max-width: 380%;
     }
-
-    .circle {
-        position: absolute;
-        bottom: 22%;
-        left: 22%;
-        margin: auto;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: linear-gradient(#ffd26c, #dd9696);
-    }
-
-    .clouds {
-        position: absolute;
-        bottom: 0%;
-        right: -24%;
-        margin: auto;
-        width: 60px;
-    }
-
-    .hqvision {
-        position: absolute;
-        top: -34%;
-        right: 2%;
-        margin: auto;
-        width: 160px;
-    }
-
 
 
 
@@ -1344,31 +1223,31 @@ contact-sp
 --------------------*/
 @media (min-width: 768px) and (max-width: 959px) {
     .section-header {
-        font-size: 12vw;
+        font-size: 10vw;
         font-weight: 600;
         letter-spacing: 2px;
     }
 
     .shape {
-        top: -12%;
-        left: -34%;
+        top: -8%;
+        left: -8%;
         margin: auto;
-        width: 180px;
+        width: 140px;
     }
 
     .tower {
         position: absolute;
         bottom: 16%;
-        left: -10%;
+        left: 0;
         margin: auto;
-        width: 100px;
+        width: 80px;
     }
 
     .desert {
         bottom: -100%;
-        left: -60%;
+        left: -40%;
         margin: auto;
-        max-width: 240%;
+        max-width: 220%;
     }
 
     .
