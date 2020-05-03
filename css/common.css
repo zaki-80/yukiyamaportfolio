@@ -82,7 +82,7 @@ a {
     .glitch:hover {
         color: #fff;
         display: inline-block;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         position: relative;
         background: #000;
     }
@@ -341,8 +341,9 @@ a {
 
         .list-contact:hover {
             position: absolute;
+            letter-spacing: 0;
             background: #000;
-            width: 64px;
+            width: 78px;
             transform: rotate(6deg);
         }
     }
@@ -415,14 +416,15 @@ h1 {
 .menu-list {
     position: fixed;
     right: 32px;
-    width: 12 0px;
+    width: 120px;
     background: #f2f2f2;
     border: 1px solid #707070;
-    padding: 10px 16px;
+    padding: 8px 16px;
     box-shadow: -8px 8px 1px 0px rgba(80, 80, 80, 0.6);
     font-weight: 600;
     letter-spacing: 1px;
     font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    font-size: 1.4rem;
 }
 
 .menu-list li {
@@ -456,6 +458,7 @@ h1 {
 top-sp
 
 --------------------*/
+
     .header {
         z-index: auto;
         position: relative;
@@ -480,7 +483,7 @@ top-sp
     .menu-list {
         background: #000;
         border: none;
-        width: auto;
+        width: 100px;
         box-shadow: none;
         right: 0;
     }
@@ -493,16 +496,15 @@ top-sp
 
     .menu-list a {
         z-index: 7;
-        color: #000;
     }
 
     .list-top {
         position: absolute;
         top: 16px;
-        right: 2px;
-        width: 60px;
+        right: -2px;
+        width: 74px;
         height: 30px;
-        padding: 8px;
+        padding: 9px 10px;
         background: #fff;
         transform: rotate(16deg);
     }
@@ -510,10 +512,10 @@ top-sp
     .list-works {
         position: absolute;
         top: 12px;
-        right: 4px;
-        width: 60px;
+        right: 0px;
+        width: 74px;
         height: 30px;
-        padding: 8px;
+        padding: 9px 8px;
         background: #fff;
         transform: rotate(-2deg);
     }
@@ -521,21 +523,23 @@ top-sp
     .list-profile {
         position: absolute;
         top: 10px;
-        right: 4px;
-        width: 60px;
+        right: -2px;
+        width: 76px;
         height: 30px;
-        padding: 8px;
+        padding: 9px 8px;
+        letter-spacing: 0;
         background: #fff;
         transform: rotate(-12deg);
     }
 
     .list-contact {
         position: absolute;
-        top: 16px;
-        right: 2px;
-        width: 64px;
+        top: 10px;
+        right: -3px;
+        width: 80px;
         height: 30px;
-        padding: 8px 6px;
+        padding: 9px 6px;
+        letter-spacing: 0;
         background: #fff;
         transform: rotate(6deg);
     }
@@ -560,7 +564,7 @@ top-sp
         position: fixed;
         top: 0px;
         right: 0px;
-        width: 86px;
+        width: 100px;
         height: 44px;
         background: #000;
         cursor: pointer;
@@ -573,7 +577,7 @@ top-sp
         position: absolute;
         top: 0;
         right: 0;
-        width: 56px;
+        width: 70px;
         height: 1px;
         background-color: #fff;
         transition: all .5s .2s;
