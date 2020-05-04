@@ -67,7 +67,7 @@ a {
     mix-blend-mode: difference;
     border-radius: 50%;
     transform: translate(0, 0);
-    transition: transform 0.15s;
+    transition: transform 0.12s;
     /*ちょっと遅れてついてくるように*/
     transition-timing-function: ease-out;
     z-index: 999;
@@ -394,6 +394,7 @@ h1 {
     height: 60px;
     padding: 20px;
     color: #2323DD;
+    font-size: 1.4rem;
     font-family: Termina,
         "Helvetica Neue",
         -apple-system,
