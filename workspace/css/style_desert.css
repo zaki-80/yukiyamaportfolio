@@ -1,0 +1,1360 @@
+@charset "UTF-8";
+
+.section-header {
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: 8rem;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 0.5;
+    color: rgba(205, 205, 205, 0);
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    -webkit-text-stroke: 1px #000;
+    padding: 160px 0 40px;
+}
+
+.copy {
+    display: block;
+    padding: 40px 0;
+}
+
+
+
+
+
+/*-------------------
+
+ホバールール
+
+--------------------*/
+@media (hover: hover) {
+    .work-info:hover::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        width: 100%;
+        height: 6px;
+        background: rgba(0, 100, 100, 0.4);
+        animation: line 7.4s ease infinite;
+    }
+
+    @keyframes flash {
+        0% {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        100% {
+            background: rgba(255, 255, 255, 0.74);
+        }
+    }
+
+
+    @keyframes skew {
+        0% {
+            transform: none;
+        }
+
+        33% {
+            transform: none;
+        }
+
+        33.3% {
+            transform: skewX(30deg);
+        }
+
+        33.6% {
+            transform: skewX(-30deg);
+        }
+
+        33.9% {
+            transform: none;
+        }
+
+        66% {
+            transform: none;
+        }
+
+        66.3% {
+            transform: skewX(5deg);
+        }
+
+        66.6% {
+            transform: skewX(-5deg);
+        }
+
+        66.9% {
+            transform: none;
+        }
+
+        77% {
+            transform: none;
+        }
+
+        77.3% {
+            transform: skewX(15deg);
+        }
+
+        77.6% {
+            transform: skewX(-15deg);
+        }
+
+        77.9% {
+            transform: none;
+        }
+    }
+
+    @keyframes line {
+        0% {
+            top: -40px;
+            background: rgba(0, 100, 100, 0.08);
+        }
+
+        15% {
+            top: -10px;
+            background: rgba(0, 100, 100, 0.08);
+        }
+
+        30% {
+            top: 200px;
+            background: rgba(0, 100, 100, 0.02);
+            height: 8px;
+        }
+
+        50% {
+            top: -40px;
+            background: rgba(0, 100, 100, 0.05);
+            height: 12px;
+        }
+
+        60% {
+            top: -40px;
+            background: rgba(0, 100, 100, 0.04);
+            height: 12px;
+        }
+
+        100% {
+            top: 600px;
+            background: rgba(0, 100, 100, 0.01);
+            height: 1px;
+        }
+    }
+
+
+    .work-info:hover {
+        z-index: 0;
+        opacity: 1;
+        cursor: pointer;
+        animation: skew 4s infinite,
+            flash .02s infinite;
+    }
+
+    .grid-item:hover img,
+    .grid-item:hover video {
+        animation: skew 4s infinite;
+    }
+
+    .work-info:hover p {
+        z-index: 0;
+        opacity: 0.85;
+    }
+
+    .work-info:hover dl {
+        z-index: 0;
+        opacity: 0.85;
+    }
+
+
+    /* spサイズになった時に崩れるホバー対応 */
+    @media (max-width: 767px) {
+        .glitch-menu:hover {
+            font-size: 1.4rem;
+            position: absolute;
+            transform: rotate(16deg);
+        }
+
+        .glitch-menu:hover::after {
+            color: #fff;
+            left: 0.2px;
+            text-shadow: -0.7px 0 red;
+            top: 0.2px;
+            padding: 8px;
+        }
+
+        .glitch-menu:hover::before {
+            color: #fff;
+            left: 0.6px;
+            text-shadow: 0.9px 0 blue;
+            top: 0.6px;
+            padding: 8px;
+        }
+
+
+        .glitch-18:hover {
+            font-size: 3vw;
+
+        }
+
+        .list-top:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(16deg);
+        }
+
+        .list-works:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(-2deg);
+        }
+
+        .list-profile:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(-12deg);
+        }
+
+        .list-contact:hover {
+            position: absolute;
+            background: #000;
+            transform: rotate(6deg);
+        }
+    }
+}
+
+
+
+
+/*-------------------
+
+top-pc
+
+--------------------*/
+.top {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 100px 0 0;
+}
+
+.top-container {
+    background: #D8D8D8;
+    margin: 0 auto;
+    width: 450px;
+    height: 600px;
+    overflow: hidden;
+    border: 1px solid #707070;
+}
+
+.mainvisual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #D8d8d8;
+}
+
+.pointer {
+    z-index: 2;
+    position: absolute;
+    right: 18%;
+    bottom: 38%;
+    width: 22px;
+    animation-name: anime1;
+    animation-duration: 2s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes anime1 {
+    0% {
+        transform: translate(0px)
+    }
+
+    20% {
+        transform: translate(-20px, -16px)
+    }
+
+    50% {
+        transform: translate(-114px, 28px)
+    }
+
+    60% {
+        transform: translate(-42px, -14px)
+    }
+
+    80% {
+        transform: translate(-20px, 18px)
+    }
+
+    100% {
+        transform: translate(0px)
+    }
+}
+
+.desert {
+    position: absolute;
+    left: 0;
+    bottom: -14%;
+    width: 1000px;
+}
+
+.flower {
+    position: absolute;
+    left: 6%;
+    bottom: 48%;
+    width: 100px;
+}
+
+.tower {
+    position: absolute;
+    left: 14%;
+    bottom: 28%;
+    width: 28px;
+}
+
+.statue {
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 220px;
+}
+
+.statue01 {
+    animation: timelaps01 2s infinite;
+}
+
+.statue02 {
+    animation: timelaps02 2s infinite;
+}
+
+.statue03 {
+    animation: timelaps03 2s infinite;
+}
+
+.statue04 {
+    animation: timelaps04 2s infinite;
+}
+
+.statue05 {
+    animation: timelaps05 2s infinite;
+}
+
+.statue06 {
+    animation: timelaps06 2s infinite;
+}
+
+@keyframes timelaps01 {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes timelaps02 {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes timelaps03 {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes timelaps04 {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes timelaps05 {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes timelaps06 {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.shape {
+    position: absolute;
+    top: 20%;
+    right: 14%;
+    width: 200px;
+    animation-name: anime2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime2 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.browser {
+    position: absolute;
+    bottom: 40%;
+    right: 28%;
+    width: 220px;
+}
+
+.clouds {
+    position: absolute;
+    bottom: 22%;
+    right: 16%;
+
+    width: 120px;
+}
+
+.circle {
+    position: absolute;
+    top: 18%;
+    left: 16%;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(#9796f0, #fbc7d4);
+}
+
+.sculpture {
+    position: absolute;
+    bottom: 28%;
+    left: 28%;
+    width: 220px;
+    mix-blend-mode: luminosity;
+}
+
+.code_mainvisual {
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+    margin: auto;
+    width: 90px;
+    opacity: 0.88;
+}
+
+
+
+/*-------------------
+
+works-pc
+
+--------------------*/
+.grid {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+
+}
+
+#grid {
+    margin: 0 auto;
+}
+
+.grid-item {
+    width: 320px;
+    height: auto;
+    margin: 20px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 320px;
+    height: auto;
+}
+
+.grid-item video {
+    width: 320px;
+    height: auto;
+}
+
+.work-info {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 8% 10%;
+}
+
+.work-info p {
+    z-index: -1;
+    opacity: 0;
+    text-align: left;
+    color: #232323;
+    font-size: 1.2rem;
+    padding-bottom: 6%;
+}
+
+
+.work-info dl {
+    z-index: -1;
+    opacity: 0;
+    text-align: left;
+    color: #232323;
+    font-size: 1.2rem;
+    padding-bottom: 6%;
+}
+
+.work-info dt,
+.work-info dd {
+    line-height: 1.5;
+}
+
+.work-info .work-name {
+    font-weight: 600;
+}
+
+
+
+/*-------------------
+
+profile-pc
+
+--------------------*/
+.profile {
+    position: relative;
+    background: #f2f2f2;
+    color: #404040;
+    margin: 160px 6% 0px;
+    padding-bottom: 80px;
+    border: 1px solid #707070;
+}
+
+.profile-img {
+    width: 150px;
+    padding: 40px 0;
+    margin-bottom: 80px;
+    background: #333;
+}
+
+.profile-info {
+    text-align: left;
+    font-size: 1.6rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.profile-sub {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    padding: 40px 0 80px;
+}
+
+.profile-sub dt {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+.profile-sub dd {
+    padding-bottom: 40px;
+}
+
+.profile-sub dd:last-child {
+    padding-bottom: 0;
+}
+
+.name {
+    font-size: 4rem;
+    padding-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0);
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    -webkit-text-stroke: 0.7px #1b1f1e;
+}
+
+.aboutme {
+    line-height: 1.4;
+}
+
+.space {
+    letter-spacing: 0.6em;
+}
+
+.space::before {
+    content: " ";
+    letter-spacing: 0.6em;
+}
+
+.hand01 {
+    position: absolute;
+    top: -66px;
+    left: -220px;
+    width: 450px;
+}
+
+.hand02 {
+    position: absolute;
+    top: -66px;
+    right: -219.5px;
+    width: 450px;
+}
+
+/*-------------------
+
+contact-pc
+
+--------------------*/
+.contact {
+    position: relative;
+    color: #404040;
+    margin: -160px 6% 0;
+    padding-bottom: 160px;
+    background: #f2f2f2;
+    border: 1px solid #707070;
+}
+
+.contact p {
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+.contact a {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 255, 1);
+}
+
+.contact-img {
+    width: 150px;
+    padding: 40px 0;
+    margin-bottom: 80px;
+    background: #333;
+}
+
+.contact-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 40px 40px 20px;
+    border: 1px solid #707070;
+}
+
+.foo-profile.delighter {
+    transition: all 0.6s ease-out;
+    transform: translate(-4%, 4%);
+    opacity: 0.6;
+}
+
+.foo-contact.delighter {
+    transition: all 0.6s ease-out;
+    transform: translate(4%, 10%);
+    opacity: 0.6;
+}
+
+/* スクロールしてターゲットが画面上部（初期設定）から75%（初期設定）の位置にきた際 .started が設定されます。*/
+
+.foo-profile.delighter.started {
+    z-index: 2;
+    transform: translateY(-40px);
+    opacity: 1;
+}
+
+/* スクロールしてターゲットが画面下部（初期設定）から75%（初期設定）の位置にきた際 .ended が設定されます。 */
+
+.foo-profile.delighter.started.ended {
+    z-index: 0;
+    transform: translateY(40px) scale(0.95, 0.95);
+    background: rgba(230, 230, 230);
+    opacity: 0.6;
+}
+
+
+
+/* スクロールしてターゲットが画面上部（初期設定）から75%（初期設定）の位置にきた際 .started が設定されます。*/
+.foo-contact.delighter.started {
+    z-index: 2;
+    transform: translateY(-40px);
+    opacity: 1;
+}
+
+/* スクロールしてターゲットが画面下部（初期設定）から75%（初期設定）の位置にきた際 .ended が設定されます。 */
+
+.foo-contact.delighter.started.ended {}
+
+
+/*-------------------
+
+□□□ sp □□□
+
+--------------------*/
+@media (max-width: 767px) {
+    .section-header {
+        font-size: 12vw;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: rgba(0, 0, 0, 0);
+        font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        -webkit-text-stroke: 0.7px #1b1f1e;
+        padding: 120px 0 60px;
+    }
+
+    .onlypc {
+        display: none;
+    }
+
+    .copy {
+        font-size: 1.2rem;
+        margin-top: -40px;
+    }
+
+
+
+
+    /*-------------------
+
+top-sp
+
+--------------------*/
+    .top {
+        margin: 20px 0 0;
+    }
+
+    .top-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 500px;
+    }
+
+    .mainvisual {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background: #000;
+    }
+
+    .browser {
+        position: absolute;
+        top: -20%;
+        right: -38%;
+        margin: auto;
+        width: 100px;
+    }
+
+    .pointer {
+        position: absolute;
+        bottom: 40%;
+        right: 16%;
+        margin: auto;
+        width: 20px;
+    }
+
+    @keyframes anime1 {
+        0% {
+            transform: translate(0px)
+        }
+
+        20% {
+            transform: translate(-20px, -16px)
+        }
+
+        50% {
+            transform: translate(-82px, 16px)
+        }
+
+        60% {
+            transform: translate(-30px, -4px)
+        }
+
+        80% {
+            transform: translate(-10px, 6px)
+        }
+
+        100% {
+            transform: translate(0px)
+        }
+    }
+
+
+    .statue {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 200px;
+    }
+
+    .shape {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        margin: auto;
+        width: 140px;
+        animation-name: anime2;
+        animation-duration: 3.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes anime2 {
+        0% {
+            transform: rotate(0deg)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+    .tower {
+        position: absolute;
+        bottom: -20%;
+        left: 30%;
+        margin: auto;
+        width: 60px;
+    }
+
+    .desert {
+        bottom: -200%;
+        left: -140%;
+        margin: auto;
+        max-width: 380%;
+    }
+
+    .code_mainvisual {
+        width: 72px;
+    }
+
+    /*-------------------
+
+works-sp
+
+--------------------*/
+    .grid {
+        max-width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .grid-item {
+        width: 96%;
+        margin: 2%;
+    }
+
+    @media (min-width: 720px) and (max-width: 767px) {
+        .grid-item {
+            width: 45%;
+            margin-bottom: 4%;
+        }
+    }
+
+
+
+
+    /*-------------------
+
+profile-sp
+
+--------------------*/
+    .profile {
+        background: #f2f2f2;
+        color: #404040;
+        margin: 40px 4%;
+        padding-bottom: 8%;
+        border: 1px solid #707070;
+    }
+
+    .profile .section-header {
+        -webkit-text-stroke: 0.7px #1b1f1e;
+    }
+
+    .profile-img {
+        width: 24%;
+        padding: 6% 0;
+    }
+
+    .profile-info {
+        font-size: 1.6rem;
+        width: 90%;
+        margin: 0 auto;
+        letter-spacing: 0.08em;
+        line-height: 1.6;
+    }
+
+    .name {
+        font-size: 3rem;
+        letter-spacing: 0.1em;
+    }
+
+    .name::before {
+        content: "";
+        letter-spacing: 0.24em;
+    }
+
+    .profile-sub {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+
+    .profile-sub dd {
+        padding-bottom: 32px;
+    }
+
+    .profile-sub dd:last-child {
+        padding-bottom: 0;
+    }
+
+    .name {
+        padding-bottom: 32px;
+    }
+
+    .aboutme {
+        line-height: 1.7;
+    }
+
+    .hand01 {
+        position: absolute;
+        top: -44px;
+        left: -147px;
+        width: 300px;
+    }
+
+    .hand02 {
+        position: absolute;
+        top: -44px;
+        right: -147px;
+        width: 300px;
+    }
+
+    /* スクロールしてターゲットが画面下部（初期設定）から75%（初期設定）の位置にきた際 .ended が設定されます。 */
+    .foo-profile.delighter.started.ended {
+        transform: translateY(100px) scale(0.95, 0.95);
+        background: rgba(230, 230, 230);
+        opacity: 0.6;
+    }
+
+
+
+
+    /*-------------------
+
+contact-sp
+
+--------------------*/
+    .contact {
+        background: #f2f2f2;
+        color: #404040;
+        margin: 0 4%;
+        padding-bottom: 120px;
+        border: 1px solid #707070;
+    }
+
+    .contact a {
+        font-size: 3vw;
+    }
+
+    .contact p {
+        margin: 0 0 4%;
+    }
+
+    .contact-container {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        padding: 8% 2% 4%;
+    }
+
+    .contact-img {
+        width: 24%;
+        padding: 6% 0;
+    }
+}
+
+
+
+
+/*-------------------
+
+□□□ tablet □□□
+
+--------------------*/
+@media (min-width: 768px) and (max-width: 959px) {
+    .section-header {
+        font-size: 10vw;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .pointer {
+        position: absolute;
+        bottom: 22%;
+        right: 26%;
+        margin: auto;
+        width: 20px;
+    }
+
+    @keyframes anime1 {
+        0% {
+            transform: translate(0px)
+        }
+
+        20% {
+            transform: translate(-34px, -16px)
+        }
+
+        50% {
+            transform: translate(-82px, 16px)
+        }
+
+        60% {
+            transform: translate(-30px, -4px)
+        }
+
+        80% {
+            transform: translate(-10px, 6px)
+        }
+
+        100% {
+            transform: translate(0px)
+        }
+    }
+
+    /*-------------------
+
+works-tab
+
+--------------------*/
+
+    .grid {
+        width: 720px;
+        padding-bottom: 120px;
+    }
+
+    .grid-item {
+        width: 320px;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .grid-item img {
+        width: 320px;
+        height: auto;
+    }
+
+    .grid-item video {
+        width: 320px;
+        height: auto;
+    }
+
+    .work-info {
+        padding: 10% 12%;
+    }
+
+    /*-------------------
+
+profile-tab
+
+--------------------*/
+    .profile {
+        margin: 0 4%;
+    }
+
+    .profile-img {
+        width: 16%;
+        padding: 4% 0;
+    }
+
+
+
+    /*-------------------
+
+contact-tab
+
+--------------------*/
+
+
+    .contact {
+        margin: 0 4%;
+    }
+
+    .contact a {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-img {
+        width: 16%;
+        padding: 4% 0;
+    }
+
+}
