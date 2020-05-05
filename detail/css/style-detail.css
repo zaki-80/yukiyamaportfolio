@@ -346,8 +346,15 @@ project-summary-sp
     }
 
     .barcode {
+        display: inline-block;
+        margin: 0 auto;
+        position: absolute;
+        padding: 0;
+    }
+
+    .barcode img {
         text-align: right;
-        position: static;
+        margin: 0 auto;
     }
 
     .biography {
@@ -406,6 +413,7 @@ project-detail-sp
     }
 
     .project-summary {
-        padding: 16% 2% 0 40px;
+        padding: 180px 2% 0 40px;
     }
+
 }
