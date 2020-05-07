@@ -53,26 +53,8 @@ a {
 }
 
 #stalker {
-    pointer-events: none;
-    position: fixed;
-    top: -8px;
-    /*座標調節（カーソル位置と円の中心を合わせる）*/
-    left: -8px;
-    /*座標調節（カーソル位置と円の中心を合わせる）*/
-    width: 16px;
-    /*マウスストーカーの直径*/
-    height: 16px;
-    /*マウスストーカーの直径*/
-    background: rgba(140, 255, 255, 1);
-    mix-blend-mode: difference;
-    border-radius: 50%;
-    transform: translate(0, 0);
-    transition: transform 0.12s;
-    /*ちょっと遅れてついてくるように*/
-    transition-timing-function: ease-out;
-    z-index: 999;
+    display: none;
 }
-
 
 
 
@@ -83,6 +65,28 @@ a {
 
 --------------------*/
 @media (hover: hover) {
+    #stalker {
+        display: inline-block;
+        pointer-events: none;
+        position: fixed;
+        top: -8px;
+        /*座標調節（カーソル位置と円の中心を合わせる）*/
+        left: -8px;
+        /*座標調節（カーソル位置と円の中心を合わせる）*/
+        width: 16px;
+        /*マウスストーカーの直径*/
+        height: 16px;
+        /*マウスストーカーの直径*/
+        background: rgba(140, 255, 255, 1);
+        mix-blend-mode: difference;
+        border-radius: 50%;
+        transform: translate(0, 0);
+        transition: transform 0.12s;
+        /*ちょっと遅れてついてくるように*/
+        transition-timing-function: ease-out;
+        z-index: 999;
+    }
+
     .glitch:hover {
         color: #fff;
         display: inline-block;
