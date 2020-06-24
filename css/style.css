@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+
+/*-------------------
+
+共通スタイル
+
+--------------------*/
 .section-header {
     z-index: 1;
     text-transform: uppercase;

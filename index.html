@@ -19,7 +19,14 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <!-- ローディング用 -->
+    <div id="showloading">
+        <!-- ローディング中に表示する画像（GIF）を用意 -->
+        <p data-content="Loading" id="loading-text">Loading</p>
+    </div>
+    <!-- コンテンツ（読み込みに時間がかかる画像ファイルのため読み込みが終わるまで非表示） -->
+
+    <div class="wrapper hidden" id="contents">
         <header class="header">
             <div class="biography">
                 <h1>zaki portfolio</h1>
@@ -58,7 +65,6 @@
                     </ul>
                 </nav>
             </div>
-
         </header>
         <section class="top">
             <div class="top-container">
@@ -289,6 +295,7 @@
         <small class="copy text-center">©︎2020 zaki all rights reserved.</small>
     </div>
     <div id="stalker"></div>
+
     <script>
         $('.hamburger').on('click', function() {
             if ($('.nav-menu').is(':visible')) {
@@ -312,7 +319,6 @@
     <script>
         $(window).on('load', function() {
             $('#grid').imagesLoaded(function() {
-                $(this).masonry('reload');
                 $('#grid').masonry({
                     itemSelector: '.grid-item', //整理される要素のclassを指定
                     columnWidth: 360, //一列の幅サイズを指定
