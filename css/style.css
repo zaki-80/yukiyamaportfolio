@@ -1,5 +1,67 @@
 @charset "UTF-8";
 
+/*-------------------
+
+ローディング画面
+
+ * Loading animation like the one seen on http://www.freeger.com/projects/contextad/ with CSS
+ * Caveat: Not DRY. The content needs to be repeated in a data- attribute (or directly in the CSS).
+--------------------*/
+#loading-text {
+    color: rgba(0, 0, 255, 0.4);
+    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 8vw;
+}
+
+@keyframes loading {
+    from {
+        max-width: 0;
+    }
+}
+
+#loading-text:before {
+    content: attr(data-content);
+    position: absolute;
+    overflow: hidden;
+    max-width: 8em;
+    color: #0000ff;
+    animation: loading 1s linear infinite;
+}
+
+#loader-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    z-index: 100;
+}
+
+.outer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 200;
+}
+
+#loader {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    /*親要素を起点に上から50%*/
+    left: 50%;
+    /*親要素を起点に左から50%*/
+    transform: translateY(-50%) translateX(-50%);
+    /*要素の大きさの半分ずつを戻す*/
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    z-index: 200;
+}
+
+
+
+
 
 /*-------------------
 
@@ -257,7 +319,7 @@ top-pc
     right: 0;
     left: 0;
     margin: auto;
-    background: #000;
+    background: #050608;
 }
 
 .pointer {
@@ -953,7 +1015,6 @@ top-sp
         right: 0;
         left: 0;
         margin: auto;
-        background: #000;
     }
 
     .pointer {

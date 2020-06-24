@@ -20,13 +20,16 @@
 
 <body>
     <!-- ローディング用 -->
-    <div id="showloading">
-        <!-- ローディング中に表示する画像（GIF）を用意 -->
-        <p data-content="Loading" id="loading-text">Loading</p>
+    <div id="loader-bg">
+        <div class="outer">
+            <div id="loader">
+                <p data-content="Loading..." id="loading-text">Loading...</p>
+                <p data-content="Loading..." id="loading-text">Loading...</p>
+                <p data-content="Loading..." id="loading-text">Loading...</p>
+            </div>
+        </div>
     </div>
-    <!-- コンテンツ（読み込みに時間がかかる画像ファイルのため読み込みが終わるまで非表示） -->
-
-    <div class="wrapper hidden" id="contents">
+    <div class="wrapper" id="contents">
         <header class="header">
             <div class="biography">
                 <h1>zaki portfolio</h1>
@@ -295,6 +298,32 @@
         <small class="copy text-center">©︎2020 zaki all rights reserved.</small>
     </div>
     <div id="stalker"></div>
+    <script>
+        $(function() {
+            var h = $(window).height();
+
+            $('#contents').css('display', 'none');
+            $('#loader-bg ,#loader').css('display', 'block');
+        });
+
+        $(window).on('load', function() { //全ての読み込みが完了したら実行
+            $('#loader-bg').delay(900).fadeOut(800);
+            $('#loader').delay(600).fadeOut(300);
+            $('#contents').css('display', 'block');
+        });
+
+        //10秒たったら強制的にロード画面を非表示
+        $(function() {
+            setTimeout('stopload()', 10000);
+        });
+
+        function stopload() {
+            $('#contents').css('display', 'block');
+            $('#loader-bg').delay(900).fadeOut(800);
+            $('#loader').delay(600).fadeOut(300);
+        }
+
+    </script>
 
     <script>
         $('.hamburger').on('click', function() {
