@@ -815,14 +815,14 @@ profile-pc
 .profile-info {
     text-align: left;
     font-size: 1.6rem;
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 }
 
 .profile-sub {
     font-size: 1.6rem;
     line-height: 1.4;
-    padding: 80px 0 80px;
+    padding: 40px 0 40px;
 }
 
 .profile-sub dt {
@@ -840,7 +840,7 @@ profile-pc
 }
 
 .name {
-    font-size: 4rem;
+    font-size: 8rem;
     padding-bottom: 40px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -850,7 +850,7 @@ profile-pc
 }
 
 .aboutme {
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .space {
