@@ -712,7 +712,7 @@ top-pc
     left: 4%;
     margin: auto;
     width: 90px;
-    opacity: 0.88;
+    opacity: 0.9;
 }
 
 
@@ -814,13 +814,13 @@ profile-pc
 
 .profile-info {
     text-align: left;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     width: 50%;
     margin: 0 auto;
 }
 
 .profile-sub {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.4;
     padding: 40px 0 40px;
 }
@@ -828,20 +828,19 @@ profile-pc
 .profile-sub dt {
     font-weight: 600;
     letter-spacing: 1px;
+    line-height: 1.4;
     font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 .profile-sub dd {
     padding-bottom: 40px;
+    line-height: 1.4;
 }
 
-.profile-sub dd:last-child {
-    padding-bottom: 0;
-}
 
 .name {
-    font-size: 8rem;
-    padding-bottom: 40px;
+    font-size: 3.2rem;
+    padding-bottom: 32px;
     font-weight: 600;
     letter-spacing: 2px;
     color: rgba(0, 0, 0, 0);
