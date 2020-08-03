@@ -826,6 +826,7 @@ profile-pc
 }
 
 .profile-sub dt {
+    font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.4;
