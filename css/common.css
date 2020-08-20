@@ -58,7 +58,6 @@ a {
 
 
 
-
 /*-------------------
 
 ホバールール
@@ -93,11 +92,43 @@ a {
         font-size: 1.4rem;
         position: relative;
         background: #000;
+        clip: inherit;
     }
 
     .glitch-18:hover {
         font-size: 1.8rem;
         display: inline-block;
+        clip: inherit;
+    }
+
+    .glitch:hover::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 0.7px;
+        text-shadow: -0.7px 0 red;
+        top: 0.1;
+        color: #fff;
+        background: #000;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim 1.8s infinite linear alternate-reverse;
+        -webkit-animation: noise-anim 1.8s infinite linear alternate-reverse;
+        -moz-animation: noise-anim 1.8s infinite linear alternate-reverse;
+    }
+
+    .glitch:hover::before {
+        content: attr(data-text);
+        position: absolute;
+        left: -0.9px;
+        text-shadow: 0.9px 0 blue;
+        top: 0;
+        color: #fff;
+        background: #000;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim-2 1.5s infinite linear alternate-reverse;
+        -webkit-animation: noise-anim-2 1.5s infinite linear alternate-reverse;
+        -moz-animation: noise-anim-2 1.5s infinite linear alternate-reverse;
     }
 
     @keyframes noise-anim {
@@ -186,19 +217,6 @@ a {
         }
     }
 
-    .glitch:hover::after {
-        content: attr(data-text);
-        position: absolute;
-        left: 0.7px;
-        text-shadow: -0.7px 0 red;
-        top: 0.1;
-        color: #fff;
-        background: #000;
-        overflow: hidden;
-        clip: rect(0, 900px, 0, 0);
-        animation: noise-anim 1.8s infinite linear alternate-reverse;
-    }
-
     @keyframes noise-anim-2 {
         0% {
             clip: rect(18px, 9999px, 13px, 0);
@@ -285,18 +303,6 @@ a {
         }
     }
 
-    .glitch:hover::before {
-        content: attr(data-text);
-        position: absolute;
-        left: -0.9px;
-        text-shadow: 0.9px 0 blue;
-        top: 0;
-        color: #fff;
-        background: #000;
-        overflow: hidden;
-        clip: rect(0, 900px, 0, 0);
-        animation: noise-anim-2 1.5s infinite linear alternate-reverse;
-    }
 
     .contact a:hover {
         color: #fff !important;
@@ -356,9 +362,6 @@ a {
         }
     }
 }
-
-
-
 
 /*-------------------
 

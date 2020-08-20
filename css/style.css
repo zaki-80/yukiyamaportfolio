@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/*@charset "UTF-8";*/
 
 /*-------------------
 
@@ -23,7 +23,7 @@
 #loading-text:before {
     content: attr(data-content);
     position: absolute;
-    overflow: hidden;
+    /*    overflow: hidden;*/
     max-width: 8em;
     color: #0000ff;
     animation: loading 1s linear infinite;
@@ -70,23 +70,21 @@
 --------------------*/
 .section-header {
     z-index: 1;
-    text-transform: uppercase;
-    font-size: 8rem;
-    font-weight: bold;
-    letter-spacing: 0px;
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
     line-height: 0.5;
+    text-align: left;
     color: rgba(205, 205, 205, 0);
     font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     -webkit-text-stroke: 1px #000;
-    padding: 160px 0 40px;
+    padding: 160px 14% 80px;
 }
 
 .copy {
     display: block;
     padding: 40px 0;
 }
-
-
 
 
 
@@ -103,8 +101,10 @@
         content: "";
         width: 100%;
         height: 6px;
-        background: rgba(0, 100, 100, 0.4);
+        background: inherit;
         animation: line 7.4s ease infinite;
+        -webkit animation: line 7.4s ease infinite;
+        -moz animation: line 7.4s ease infinite;
     }
 
     @keyframes flash {
@@ -175,35 +175,35 @@
     @keyframes line {
         0% {
             top: -40px;
-            background: rgba(0, 100, 100, 0.08);
+            background: rgba(90, 100, 100, 0.08);
         }
 
         15% {
             top: -10px;
-            background: rgba(0, 100, 100, 0.08);
+            background: rgba(90, 100, 100, 0.08);
         }
 
         30% {
             top: 200px;
-            background: rgba(0, 100, 100, 0.02);
+            background: rgba(90, 100, 100, 0.02);
             height: 8px;
         }
 
         50% {
             top: -40px;
-            background: rgba(0, 100, 100, 0.05);
+            background: rgba(90, 100, 100, 0.05);
             height: 12px;
         }
 
         60% {
             top: -40px;
-            background: rgba(0, 100, 100, 0.04);
+            background: rgba(90, 100, 100, 0.04);
             height: 12px;
         }
 
         100% {
             top: 600px;
-            background: rgba(0, 100, 100, 0.01);
+            background: rgba(90, 100, 100, 0.01);
             height: 1px;
         }
     }
@@ -798,11 +798,10 @@ profile-pc
 --------------------*/
 .profile {
     position: relative;
-    background: #f2f2f2;
+    background: #fff;
     color: #404040;
-    margin: 160px 6% 0px;
-    padding-bottom: 80px;
-    border: 1px solid #707070;
+    margin: 0;
+    padding-bottom: 0;
 }
 
 .profile-img {
@@ -816,7 +815,7 @@ profile-pc
     text-align: left;
     font-size: 1.4rem;
     width: 50%;
-    margin: 0 auto;
+    margin-left: 14%;
 }
 
 .profile-sub {
@@ -840,13 +839,11 @@ profile-pc
 
 
 .name {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     padding-bottom: 32px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: rgba(0, 0, 0, 0);
-    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    -webkit-text-stroke: 0.7px #1b1f1e;
+    font-weight: 300;
+    letter-spacing: 0.16em;
+    color: #404040;
 }
 
 .aboutme {
@@ -862,19 +859,7 @@ profile-pc
     letter-spacing: 0.6em;
 }
 
-.hand01 {
-    position: absolute;
-    top: -66px;
-    left: -220px;
-    width: 450px;
-}
 
-.hand02 {
-    position: absolute;
-    top: -66px;
-    right: -219.5px;
-    width: 450px;
-}
 
 /*-------------------
 
@@ -884,10 +869,9 @@ contact-pc
 .contact {
     position: relative;
     color: #404040;
-    margin: -160px 6% 0;
-    padding-bottom: 160px;
-    background: #f2f2f2;
-    border: 1px solid #707070;
+    margin: 0;
+    padding-bottom: 40px;
+    background: #fff;
 }
 
 .contact p {
@@ -905,62 +889,14 @@ contact-pc
     color: rgba(0, 0, 255, 1);
 }
 
-.contact-img {
-    width: 150px;
-    padding: 40px 0;
-    margin-bottom: 80px;
-    background: #333;
-}
-
 .contact-container {
     position: relative;
     display: inline-block;
-    margin: 0 auto;
-    padding: 40px 40px 20px;
+    padding: 80px 80px 60px;
+    margin: 40px;
     border: 1px solid #707070;
 }
 
-.foo-profile.delighter {
-    transition: all 0.6s ease-out;
-    transform: translate(-4%, 4%);
-    opacity: 0.6;
-}
-
-.foo-contact.delighter {
-    transition: all 0.6s ease-out;
-    transform: translate(4%, 10%);
-    opacity: 0.6;
-}
-
-/* スクロールしてターゲットが画面上部（初期設定）から75%（初期設定）の位置にきた際 .started が設定されます。*/
-
-.foo-profile.delighter.started {
-    z-index: 2;
-    transform: translateY(-40px);
-    opacity: 1;
-}
-
-/* スクロールしてターゲットが画面下部（初期設定）から75%（初期設定）の位置にきた際 .ended が設定されます。 */
-
-.foo-profile.delighter.started.ended {
-    z-index: 0;
-    transform: translateY(40px) scale(0.95, 0.95);
-    background: rgba(230, 230, 230);
-    opacity: 0.6;
-}
-
-
-
-/* スクロールしてターゲットが画面上部（初期設定）から75%（初期設定）の位置にきた際 .started が設定されます。*/
-.foo-contact.delighter.started {
-    z-index: 2;
-    transform: translateY(-40px);
-    opacity: 1;
-}
-
-/* スクロールしてターゲットが画面下部（初期設定）から75%（初期設定）の位置にきた際 .ended が設定されます。 */
-
-.foo-contact.delighter.started.ended {}
 
 
 /*-------------------
@@ -970,9 +906,10 @@ contact-pc
 --------------------*/
 @media (max-width: 767px) {
     .section-header {
-        font-size: 12vw;
+        font-size: 8vw;
         font-weight: 600;
         letter-spacing: 2px;
+        text-align: center;
         color: rgba(0, 0, 0, 0);
         font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
         -webkit-text-stroke: 0.7px #1b1f1e;
@@ -1096,11 +1033,10 @@ profile-sp
 
 --------------------*/
     .profile {
-        background: #f2f2f2;
+        background: #fff;
         color: #404040;
         margin: 40px 4%;
         padding-bottom: 8%;
-        border: 1px solid #707070;
     }
 
     .profile .section-header {
@@ -1151,27 +1087,6 @@ profile-sp
         line-height: 1.7;
     }
 
-    .hand01 {
-        position: absolute;
-        top: -44px;
-        left: -147px;
-        width: 300px;
-    }
-
-    .hand02 {
-        position: absolute;
-        top: -44px;
-        right: -147px;
-        width: 300px;
-    }
-
-    /* スクロールしてターゲットが画面下部（初期設定）から75%（初期設定）の位置にきた際 .ended が設定されます。 */
-    .foo-profile.delighter.started.ended {
-        transform: translateY(100px) scale(0.95, 0.95);
-        background: rgba(230, 230, 230);
-        opacity: 0.6;
-    }
-
 
 
 
@@ -1181,11 +1096,10 @@ contact-sp
 
 --------------------*/
     .contact {
-        background: #f2f2f2;
+        background: #fff;
         color: #404040;
         margin: 0 4%;
         padding-bottom: 120px;
-        border: 1px solid #707070;
     }
 
     .contact a {
@@ -1202,11 +1116,6 @@ contact-sp
         margin: 0 auto;
         padding: 8% 2% 4%;
     }
-
-    .contact-img {
-        width: 24%;
-        padding: 6% 0;
-    }
 }
 
 
@@ -1219,7 +1128,7 @@ contact-sp
 --------------------*/
 @media (min-width: 768px) and (max-width: 959px) {
     .section-header {
-        font-size: 10vw;
+        font-size: 6vw;
         font-weight: 600;
         letter-spacing: 2px;
     }
@@ -1295,7 +1204,7 @@ profile-tab
 
 --------------------*/
     .profile {
-        margin: 0 4%;
+        margin: 0;
     }
 
     .profile-img {
@@ -1303,6 +1212,9 @@ profile-tab
         padding: 4% 0;
     }
 
+    .profile-info {
+        width: 60%;
+    }
 
 
 
@@ -1312,16 +1224,11 @@ contact-tab
 
 --------------------*/
     .contact {
-        margin: 0 4%;
+        margin: 0;
     }
 
     .contact a {
         font-size: 1.8rem;
         margin-bottom: 20px;
-    }
-
-    .contact-img {
-        width: 16%;
-        padding: 4% 0;
     }
 }
