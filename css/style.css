@@ -840,7 +840,7 @@ profile-pc
 
 .name {
     font-size: 2.4rem;
-    padding-bottom: 32px;
+    padding-bottom: 16px;
     font-weight: 300;
     letter-spacing: 0.16em;
     color: #404040;
@@ -1057,8 +1057,9 @@ profile-sp
     }
 
     .name {
-        font-size: 3rem;
+        font-size: 2rem;
         letter-spacing: 0.1em;
+        padding-bottom: 16px;
     }
 
     .name::before {
@@ -1077,10 +1078,6 @@ profile-sp
 
     .profile-sub dd:last-child {
         padding-bottom: 0;
-    }
-
-    .name {
-        padding-bottom: 32px;
     }
 
     .aboutme {
