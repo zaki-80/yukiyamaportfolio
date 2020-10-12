@@ -504,7 +504,7 @@ h3 {
     .top-container {
         margin: 0 auto;
         width: 90%;
-        height: 500px
+        height: 580px
     }
 
     .grid {
@@ -513,6 +513,7 @@ h3 {
     }
 
     .about {
+        padding: 40px 0 0 0;
         height: auto;
     }
 
@@ -530,7 +531,7 @@ h3 {
     }
 
     .bg-y {
-        top: 32%;
+        top: 40%;
         right: 16%;
         opacity: .4
     }
