@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Kawaru';
+    src: url('../font/Kawaru.woff') format('woff'),
+        url('../font/Kawaru.woff2') format('woff2'),
+        url('../font/Kawaru.ttf') format('truetype');
+}
+
 #loading-text,
 .about-sub dt,
 .work-info .work-name {
@@ -16,6 +23,7 @@
 .section-header {
     font-family: "Kawaru", "Arial Black", "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     text-transform: uppercase;
+    font-variation-settings: "gltc"5;
 }
 
 #loading-text {
@@ -73,6 +81,7 @@
     right: 4px;
     font-size: 10rem;
     font-family: "Kawaru", "Arial Black", "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    font-variation-settings: "gltc"5;
     color: rgba(0, 0, 0, .1);
     text-transform: uppercase;
     text-align: right;
@@ -253,6 +262,7 @@ top
     font-family: "Kawaru",
         "Arial Black",
         "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    font-variation-settings: "gltc"5;
     color: #2C2C2C;
     line-height: 1;
     display: block;
@@ -261,7 +271,7 @@ top
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    animation: kawaru 4s linear infinite;
+    animation: kawaru 5s linear infinite;
 }
 
 @keyframes kawaru {
@@ -280,6 +290,7 @@ top
 
 .section-header {
     font-family: "Kawaru", "Arial Black", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+            font-variation-settings: "gltc"5;
     font-size: 10rem;
     margin: 0 0 40px 4%;
     color: #2C2C2C;
