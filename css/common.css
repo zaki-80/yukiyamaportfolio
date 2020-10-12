@@ -513,7 +513,7 @@ h1 {
 
     .slide p {
         display: inline-block;
-        padding-right: 8%;
+        padding-right: 10%;
     }
 
     .slide p:first-child {
