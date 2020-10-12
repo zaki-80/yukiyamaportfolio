@@ -1,0 +1,837 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Kawaru';
+    src: url('/font/Kawaru.woff') format('woff'),
+        url('/font/Kawaru.woff2') format('woff2'),
+        url('/font/Kawaru.ttf') format('truetype');
+}
+
+.biography,
+body {
+    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    letter-spacing: .08em;
+    color: #2C2C2C;
+    background-color: #E2E2E2;
+    font-weight: 300;
+    overflow-x: hidden;
+    font-feature-settings: "palt";
+    -webkit-font-feature-settings: "palt"
+}
+
+.img {
+    max-width: 100%;
+    height: auto
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    color: #2C2C2C;
+    cursor: pointer
+}
+
+.text-center {
+    text-align: center
+}
+
+#stalker,
+.onlysp {
+    display: none
+}
+
+
+
+
+/*----------
+hoverスタイル
+---------*/
+
+@media (hover:hover) {
+
+    .glitch-14:hover,
+    .glitch:hover {
+        display: inline-block;
+        clip: inherit;
+        line-height: 1;
+        vertical-align: bottom;
+    }
+
+    #stalker {
+        display: inline-block;
+        pointer-events: none;
+        position: fixed;
+        top: 22px;
+        left: 22px;
+        width: 18px;
+        height: 18px;
+        background: rgba(44, 44, 44, 1);
+        border-radius: 50%;
+        transform: translate(0, 0);
+        transition: transform .34s;
+        transition-timing-function: ease-out;
+        z-index: 999
+    }
+
+    #stalker2 {
+        display: inline-block;
+        pointer-events: none;
+        position: fixed;
+        top: 16px;
+        left: 14px;
+        width: 40px;
+        height: 36px;
+        background-image: none;
+        border: 1px solid #2C2C2C;
+        border-radius: 50%;
+        transform: translate(0, 0);
+        transition: transform .36s;
+        transition-timing-function: ease-out;
+        z-index: 999
+    }
+
+    #stalker2.active {
+        -webkit-animation: blink 2s infinite;
+        animation: blink 2s linear infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            border: 1px solid #2C2C2C;
+            border-bottom: 0px solid #2C2C2C;
+            border-bottom: 1px solid;
+            background-image: none;
+        }
+
+        2% {
+            border-top: 0px solid;
+            border-bottom: 1px solid;
+            background-image: linear-gradient(to bottom, #E2E2E2 60%, #2C2C2C 64%, rgba(0, 0, 0, 0) 68%);
+        }
+
+        4% {
+            border-top: 0px solid;
+            border-bottom: 1px solid;
+            background-image: linear-gradient(to bottom, #E2E2E2 98%, #2C2C2C 99%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        6% {
+            border-top: 0px solid;
+            border-bottom: 1px solid;
+            background-image: linear-gradient(to bottom, #E2E2E2 70%, #2C2C2C 74%, rgba(0, 0, 0, 0) 78%);
+        }
+
+        8% {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            background-image: none;
+        }
+    }
+
+    .glitch:hover {
+        color: #FEFEFE;
+        font-size: 1.6rem;
+        position: relative;
+        background: #2C2C2C;
+    }
+
+    .glitch-14:hover {
+        font-size: 1.4rem
+    }
+
+    .glitch:hover::after,
+    .glitch:hover::before {
+        content: attr(data-text);
+        position: absolute;
+        color: #FEFEFE;
+        background: #2C2C2C;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0)
+    }
+
+    .glitch:hover::after {
+        left: .7px;
+        text-shadow: -.7px 0 red;
+        top: .1;
+        animation: noise-anim 1.8s infinite linear alternate-reverse;
+        -webkit-animation: noise-anim 1.8s infinite linear alternate-reverse;
+        -moz-animation: noise-anim 1.8s infinite linear alternate-reverse
+    }
+
+    .glitch:hover::before {
+        left: -.9px;
+        text-shadow: .9px 0 #00f;
+        top: 0;
+        animation: noise-anim-2 1.5s infinite linear alternate-reverse;
+        -webkit-animation: noise-anim-2 1.5s infinite linear alternate-reverse;
+        -moz-animation: noise-anim-2 1.5s infinite linear alternate-reverse
+    }
+
+    .glitch-header-contact:hover::before,
+    .glitch-header-contact:hover::after {
+        padding-left: 1.6em;
+    }
+
+    @keyframes noise-anim {
+        0% {
+            clip: rect(77px, 9999px, 6px, 0)
+        }
+
+        5% {
+            clip: rect(65px, 9999px, 70px, 0)
+        }
+
+        10% {
+            clip: rect(82px, 9999px, 82px, 0)
+        }
+
+        15% {
+            clip: rect(32px, 9999px, 35px, 0)
+        }
+
+        20% {
+            clip: rect(31px, 9999px, 49px, 0)
+        }
+
+        25% {
+            clip: rect(18px, 9999px, 46px, 0)
+        }
+
+        30% {
+            clip: rect(94px, 9999px, 64px, 0)
+        }
+
+        35% {
+            clip: rect(69px, 9999px, 31px, 0)
+        }
+
+        40% {
+            clip: rect(6px, 9999px, 72px, 0)
+        }
+
+        45% {
+            clip: rect(25px, 9999px, 35px, 0)
+        }
+
+        50% {
+            clip: rect(82px, 9999px, 26px, 0)
+        }
+
+        55% {
+            clip: rect(7px, 9999px, 92px, 0)
+        }
+
+        60% {
+            clip: rect(54px, 9999px, 30px, 0)
+        }
+
+        65% {
+            clip: rect(86px, 9999px, 90px, 0)
+        }
+
+        70% {
+            clip: rect(38px, 9999px, 65px, 0)
+        }
+
+        75% {
+            clip: rect(41px, 9999px, 66px, 0)
+        }
+
+        80% {
+            clip: rect(31px, 9999px, 37px, 0)
+        }
+
+        85% {
+            clip: rect(8px, 9999px, 12px, 0)
+        }
+
+        90% {
+            clip: rect(50px, 9999px, 69px, 0)
+        }
+
+        95% {
+            clip: rect(7px, 9999px, 42px, 0)
+        }
+
+        100% {
+            clip: rect(14px, 9999px, 57px, 0)
+        }
+    }
+
+    @keyframes noise-anim-2 {
+        0% {
+            clip: rect(18px, 9999px, 13px, 0)
+        }
+
+        5% {
+            clip: rect(74px, 9999px, 51px, 0)
+        }
+
+        10% {
+            clip: rect(33px, 9999px, 65px, 0)
+        }
+
+        15% {
+            clip: rect(64px, 9999px, 66px, 0)
+        }
+
+        20% {
+            clip: rect(75px, 9999px, 6px, 0)
+        }
+
+        25% {
+            clip: rect(40px, 9999px, 49px, 0)
+        }
+
+        30% {
+            clip: rect(71px, 9999px, 1px, 0)
+        }
+
+        35% {
+            clip: rect(42px, 9999px, 73px, 0)
+        }
+
+        40% {
+            clip: rect(92px, 9999px, 57px, 0)
+        }
+
+        45% {
+            clip: rect(4px, 9999px, 33px, 0)
+        }
+
+        50% {
+            clip: rect(4px, 9999px, 34px, 0)
+        }
+
+        55% {
+            clip: rect(49px, 9999px, 25px, 0)
+        }
+
+        60% {
+            clip: rect(24px, 9999px, 44px, 0)
+        }
+
+        65% {
+            clip: rect(31px, 9999px, 99px, 0)
+        }
+
+        70% {
+            clip: rect(54px, 9999px, 83px, 0)
+        }
+
+        75% {
+            clip: rect(57px, 9999px, 97px, 0)
+        }
+
+        80% {
+            clip: rect(3px, 9999px, 15px, 0)
+        }
+
+        85% {
+            clip: rect(84px, 9999px, 34px, 0)
+        }
+
+        90% {
+            clip: rect(100px, 9999px, 88px, 0)
+        }
+
+        95% {
+            clip: rect(91px, 9999px, 59px, 0)
+        }
+
+        100% {
+            clip: rect(10px, 9999px, 87px, 0)
+        }
+    }
+
+    @media (max-width:767px) {
+        .menu-item:hover::after {
+            color: #FEFEFE;
+            left: .2px;
+            text-shadow: -.7px 0 red;
+            top: .2px;
+        }
+
+        .glitch-14:hover {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+/*------------------
+menu
+------------------*/
+.menu-list {
+    border-left: 8px dotted #2C2C2C
+}
+
+.header {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.biography {
+    z-index: 10;
+    flex-basis: 40%;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    padding: 0;
+    line-height: 1.2;
+    letter-spacing: .04em;
+    color: #2C2C2C;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* 2つ目のp */
+.slide p + p {
+    display: none;
+}
+
+.header-contact,
+.menu-list {
+    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+h1 {
+    padding-bottom: 4px
+}
+
+.header-contact {
+    display: inline-block;
+    flex-basis: 20%;
+    color: #2C2C2C;
+    text-transform: uppercase;
+}
+
+.header-contact a {
+    position: relative;
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+.hand {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1.2em;
+    height: 1.16em;
+    margin-right: .18em;
+    line-height: 1;
+    background: url(../images/wavehands.svg) no-repeat;
+    background-size: contain;
+
+}
+
+.wavehands:hover {
+    background-color: #2C2C2C;
+}
+
+.header-contact a:hover {
+    background-color: #2C2C2C;
+}
+
+.hamburger {
+    display: none
+}
+
+.menu {
+    z-index: 6;
+    position: relative;
+    flex-basis: 40%;
+    text-align: right;
+}
+
+.menu-list {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    width: 80px;
+    height: 88px;
+    padding: 0 8px;
+
+}
+
+.menu-list li {
+    text-align: left;
+    line-height: 1;
+    vertical-align: bottom;
+}
+
+.menu-item:last-child {
+    padding: 4px 0 0 0;
+}
+
+.menu-item {
+    padding: 4px 0 4px 0;
+    margin-bottom: 10px;
+}
+
+.menu-item a {
+    padding: 4px;
+    color: #2C2C2C;
+    line-height: 1;
+    vertical-align: bottom;
+}
+
+@media (max-width:767px) {
+    .onlypc {
+        display: none
+    }
+
+    .header {
+        z-index: auto;
+        position: relative;
+        font-size: 1.4rem
+    }
+
+    .biography {
+        display: inline-block;
+        line-height: 1.2
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+    .slide p {
+        display: inline-block;
+        padding-right: 8%;
+    }
+
+    .slide p:first-child {
+        -webkit-animation: slide01 20s -10s linear infinite;
+        animation: slide01 20s -10s linear infinite;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    /* 2つ目のp */
+    .slide p + p {
+        display: inline-block;
+        -webkit-animation: slide02 20s linear infinite;
+        animation: slide02 20s linear infinite;
+    }
+
+    /*アニメーション*/
+    @-webkit-keyframes slide01 {
+        0% {
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+
+        to {
+            -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes slide01 {
+        0% {
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+
+        to {
+            -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+    }
+
+    @-webkit-keyframes slide02 {
+        0% {
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        to {
+            -webkit-transform: translateX(-200%);
+            -ms-transform: translateX(-200%);
+            transform: translateX(-200%);
+        }
+    }
+
+    @keyframes slide02 {
+        0% {
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        to {
+            -webkit-transform: translateX(-200%);
+            -ms-transform: translateX(-200%);
+            transform: translateX(-200%);
+        }
+    }
+
+    @keyframes slide01 {
+        0% {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes slide02 {
+        0% {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-200%);
+        }
+    }
+
+    .header-contact {
+        display: none
+    }
+
+    .menu-list {
+        background: #2C2C2C;
+        border: none;
+        top: 44px;
+        width: 100px;
+        height: 120px;
+        padding: 16px;
+        right: 0
+    }
+
+    .menu-list a {
+        color: #fff;
+    }
+
+
+    .hamburger,
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0
+    }
+
+    .nav-menu {
+        display: none;
+        top: 42px;
+        height: 120px
+    }
+
+    .menu-item {
+        background: #2C2C2C
+    }
+
+    .hamburger {
+        z-index: 6;
+        display: block;
+        top: 0;
+        width: 100px;
+        height: 44px;
+        background: #2C2C2C;
+        cursor: pointer;
+        border: none;
+        outline: 0;
+        appearance: none
+    }
+
+    .hamburger.active span,
+    .hamburger__line {
+        background-color: #fff
+    }
+
+    .hamburger__line {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70px;
+        height: 1px;
+        transition: all .5s .2s
+    }
+
+    .hamburger__line1 {
+        top: 15px;
+        right: 15px
+    }
+
+    .hamburger__line2 {
+        top: 20px;
+        right: 15px
+    }
+
+    .hamburger__line3 {
+        top: 25px;
+        right: 15px
+    }
+
+    .hamburger span:nth-of-type(1) {
+        top: 16px
+    }
+
+    .hamburger.active span:nth-of-type(1) {
+        transform: translateY(8px) rotate(-20deg)
+    }
+
+    .hamburger span:nth-of-type(2) {
+        top: 22px
+    }
+
+    .hamburger.active span:nth-of-type(2) {
+        opacity: 0
+    }
+
+    .hamburger span:nth-of-type(3) {
+        top: 28px
+    }
+
+    .hamburger.active span:nth-of-type(3) {
+        transform: translateY(-4px) rotate(20deg)
+    }
+
+}
+
+@media (min-width:768px) and (max-width:959px) {
+    .biography {
+        flex-basis: 40%;
+        line-height: 1.4;
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+    .slide p {
+        display: inline-block;
+        padding-right: 8%;
+    }
+
+    .slide p:first-child {
+        -webkit-animation: slide01 20s -10s linear infinite;
+        animation: slide01 20s -10s linear infinite;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    /* 2つ目のp */
+    .slide p + p {
+        display: inline-block;
+        -webkit-animation: slide02 20s linear infinite;
+        animation: slide02 20s linear infinite;
+    }
+
+    /*アニメーション*/
+    @-webkit-keyframes slide01 {
+        0% {
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+
+        to {
+            -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes slide01 {
+        0% {
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+
+        to {
+            -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+    }
+
+    @-webkit-keyframes slide02 {
+        0% {
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        to {
+            -webkit-transform: translateX(-200%);
+            -ms-transform: translateX(-200%);
+            transform: translateX(-200%);
+        }
+    }
+
+    @keyframes slide02 {
+        0% {
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        to {
+            -webkit-transform: translateX(-200%);
+            -ms-transform: translateX(-200%);
+            transform: translateX(-200%);
+        }
+    }
+
+    @keyframes slide01 {
+        0% {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes slide02 {
+        0% {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-200%);
+        }
+    }
+
+    .header-contact {
+        display: none
+    }
+}

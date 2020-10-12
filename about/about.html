@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="yukiyama portfolio">
+    <title>yukiyama portfolio</title>
+    <link rel="stylesheet" href="../css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/stt7ued.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="contents">
+        <header class="header">
+            <div class="biography">
+                <h1>yukiyama portfolio</h1>
+                <div class="slide">
+                    <p>web design | graphic design | typography , Japan</p>
+                    <p>web design | graphic design | typography , Japan</p>
+                </div>
+            </div>
+            <div class="header-contact text-center">
+                <p><a href="about/about.html" class="glitch glitch-14 glitch-header-contact" data-text="contact"><span class="hand"></span>contact</a></p>
+            </div>
+            <div class="menu">
+                <button class="hamburger">
+                    <span class="hamburger__line hamburger__line1"></span>
+                    <span class="hamburger__line hamburger__line2"></span>
+                    <span class="hamburger__line hamburger__line3"></span>
+                </button>
+                <nav class="nav-menu">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="../index.html">
+                                <span class="glitch glitch-14" data-text="top">top
+                                </span>
+                            </a>
+
+                        </li>
+                        <li class="menu-item"><a href="../index.html#works">
+                                <span class="glitch glitch-14" data-text="works">works</span></a>
+                        </li>
+                        <li class="menu-item"><a href="about.html">
+                                <span class="glitch glitch-14" data-text="about">about</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="about">
+            <h2 class="section-header" id="about">about
+            </h2>
+            <div class="about-container">
+                <div class="about-info">
+                    <p class="name">yukiyama</p>
+                    <p class="aboutme">
+                        webデザイン、グラフィックデザイン、タイポグラフィなど勉強しています。<br>
+                        IT系企業に5年ほど勤務していましたが、ものづくりがしたいという想いが強くなり、以前から興味のあったwebデザインを独学とスクールでの学習を通して学びました。
+                    </p>
+                    <p class="aboutme">音楽や映画などのカルチャーが好きなので、そのフィルターを通してどこか尖ったオルタナティブなデザインをつくりたいと思っています。</p>
+                    <dl class="about-sub">
+                        <dt>主なスキル・ツール</dt>
+                        <dd>HTML、CSS、AdobeXD、Photoshop、Illustrator、PremierePro</dd>
+                        <dt>資格</dt>
+                        <dd>HTML5プロフェッショナル認定資格 レベル1、Webクリエイター能力認定試験 エキスパート、ウェブデザイン技能検定3級、ITパスポート、CSR検定2級
+                        </dd>
+                    </dl>
+                </div>
+                <div class="contact">
+                    <h3><span class="hand"></span>contact</h3>
+                    <p class="contact-mail glitch" data-text="mail : yyamazaki160&#64;gmail.com"><a href="mailto:yyamazaki160&#64;gmail.com">mail : yyamazaki160&#64;gmail.com</a></p><br>
+                    <p class="twitter glitch" data-text="twitter : @snowmountain___"><a href="https://twitter.com/snowmountain___">twitter : @snowmountain___</a></p><br>
+                    <p class="twitter glitch" data-text="instagram : @snowmountain___"><a href="https://instagram.com/snowmountain___">instagram : @snowmountain___</a></p>
+                </div>
+            </div>
+            <img src="../images/y.svg" class="bg-y" alt="bg画像">
+            <small class="copy" id="copy">©︎2020 yukiyama</small>
+        </section>
+    </div>
+
+    <div id="stalker"></div>
+    <div id="stalker2"></div>
+
+    <script>
+        $('.hamburger').on('click', function() {
+            if ($('.nav-menu').is(':visible')) {
+                $(this).removeClass('active');
+                // Close menu
+                $('nav > *').slideUp(function() {
+                    $(this).parent().hide();
+                });
+            } else {
+                $(this).addClass('active');
+                $(this).addClass('active');
+                // Open menu
+                $('.nav-menu > *')
+                    .hide()
+                    .parent().show().end()
+                    .slideDown();
+            }
+        });
+
+    </script>
+    <script type="text/javascript">
+        const stalker = document.getElementById('stalker');
+
+        //上記のdivタグをマウスに追従させる処理
+        document.addEventListener('mousemove', function(e) {
+            stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+
+        const stalker2 = document.getElementById('stalker2');
+
+        //上記のdivタグをマウスに追従させる処理
+        document.addEventListener('mousemove', function(e) {
+            stalker2.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+        $("a").on("mouseenter", function() {
+            $('#cursor').addClass("active");
+            $('#stalker').addClass("active");
+            $('#stalker2').addClass("active");
+        });
+
+        $("a").on("mouseleave", function() {
+            $('#cursor').removeClass("active");
+            $('#stalker').removeClass("active");
+            $('#stalker2').removeClass("active");
+        });
+
+    </script>
+</body>
+
+</html>

@@ -2,142 +2,21 @@
 
 
 .header {
-    color: #404040;
+    color: #2C2C2C;
 }
 
 .header-container {
     position: fixed;
 }
 
-.biography {
-    max-width: 360px;
-}
-
-.biography a {
-    color: #000;
-}
-
-.mail {
-    margin-left: 42%;
-}
-
 h2 {
     font-size: 2.2rem;
     padding-bottom: 4px;
-    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-}
-
-.glitch {
-    color: #2323DD;
+    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 }
 
 .onlysp {
     display: none;
-}
-
-
-
-/*----------
-
-ホバースタイル
-
-----------*/
-@media (hover: hover) {
-    .glitch:hover {
-        color: #fff;
-        font-size: 1.6rem;
-        position: relative;
-        margin: 0 auto;
-        background: #000;
-    }
-
-    .glitch:hover::before {
-        content: attr(data-text);
-        position: absolute;
-        left: -0.9px;
-        text-shadow: 0.9px 0 blue;
-        top: 0;
-        color: #fff;
-        background: #000;
-        overflow: hidden;
-        clip: rect(0, 900px, 0, 0);
-        animation: noise-anim-2 1.5s infinite linear alternate-reverse;
-    }
-
-    .glitch:hover::after {
-        content: attr(data-text);
-        position: absolute;
-        left: 0.7px;
-        text-shadow: -0.7px 0 red;
-        top: 0.1;
-        color: #fff;
-        background: #000;
-        overflow: hidden;
-        clip: rect(0, 900px, 0, 0);
-        animation: noise-anim 1.8s infinite linear alternate-reverse;
-    }
-
-    .glitch-menu:hover {
-        font-size: 1.4rem;
-    }
-
-    .glitch-14:hover {
-        font-size: 1.4rem;
-    }
-
-    /* spサイズになった時に崩れるホバー対応 */
-    @media (max-width: 767px) {
-        .glitch-menu:hover {
-            font-size: 1.4rem;
-            color: #fff;
-            position: absolute;
-            width: 60px;
-            height: 30px;
-            padding: 8px;
-            background: #fff;
-        }
-
-        .glitch-menu:hover::after {
-            color: #fff;
-            left: 2px;
-            text-shadow: -0.7px 0 red;
-            top: 0.2px;
-            padding: 8px;
-        }
-
-        .glitch-menu:hover::before {
-            color: #fff;
-            left: 0.6px;
-            text-shadow: 0.9px 0 blue;
-            top: 0.6px;
-            padding: 8px;
-        }
-
-        .list-top:hover {
-            position: absolute;
-            background: #000;
-            transform: rotate(16deg);
-        }
-
-        .list-works:hover {
-            position: absolute;
-            background: #000;
-            transform: rotate(-2deg);
-        }
-
-        .list-profile:hover {
-            position: absolute;
-            background: #000;
-            transform: rotate(-12deg);
-        }
-
-        .list-contact:hover {
-            position: absolute;
-            background: #000;
-            width: 64px;
-            transform: rotate(6deg);
-        }
-    }
 }
 
 
@@ -158,13 +37,13 @@ project-summary-pc
 
 .project-summary {
     position: fixed;
-    padding: 180px 5% 0 40px;
+    padding: 120px 2% 0 32px;
     width: 35%;
     height: 100vh;
 }
 
 dl {
-    padding-bottom: 4vh;
+    padding-bottom: 3.2vh;
 }
 
 dt {
@@ -172,22 +51,28 @@ dt {
 }
 
 dd a {
-    padding: 0 0.4px;
+    line-height: 1;
+    vertical-align: bottom;
+}
+
+dt:first-child {
+    line-height: 1;
 }
 
 .category {
-    padding-bottom: 4vh;
+    padding-bottom: 6vh;
 }
 
 .summary {
-    padding-bottom: 6vh;
+    padding-bottom: 3.2vh;
 }
 
 .back {
     position: absolute;
-    padding: 16% 20% 0 0;
+    padding: 10% 0 0 0;
     font-weight: 600;
-    font-family: Termina, "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
 }
 
 .lt::before {
@@ -199,7 +84,15 @@ dd a {
     position: absolute;
     right: 0;
     padding: 16% 0 0 16%;
+    background-color: #E2E2E2;
 }
+
+.barcode img {
+    mix-blend-mode: multiply;
+}
+
+
+
 
 /*-------------------
 
@@ -214,16 +107,17 @@ project-detail-pc
 
 .first-img-box {
     width: 65%;
-    padding: 10% 6% 0;
+    padding: 8% 6% 0;
     margin-left: 35%;
 }
 
 .project-img {
-    padding-bottom: 80px;
+    width: 100%;
+    padding-bottom: 40px;
 }
 
 .project-video {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 
 }
 
@@ -232,11 +126,11 @@ project-detail-pc
 }
 
 .project-intention p {
-    padding-bottom: 24px;
+    padding-bottom: 16px;
 }
 
 .intention-box {
-    padding-bottom: 24px;
+    padding-bottom: 40px;
 }
 
 
@@ -252,13 +146,12 @@ project-detail-pc
 
 --------------------*/
 @media (max-width: 767px) {
-    .mail {
+    .header-contact {
         display: none;
     }
 
     .header {
         margin: 0;
-        display: block;
     }
 
     .header-container {
@@ -300,15 +193,13 @@ project-summary-sp
         order: 1;
         width: 100%;
         margin: 0;
-        padding: 40px 0 0;
+        padding: 20px 0 0;
         word-wrap:
     }
 
     .project-img img {
         padding-bottom: 20px;
     }
-
-
 
     dl {
         padding-bottom: 4vh;
@@ -320,6 +211,7 @@ project-summary-sp
 
     dd a {
         padding: 0 0.4px;
+        line-height: 1;
     }
 
     .category {
@@ -348,15 +240,6 @@ project-summary-sp
         margin: 0 auto;
     }
 
-    .biography {
-        display: block;
-        padding: 20px;
-        margin: 2%;
-    }
-
-    .menu-list .glitch {
-        color: #000;
-    }
 
 
 
@@ -388,7 +271,7 @@ project-detail-sp
     }
 
     .project-summary {
-        padding: 4% 2% 10%;
+        padding: 0 2% 10%;
     }
 }
 
@@ -398,13 +281,22 @@ project-detail-sp
 
 --------------------*/
 @media (min-width: 768px) and (max-width: 959px) {
+
     .biography {
-        max-width: 300px;
-        margin: 4%;
+        flex-basis: 35%;
     }
 
     .project-summary {
-        padding: 180px 2% 0 40px;
+        padding: 120px 2% 0 24px;
     }
 
+    .first-img-box {
+        width: 65%;
+        padding: 10% 24px 0;
+        margin-left: 35%;
+    }
+
+    .project-detail {
+        padding: 0 24px 0;
+    }
 }

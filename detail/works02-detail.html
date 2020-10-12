@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="css/style-detail.css">
     <link rel="stylesheet" href="https://use.typekit.net/stt7ued.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -20,32 +23,35 @@
         <span class="hamburger__line hamburger__line3"></span>
     </button>
     <header class="header">
-        <div class="header-container">
-            <div class="biography">
-                <h1>yukiyama portfolio</h1>
+        <div class="biography">
+            <h1>yukiyama portfolio</h1>
+            <div class="slide">
+                <p>web design | graphic design | typography , Japan</p>
                 <p>web design | graphic design | typography , Japan</p>
             </div>
         </div>
-        <div class="mail text-center">
-            <p><a href="mailto:yyamazaki160&#64;gmail.com" class="glitch glitch-14" data-text="yyamazaki160&#64;gmail.com">yyamazaki160&#64;gmail.com</a></p>
+        <div class="header-contact text-center">
+            <p><a href="../about/about.html" class="glitch glitch-14 glitch-header-contact" data-text="contact"><span class="hand"></span>contact</a></p>
         </div>
         <div class="menu">
+            <button class="hamburger">
+                <span class="hamburger__line hamburger__line1"></span>
+                <span class="hamburger__line hamburger__line2"></span>
+                <span class="hamburger__line hamburger__line3"></span>
+            </button>
             <nav class="nav-menu">
                 <ul class="menu-list">
                     <li class="menu-item"><a href="../index.html">
-                            <span class="list-top glitch glitch-menu" data-text="top">top</span>
-                        </a>
-                    </li>
-                    <li class="menu-item"><a href="../index.html#works">
-                            <span class="list-works glitch glitch-menu" data-text="works">works</span></a>
-                    </li>
-                    <li class="menu-item"><a href="../index.html#profile">
-                            <span class="list-profile glitch glitch-menu" data-text="profile">profile</span>
+                            <span class="glitch glitch-14" data-text="top">top
+                            </span>
                         </a>
 
                     </li>
-                    <li class="menu-item"><a href="../index.html#contact">
-                            <span class="list-contact glitch glitch-menu" data-text="contact">contact</span>
+                    <li class="menu-item"><a href="../index.html#works">
+                            <span class="glitch glitch-14" data-text="works">works</span></a>
+                    </li>
+                    <li class="menu-item"><a href="../about/about.html">
+                            <span class="glitch glitch-14" data-text="about">about</span>
                         </a>
                     </li>
                 </ul>
@@ -55,35 +61,61 @@
 
     <section class="work-detail">
         <div class="project-summary">
-            <h2 class="project-name">collage</h2>
-            <p class="category">グラフィックデザイン</p>
+            <h2 class="project-name">SNSのプロフィール画面</h2>
+            <p class="category">UIデザイン</p>
             <p class="summary">
-                Photoshopで加工・デザインした素材を使って、HTMLやCSSで配置したコラージュ作品。
+
             </p>
             <dl>
                 <dt>使用ツール・言語</dt>
                 <dd>
-                    Photoshop、HTML、CSS
+                    AdobeXD
                 </dd>
             </dl>
-
+            <dl>
+                <dt>URL</dt>
+                <dd>
+                    <a href="https://cocoda-design.com/daily-products/16655" class=" glitch glitch-14" data-text="Daily Cocoda!">Daily Cocoda!</a>
+                </dd>
+            </dl>
             <div class="back onlypc">
-                <a href="../index.html#works" class="glitch glitch-14" data-text="<back"><span class=" lt">back</span></a>
+                <a href="../index.html#works" class="glitch glitch-14" data-text="<back"><span class="lt">back</span></a>
             </div>
             <div class="barcode">
                 <img src="../images/code_002.png" alt="バーコードの画像">
             </div>
         </div>
-        <div class="first-img-box project-video">
-            <video id="video" class="video" autoplay loop muted playsinline width="100%">
-                <source src="../video/work02-01.mp4" type="video/mp4">
-            </video>
+        <div class="first-img-box">
+            <img src="../images/work02-01@1x.jpg" srcset="../images/work02-01@1x.jpg 400w,
+                ../images/work02-01@2x.jpg 800w,
+                ../images/work02-01@3x.jpg 1200w" sizes="100vw" alt="作品画像01" class="project-img first-img">
         </div>
         <div class="project-detail">
+            <div class="img-box">
+                <img src="../images/work02-02@1x.jpg" srcset="../images/work02-02@1x.jpg 400w,
+                ../images/work02-02@2x.jpg 800w,
+                ../images/work02-02@3x.jpg 1200w" sizes="100vw" alt="作品画像02" class="project-img">
+            </div>
             <div class="project-intention">
                 <div class="intention-box">
-                    <p>90年代・ヴェイパーウェーブをイメージして制作しました。
-                    </p>
+                    <dl>
+                        <dt>ターゲット</dt>
+                        <dd>20代前半女性</dd>
+                    </dl>
+                    <dl>
+                        <dt>雰囲気</dt>
+                        <dd>POP、可愛い</dd>
+                    </dl>
+                    <dl>
+                        <dt>コンセプト</dt>
+                        <dd>日常の写真をおしゃれにUPできるSNS</dd>
+                    </dl>
+                    <dl>
+                        <dt>参考</dt>
+                        <dd>instagram、C CHANNEL、twitter</dd>
+                    </dl>
+                    <p>スマホで利用することを考え、親指の届きやすい右下に投稿ボタンを設置しました。また、丸みのあるボタンやアイコンを使用し、ポップな雰囲気を目指しました。<br>
+                        既存のSNSとの差別化として、お気に入りの写真をリストごとに分類できる機能を想定してデザインしました。（あとでリストごとに見返したり、共通の趣味のユーザーと繋がれたりできる機能）</p>
                 </div>
                 <div class="back onlysp">
                     <a href="../index.html#works" class="glitch glitch-14" data-text="<back"><span class=" lt">back</span></a>
@@ -92,6 +124,7 @@
         </div>
     </section>
     <div id="stalker"></div>
+    <div id="stalker2"></div>
     <script>
         $('.hamburger').on('click', function() {
             if ($('.nav-menu').is(':visible')) {
@@ -118,6 +151,24 @@
         //上記のdivタグをマウスに追従させる処理
         document.addEventListener('mousemove', function(e) {
             stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+
+        const stalker2 = document.getElementById('stalker2');
+
+        //上記のdivタグをマウスに追従させる処理
+        document.addEventListener('mousemove', function(e) {
+            stalker2.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+        $("a").on("mouseenter", function() {
+            $('#cursor').addClass("active");
+            $('#stalker').addClass("active");
+            $('#stalker2').addClass("active");
+        });
+
+        $("a").on("mouseleave", function() {
+            $('#cursor').removeClass("active");
+            $('#stalker').removeClass("active");
+            $('#stalker2').removeClass("active");
         });
 
     </script>
