@@ -23,7 +23,7 @@
 .section-header {
     font-family: "Kawaru", "Arial Black", "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     text-transform: uppercase;
-    font-variation-settings: "gltc"5, "wdth"0;
+    font-variation-settings: "gltc"4, "wdth"0;
 }
 
 #loading-text {
@@ -290,7 +290,7 @@ top
 
 .section-header {
     font-family: "Kawaru", "Arial Black", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    font-variation-settings: "gltc"5, "wdth"0;
+    font-variation-settings: "gltc"4, "wdth"0;
     font-size: 10rem;
     margin: 0 0 40px 4%;
     color: #2C2C2C;
@@ -308,7 +308,7 @@ top
 .grid-item,
 .grid-item img,
 .grid-item video {
-    width: 332px;
+    width: 324px;
     height: auto;
     vertical-align: bottom;
     line-height: 1;
@@ -321,7 +321,7 @@ top
 
 .grid-item {
     background: #E2E2E2;
-    margin: 4px;
+    margin: 8px;
     overflow: hidden;
 }
 
@@ -498,7 +498,7 @@ h3 {
     }
 
     .top {
-        margin: 0
+        margin: 0 0 80px 0;
     }
 
     .top-container {
@@ -510,6 +510,17 @@ h3 {
     .grid {
         max-width: 100%;
         padding-bottom: 0
+    }
+
+    .grid-item,
+    .grid-item img,
+    .grid-item video {
+        width: 324;
+        height: auto
+    }
+
+    .grid-item {
+        margin: 8px;
     }
 
     .about {
@@ -538,9 +549,16 @@ h3 {
 }
 
 @media (min-width:720px) and (max-width:767px) {
+
+    .grid-item,
+    .grid-item img,
+    .grid-item video {
+        width: 324px;
+        height: auto
+    }
+
     .grid-item {
-        width: 45%;
-        margin-bottom: 4%
+        margin: 8px;
     }
 
     .about {
@@ -656,12 +674,12 @@ h3 {
     .grid-item,
     .grid-item img,
     .grid-item video {
-        width: 332px;
+        width: 324px;
         height: auto
     }
 
     .grid-item {
-        margin: 4px
+        margin: 8px;
     }
 
     .contact,
@@ -686,5 +704,18 @@ h3 {
     .contact a {
         font-size: 1.8rem;
         margin-bottom: 20px
+    }
+}
+
+@media (max-width:340px) {
+
+    .grid-item,
+    .grid-item img,
+    .grid-item video {
+        width: 96%;
+    }
+
+    .grid-item {
+        margin: 2%;
     }
 }
