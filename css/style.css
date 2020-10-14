@@ -210,18 +210,19 @@
 
     .grid-item:hover img,
     .grid-item:hover video {
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%) contrast(140%);
+        -moz-filter: grayscale(100%) contrast(140%);
+        -ms-filter: grayscale(100%) contrast(140%);
+        -o-filter: grayscale(100%) contrast(140%);
+        filter: grayscale(100%) contrast(140%);
+
         animation: skew 4s infinite;
     }
 
     .work-info:hover dl,
     .work-info:hover p {
         z-index: 0;
-        opacity: 8;
+        opacity: .88;
     }
 
     .contact a:hover {
@@ -335,6 +336,57 @@ top
     padding: 8% 10%;
 }
 
+.switch-box {
+    position: relative;
+}
+
+.img-switch01 {
+    animation: img-switch01 2s linear infinite;
+}
+
+.img-switch02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: img-switch02 2s linear infinite;
+}
+
+@keyframes img-switch01 {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    50.1% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes img-switch02 {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    50.1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
 .about {
     position: relative;
 }
@@ -344,10 +396,10 @@ top
     z-index: -1;
     opacity: 0;
     text-align: left;
-    color: #E9F6EC;
+    color: #DCDE5D;
     text-shadow: #3a3839 .8px .8px .2px, #2c2d2e -.8px .8px .2px,
         #3a3839 .8px -.8px .2px, #2c2d2a -.8px -.8px .2px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-bottom: 6%
 }
 
