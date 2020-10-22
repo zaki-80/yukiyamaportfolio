@@ -298,7 +298,7 @@ top
 }
 
 .works {
-    padding-bottom: 40px;
+    padding-bottom: 24px;
 }
 
 #grid,
@@ -317,7 +317,7 @@ top
 
 .grid {
     max-width: 100%;
-    padding-bottom: 80px
+    padding-bottom: 8px
 }
 
 .grid-item {
@@ -464,6 +464,7 @@ top
 }
 
 .bg-y {
+    z-index: -1;
     position: absolute;
     width: 240px;
     top: 24%;
@@ -556,7 +557,7 @@ h3 {
     .top-container {
         margin: 0 auto;
         width: 90%;
-        height: 580px
+        height: 80vh;
     }
 
     .grid {
