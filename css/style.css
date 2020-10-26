@@ -77,12 +77,10 @@
 .copy {
     display: inline-block;
     position: absolute;
-    bottom: 4px;
-    right: 4px;
-    font-size: 10rem;
-    font-family: "Kawaru", "Arial Black", "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    font-variation-settings: "gltc"5, "wdth"0;
-    color: rgba(0, 0, 0, .1);
+    bottom: 8px;
+    right: 16px;
+    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 1.8rem;
     text-transform: uppercase;
     text-align: right;
 }
@@ -441,7 +439,7 @@ top
 
 .about-sub dd {
     padding-bottom: 24px;
-    line-height: 1.4
+    line-height: 1.6
 }
 
 .name {
@@ -456,7 +454,7 @@ top
 }
 
 .aboutme {
-    line-height: 1.4
+    line-height: 1.6
 }
 
 .space::before {
@@ -490,7 +488,7 @@ h3 {
     position: relative;
     display: inline-block;
     padding: 0 0 0 16px;
-    margin-left: 24px;
+    margin-left: 40px;
     border-left: 8px dotted #2C2C2C;
     align-self: flex-start;
     font-weight: 600;
@@ -546,8 +544,8 @@ h3 {
     .copy {
         position: static;
         width: 100%;
-        font-size: 8vw;
-        padding: 40px 4px 4px;
+        font-size: 1.6rem;
+        padding: 40px 8px 8px;
     }
 
     .top {
@@ -770,5 +768,9 @@ h3 {
 
     .grid-item {
         margin: 2%;
+    }
+
+    .contact a {
+        font-size: 1.5rem;
     }
 }
