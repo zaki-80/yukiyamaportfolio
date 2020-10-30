@@ -513,7 +513,7 @@ h1 {
 
     .slide p {
         display: inline-block;
-        padding-right: 10%;
+        padding-right: 16%;
     }
 
     .slide p:first-child {
@@ -684,7 +684,7 @@ h1 {
 
     .slide p {
         display: inline-block;
-        padding-right: 8%;
+        padding-right: 16%;
     }
 
     .slide p:first-child {
@@ -742,5 +742,12 @@ h1 {
 
     .header-contact {
         display: none
+    }
+}
+
+@media (max-width:450px) {
+
+    .biography {
+        flex-basis: 60%;
     }
 }
