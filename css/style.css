@@ -23,7 +23,7 @@
 .section-header {
     font-family: "Kawaru", "Arial Black", "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     text-transform: uppercase;
-    font-variation-settings: "gltc"4, "wdth"0;
+    font-variation-settings: "gltc"2, "wdth"0;
 }
 
 #loading-text {
