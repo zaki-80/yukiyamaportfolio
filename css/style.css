@@ -80,7 +80,7 @@
     bottom: 8px;
     right: 16px;
     font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     text-align: right;
 }
@@ -434,7 +434,7 @@ top
     color: #DCDE5D;
     text-shadow: #3a3839 .8px .8px .2px, #2c2d2e -.8px .8px .2px,
         #3a3839 .8px -.8px .2px, #2c2d2a -.8px -.8px .2px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding-bottom: 6%
 }
 
@@ -524,8 +524,8 @@ h3 {
 .contact {
     position: relative;
     display: inline-block;
-    padding: 0 0 0 16px;
-    margin-left: 40px;
+    padding: 0 0 0 32px;
+    margin-left: 48px;
     border-left: 8px dotted #2C2C2C;
     align-self: flex-start;
     font-weight: 600;
@@ -586,8 +586,8 @@ h3 {
     .copy {
         position: static;
         width: 100%;
-        font-size: 1.6rem;
-        padding: 40px 8px 8px;
+        font-size: 1.4rem;
+        padding: 40px 16px 8px;
     }
 
     .top {
@@ -613,6 +613,12 @@ h3 {
     .figure-item {
         position: relative;
         overflow: hidden;
+    }
+
+    .work-info dl,
+    .work-info p {
+        font-size: 1rem;
+
     }
 
     .about {
@@ -704,7 +710,7 @@ h3 {
 
     .contact {
         border-left: 8px dotted #2C2C2C;
-        padding: 0 0 0 16px;
+        padding: 0 0 0 24px;
         margin: 20px 0 0 0;
         align-self: flex-start;
         font-weight: 600;
