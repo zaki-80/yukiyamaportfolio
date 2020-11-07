@@ -19,15 +19,12 @@
     height: 100%
 }
 
-#loading-text,
-.section-header {
-    font-family: "Kawaru", "Arial Black", "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    text-transform: uppercase;
-    font-variation-settings: "gltc"2, "wdth"0;
-}
-
 #loading-text {
-    color: rgba(0, 0, 0, .4);
+    font-family: "Kawaru", "Arial Black", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    font-variation-settings: "gltc"4, "wdth"0;
+    color: #2C2C2C;
+    animation: kawaru-header .1s linear infinite;
+    color: #a2a2a2;
     background: #E2E2E2;
     font-size: 6vw
 }
@@ -431,7 +428,7 @@ top
     z-index: -1;
     opacity: 0;
     text-align: left;
-    color: #DCDE5D;
+    color: #FEFEFE;
     text-shadow: #3a3839 .8px .8px .2px, #2c2d2e -.8px .8px .2px,
         #3a3839 .8px -.8px .2px, #2c2d2a -.8px -.8px .2px;
     font-size: 1.2rem;
