@@ -70,10 +70,6 @@ hoverスタイル
 ---------*/
 
 @media (hover:hover) {
-
-    .glitch-14:hover,
-    .glitch:hover {}
-
     #stalker {
         display: inline-block;
         pointer-events: none;

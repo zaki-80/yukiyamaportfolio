@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/html5reset-1.6.1.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css">
     <link rel="stylesheet" href="https://use.typekit.net/stt7ued.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" href="../favicon.ico">
@@ -60,21 +61,26 @@
             </h2>
             <div class="about-container">
                 <div class="about-info">
-                    <p class="name">yukiyama</p>
-                    <p class="aboutme">
-                        webデザイン、グラフィックデザイン、タイポグラフィなど勉強しています。<br>
-                        IT系企業に5年ほど勤務していましたが、ものづくりがしたいという想いが強くなり、以前から興味のあったwebデザインを独学とスクールでの学習を通して学びました。
-                    </p>
-                    <p class="aboutme">音楽や映画などのカルチャーが好きなので、そのフィルターを通してどこか尖ったオルタナティブなデザインをつくりたいと思っています。</p>
-                    <dl class="about-sub">
-                        <dt>主なスキル・ツール</dt>
-                        <dd>HTML、CSS、AdobeXD、Photoshop、Illustrator、PremierePro</dd>
-                        <dt>資格</dt>
-                        <dd>HTML5プロフェッショナル認定資格 レベル1、Webクリエイター能力認定試験 エキスパート、ウェブデザイン技能検定3級、ITパスポート、CSR検定2級
-                        </dd>
-                    </dl>
+                    <div data-sal-duration="1800" data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-out-bounce">
+                        <p class="name">yukiyama🗻</p>
+                        <p class="aboutme">
+                            webデザイン、グラフィックデザイン、タイポグラフィなど勉強しています。<br>
+                            IT系企業に5年ほど勤務していましたが、ものづくりがしたいという想いが強くなり、以前から興味のあったwebデザインを独学とスクールで学びました。
+                        </p>
+
+                        <p class="aboutme">音楽や映画などのカルチャーが好きなので、そのフィルターを通してどこか尖ったオルタナティブなデザインをつくりたいと思っています。</p>
+                    </div>
+                    <div data-sal-duration="1600" data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-out-bounce">
+                        <dl class="about-sub">
+                            <dt>主なスキル・ツール</dt>
+                            <dd>HTML、CSS、AdobeXD、Photoshop、Illustrator、PremierePro</dd>
+                            <dt>資格</dt>
+                            <dd>HTML5プロフェッショナル認定資格 レベル1、Webクリエイター能力認定試験 エキスパート、ウェブデザイン技能検定3級、ITパスポート、CSR検定2級
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
-                <div class="contact">
+                <div class="contact" data-sal-duration="1600" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-bounce">
                     <h3><span class="hand"></span>contact</h3>
                     <p class="contact-mail glitch" data-text="mail : yyamazaki160&#64;gmail.com"><a href="mailto:yyamazaki160&#64;gmail.com">mail : yyamazaki160&#64;gmail.com</a></p><br>
                     <p class="twitter glitch" data-text="twitter : @snowmount_"><a href="https://twitter.com/snowmount_">twitter : @snowmount_</a></p><br>
@@ -134,6 +140,12 @@
             $('#stalker').removeClass("active");
             $('#stalker2').removeClass("active");
         });
+
+    </script>
+    <!-- Copyright (c) sal.js is Created by Mirek Ciastek(https://github.com/mciastek) -->
+    <script src="../node_modules/sal.js/dist/sal.js"></script>
+    <script>
+        sal();
 
     </script>
 </body>

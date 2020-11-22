@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/html5reset-1.6.1.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="css/style-detail.css">
+    <link rel="stylesheet" href="../dist/sal.css">
     <link rel="stylesheet" href="https://use.typekit.net/stt7ued.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" href="../favicon.ico">
@@ -86,7 +87,7 @@
         <div class="first-img-box">
             <img src="../images/work01-01@1x.jpg" srcset="../images/work01-01@1x.jpg 400w,
                 ../images/work01-01@2x.jpg 800w,
-                ../images/work01-01@3x.jpg 1200w" sizes="100vw" alt="作品画像01" class="project-img first-img">
+                ../images/work01-01@3x.jpg 1200w" sizes="100vw" alt="作品画像01" class="project-img first-img parallax-detail">
         </div>
         <div class="project-detail">
             <div class="img-box">
@@ -122,9 +123,9 @@
                     <p>また、ダーチャカレーを食べたらどういう気持ちになるのか、なってほしいのかといった部分についても考え、サイトを見たときに「食べたら幸せな気持ちになりそう」と思ってもらえるデザインを目指しました。</p>
                     <img src="../images/work01-07@1x.jpg" srcset="../images/work01-07@1x.jpg 400w,
                 ../images/work01-07@2x.jpg 800w,
-                ../images/work01-07@3x.jpg 1200w" sizes="100vw" alt="作品画像07" class="project-img">
+                ../images/work01-07@3x.jpg 1200w" sizes="100vw" alt="作品画像07" class="project-img" data-sal-duration="1000" data-sal-delay="300" data-sal-easing="ease-out-bounce">
                 </div>
-                <div class="intention-box">
+                <div class="intention-box" data-sal="slide-up">
                     <p>コーディングについては、ゆったりとしたローカルな休息をイメージさせるために少しゆっくりめのアニメーションを設定したり、風通しの良い導線を意識したレイアウトにしたりしています。</p>
                     <p>見出しの文字は、jQueryとSVGで手書きしているようなアニメーションを設定して、アイキャッチになるのと併せて手作りのようなあたたかみを感じられるようにしました。</p>
                     <div class="project-video">
@@ -204,6 +205,7 @@
         });
 
     </script>
+    <script src="../dist/sal.js"></script>
 </body>
 
 </html>

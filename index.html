@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="css/html5reset-1.6.1.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/sal.js/dist/sal.css">
     <link rel="stylesheet" href="https://use.typekit.net/stt7ued.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -70,14 +69,14 @@
             <div class="top-container">
                 <p class="main-title text-center"><span class="title1">yukiyama</span><br>
                     <span class="title2">portfolio</span></p>
-                <img src="images/mount.svg" class="mount" alt="山のSVGイラスト">
+                <img src="images/mount.svg" class="mount parallax-mount" alt="山のSVGイラスト">
             </div>
         </section>
         <section class="works">
-            <h2 class="section-header text-center" id="works">
+            <h2 data-sal-duration="800" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce" class="section-header text-center" id="works">
                 works
             </h2>
-            <div class="grid-container">
+            <div class="grid-container parallax-works">
                 <figure class="child1 figure-item"><a href="detail/works01-detail.html"><img src="images/work01-01@1x.jpg" srcset="images/work01-01@1x.jpg 400w,
                 images/work01-01@2x.jpg 800w,
                 images/work01-01@3x.jpg 1200w" alt="作品01">
@@ -94,7 +93,7 @@
                         </div>
                     </a>
                 </figure>
-                <figure class="child2 figure-item"><a href="detail/works02-detail.html"><img src="images/work02-01@3x.jpg" srcset="images/work02-01@3x.jpg 400w,
+                <figure class="child2 figure-item"><a href="detail/works02-detail.html"><img class="parallax-works" src="images/work02-01@3x.jpg" srcset="images/work02-01@3x.jpg 400w,
                 images/work02-01@3x.jpg 800w,
                 images/work02-01@3x.jpg 1200w" alt="作品02">
                         <div class="work-info">
@@ -123,7 +122,7 @@
                         </div>
                     </a>
                 </figure>
-                <figure class="child4 figure-item"><a href="detail/works04-detail.html"><img src="images/work04-01@1x.jpg" srcset="images/work04-01@1x.jpg 400w,
+                <figure class="child4 figure-item"><a href="detail/works04-detail.html"><img class="parallax-works" src=" images/work04-01@1x.jpg" srcset="images/work04-01@1x.jpg 400w,
                 images/work04-01@2x.jpg 800w,
                 images/work04-01@3x.jpg 1200w" alt="作品04">
                         <div class="work-info">
@@ -297,9 +296,9 @@
                         </div>
                     </a>
                 </figure>
-                <figure class="child16 figure-item"><a href="detail/works16-detail.html"><img src="images/work16-01@1x.jpg" srcset="images/work16-01@1x.jpg 400w,
-                images/work16-01@2x.jpg 800w,
-                images/work16-01@3x.jpg 1200w" alt="作品16">
+                <figure class="child16 figure-item"><a href="detail/works16-detail.html"><img src="images/work16-01@.jpg" srcset="images/work16-01@.jpg 400w,
+                images/work16-01@.jpg 800w,
+                images/work16-01@.jpg 1200w" alt="作品16">
                         <div class="work-info">
                             <p class="work-name">アイデア</p>
                             <p>タイポグラフィ</p>
@@ -435,22 +434,6 @@
         });
 
     </script>
-    <!--
-           <script>
-        $(window).on('load', function() {
-            $('#grid').imagesLoaded(function() {
-                $('#grid').masonry({
-                    itemSelector: '.grid-item', //整理される要素のclassを指定
-                    columnWidth: 340, //一列の幅サイズを指定
-                    isAnimated: true, //スムースアニメーション設定
-                    isFitWidth: true, //親要素の幅サイズがピッタリ
-                    isResizable: true //ウィンドウサイズが変更された時に並び替え
-                });
-            });
-        });
-
-    </script>
-    -->
     <script type="text/javascript">
         const stalker = document.getElementById('stalker');
 
@@ -478,6 +461,26 @@
         });
 
     </script>
+    <!-- Copyright (c) simpleParallax.js is Created by Geoffrey Signorato(https://simpleparallax.com/) -->
+    <script src="node_modules/simple-parallax-js/dist/simpleParallax.min.js"></script>
+    <script>
+        var image = document.getElementsByClassName('parallax-mount');
+        new simpleParallax(image, {
+            overflow: true,
+            scale: 0.6
+        });
+
+    </script>
+
+    <!-- Copyright (c) sal.js is Created by Mirek Ciastek(https://github.com/mciastek) -->
+    <script src="node_modules/sal.js/dist/sal.js"></script>
+    <script>
+        sal({
+            once: false,
+        });
+
+    </script>
+
 </body>
 
 </html>

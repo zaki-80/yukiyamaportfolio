@@ -1,0 +1,24 @@
+{
+  "name": "yukiyamaportfolio",
+  "version": "1.0.0",
+  "description": "ポートフォリオ制作の管理",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaki-80/yukiyamaportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaki-80/yukiyamaportfolio/issues"
+  },
+  "homepage": "https://github.com/zaki-80/yukiyamaportfolio#readme",
+  "dependencies": {
+    "sal.js": "^0.8.1",
+    "simple-parallax-js": "^5.6.2"
+  }
+}
