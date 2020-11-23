@@ -486,7 +486,7 @@ top
 .bg-y {
     z-index: -1;
     position: absolute;
-    width: 380px;
+    width: 360px;
     top: 28%;
     right: 8%;
 }
@@ -545,6 +545,7 @@ h3 {
 
     .mount {
         width: 100%;
+        height: 90vh;
         stroke-width: 14px;
     }
 
@@ -629,8 +630,9 @@ h3 {
 
     .bg-y {
         top: 40%;
+        width: 240px;
         right: 16%;
-        opacity: .4
+        opacity: 0.66
     }
 }
 
@@ -655,7 +657,7 @@ h3 {
         font-size: 1.6rem;
         margin: 0 auto;
         letter-spacing: .08em;
-        line-height: 1.6
+        line-height: 1.6;
     }
 
     .name {
