@@ -405,6 +405,23 @@ top
     background: #000;
 }
 
+.parallax-copy {
+    font-size: 7.2vw;
+    align-self: center;
+    height: 100%;
+    padding: 10% 0;
+}
+
+.parallax-pagetop {
+    font-size: 8vw;
+    align-self: center;
+    height: 100%;
+    padding: 0 0 0 12%;
+}
+
+.uparrow {
+    padding: 4% 0 0 4%;
+}
 
 .about {
     position: relative;
@@ -540,7 +557,7 @@ h3 {
     }
 
     .main-title {
-        font-size: 4.8rem;
+        font-size: 8.8vw;
     }
 
     .mount {
@@ -607,7 +624,17 @@ h3 {
     .work-info dl,
     .work-info p {
         font-size: 1rem;
+    }
 
+    .parallax-copy {
+        font-size: 12vw;
+        align-self: center;
+        padding: 8% 0;
+    }
+
+    .parallax-pagetop {
+        font-size: 12vw;
+        padding: 8% 0 8% 14%;
     }
 
     .about {
@@ -641,6 +668,11 @@ h3 {
     /* グリッドコンテナー */
     .grid-container {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .parallax-copy {
+        font-size: 12vw;
+        padding: 8% 0;
     }
 
     .about {
@@ -757,6 +789,16 @@ h3 {
         grid-template-columns: 1fr 1fr;
     }
 
+    .parallax-copy {
+        font-size: 12vw;
+        padding: 8% 0;
+    }
+
+    .parallax-pagetop {
+        font-size: 12vw;
+        padding: 10% 12%;
+    }
+
     .contact,
     .about {
         margin: 0
@@ -792,6 +834,15 @@ h3 {
         grid-template-columns: 1fr;
         grid-gap: 20px;
         padding: 20px;
+    }
+
+    .parallax-copy {
+        font-size: 22vw;
+    }
+
+    .parallax-pagetop {
+        font-size: 22vw;
+        padding: 10%;
     }
 }
 
