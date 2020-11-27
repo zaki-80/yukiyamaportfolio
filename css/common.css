@@ -29,7 +29,7 @@ body {
     letter-spacing: .08em;
     color: #2C2C2C;
     background-color: #E2E2E2;
-    font-weight: 300;
+    font-weight: 600;
     overflow-x: hidden;
     font-feature-settings: "palt";
     -webkit-font-feature-settings: "palt"
@@ -150,6 +150,7 @@ hoverスタイル
     .glitch-14:hover {
         font-size: 1.4rem
     }
+
 
     .glitch:hover::after,
     .glitch:hover::before {
@@ -371,7 +372,7 @@ hoverスタイル
 menu
 ------------------*/
 .menu-list {
-    border-left: 8px dotted #2C2C2C
+    border-left: 4px solid #2C2C2C
 }
 
 .header {
@@ -406,8 +407,6 @@ menu
 .header-contact,
 .menu-list {
     font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-    font-size: 1.4rem;
-    text-transform: uppercase;
     letter-spacing: .04em;
 }
 
@@ -419,7 +418,6 @@ h1 {
     display: inline-block;
     flex-basis: 20%;
     color: #2C2C2C;
-    text-transform: uppercase;
 }
 
 .header-contact a {
@@ -432,7 +430,7 @@ h1 {
     display: inline-block;
     vertical-align: middle;
     width: 1.2em;
-    height: 1.16em;
+    height: 1.1em;
     margin-right: .18em;
     line-height: 1;
     background: url(../images/wavehands.svg) no-repeat;
@@ -464,7 +462,7 @@ h1 {
     top: 20px;
     right: 24px;
     width: 80px;
-    height: 96px;
+    height: 90px;
     padding: 0 12px;
 
 }
@@ -477,7 +475,7 @@ h1 {
 
 
 .menu-item {
-    padding: 4px 0 4px 0;
+    padding: 2px 0;
     margin-bottom: 12px;
 }
 
@@ -597,6 +595,7 @@ h1 {
     }
 
     .menu-item {
+        font-size: 1.6rem;
         background: #2C2C2C
     }
 

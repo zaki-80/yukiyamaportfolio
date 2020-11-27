@@ -7,11 +7,6 @@
         url('../font/Kawaru.ttf') format('truetype');
 }
 
-#loading-text,
-.about-sub dt,
-.work-info .work-name {
-    font-weight: 600
-}
 
 #loader-bg,
 .outer {
@@ -20,13 +15,10 @@
 }
 
 #loading-text {
-    font-family: "Kawaru", "Arial Black", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    font-variation-settings: "gltc"4, "wdth"0;
-    color: #2C2C2C;
-    animation: kawaru-header .1s linear infinite;
+    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     color: #a2a2a2;
     background: #E2E2E2;
-    font-size: 6vw
+    font-size: 4.8vw;
 }
 
 @keyframes loading {
@@ -73,11 +65,12 @@
 
 .copy {
     display: inline-block;
-    position: fixed;
-    bottom: 8px;
-    right: 16px;
+    position: absolute;
+    bottom: 14px;
+    right: 20px;
     font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-    font-size: 1.4rem;
+    font-size: 2.4rem;
+    font-weight: 300;
     text-align: right;
 }
 
@@ -262,30 +255,14 @@ top
 }
 
 .section-header {
-    font-family: "Kawaru", "Arial Black", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    font-variation-settings: "gltc"4, "wdth"0;
+    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     font-size: 8rem;
     padding: 80px 0 120px;
     color: #2C2C2C;
-    animation: kawaru-header .1s linear infinite;
-}
-
-@keyframes kawaru-header {
-    0% {
-        font-variation-settings: "wdth"0, "gltc"0;
-    }
-
-    50% {
-        font-variation-settings: "wdth"0, "gltc"1;
-    }
-
-    100% {
-        font-variation-settings: "wdth"0, "gltc"0;
-    }
 }
 
 .about .section-header {
-    padding: 40px 0 4% 4%;
+    padding: 4% 0 4% 4%;
 }
 
 .works {
@@ -407,6 +384,7 @@ top
 
 .parallax-copy {
     font-size: 7.2vw;
+    font-weight: 300;
     align-self: center;
     height: 100%;
     padding: 10% 0;
@@ -414,9 +392,10 @@ top
 
 .parallax-pagetop {
     font-size: 8vw;
+    font-weight: 300;
     align-self: center;
     height: 100%;
-    padding: 0 0 0 12%;
+    padding: 0 0 0 14%;
 }
 
 .uparrow {
@@ -440,16 +419,6 @@ top
     padding-bottom: 6%
 }
 
-.name,
-.about {
-    color: #2C2C2C;
-}
-
-.about-sub,
-.about-sub dt {
-    font-size: 1.4rem;
-}
-
 .work-info dd,
 .work-info dt {
     line-height: 1.6
@@ -458,18 +427,18 @@ top
 .about {
     padding: 80px 0 0 0;
     padding-bottom: 0;
-    height: 100vh;
 }
 
 .about-info {
-    width: 32%;
+    width: 40%;
     text-align: left;
     font-size: 1.4rem;
     margin: 0 0 0 4%;
+    line-height: 2
 }
 
 .about-sub {
-    padding: 32px 0
+    padding: 40px 0
 }
 
 .about-sub dt {
@@ -478,33 +447,19 @@ top
 
 .about-sub dd {
     padding-bottom: 32px;
-    line-height: 1.6
 }
 
 .name {
-    font-size: 2rem;
-    padding-bottom: 16px;
-    font-weight: 600;
-}
-
-.space,
-.space::before {
-    letter-spacing: .6em
-}
-
-.aboutme {
-    line-height: 1.6
-}
-
-.space::before {
-    content: " "
+    font-size: 2.8rem;
+    padding-bottom: 6%;
+    line-height: 1;
 }
 
 .bg-y {
     z-index: -1;
     position: absolute;
-    width: 360px;
-    top: 28%;
+    width: 240px;
+    top: 40%;
     right: 8%;
 }
 
@@ -517,20 +472,17 @@ top
 }
 
 h3 {
-    font-size: 1.6rem;
-    text-transform: uppercase;
+    letter-spacing: .04em;
     padding-bottom: 16px;
-    font-weight: 600;
 }
 
 .contact {
     position: relative;
     display: inline-block;
-    padding: 0 0 0 32px;
-    margin-left: 48px;
-    border-left: 8px dotted #2C2C2C;
+    padding: 0 0 0 40px;
+    margin-left: 40px;
+    border-left: 4px solid #2C2C2C;
     align-self: flex-start;
-    font-weight: 600;
 }
 
 .contact p {
@@ -538,7 +490,6 @@ h3 {
     display: inline-block;
     white-space: nowrap;
     margin-bottom: 8px;
-    font-size: 1.6rem;
     letter-spacing: .04em;
     vertical-align: middle;
     line-height: 1
@@ -553,7 +504,7 @@ h3 {
 
 @media (max-width:767px) {
     #loading-text {
-        font-size: 8vw
+        font-size: 6.4vw
     }
 
     .main-title {
@@ -572,7 +523,7 @@ h3 {
     }
 
     .about .section-header {
-        padding: 40px 0 12%;
+        padding: 40px 0 8%;
         text-align: center;
     }
 
@@ -582,6 +533,7 @@ h3 {
     }
 
     .contact {
+        padding: 0 0 0 24px;
         margin-left: 0;
     }
 
@@ -593,7 +545,7 @@ h3 {
         position: static;
         width: 100%;
         font-size: 1.4rem;
-        padding: 40px 16px 8px;
+        padding: 80px 16px 4%;
     }
 
     .top {
@@ -644,7 +596,7 @@ h3 {
 
     .about-container {
         flex-direction: column;
-        margin: 0 4%;
+        margin: 0 4% 12%;
     }
 
     .about-info {
@@ -652,14 +604,14 @@ h3 {
         font-size: 1.6rem;
         margin: 0 auto;
         letter-spacing: .08em;
-        line-height: 1.6
     }
 
     .bg-y {
-        top: 40%;
-        width: 240px;
-        right: 16%;
-        opacity: 0.66
+        z-index: 0;
+        position: static;
+        display: block;
+        width: 160px;
+        margin: 0 auto;
     }
 }
 
@@ -683,18 +635,19 @@ h3 {
 
     .about-container {
         flex-direction: column;
+
     }
 
     .about-info {
         font-size: 1.6rem;
         margin: 0 auto;
         letter-spacing: .08em;
-        line-height: 1.6;
+        line-height: 2;
     }
 
     .name {
-        font-size: 1.6rem;
-        padding-bottom: 16px
+        font-size: 3.2rem;
+        padding-bottom: 24px
     }
 
     .name::before {
@@ -702,12 +655,9 @@ h3 {
         letter-spacing: .24em
     }
 
-    .about-sub {
-        font-size: 1.4rem;
-        line-height: 1.6
-    }
 
     .about-sub dd {
+        font-size: 1.6rem;
         padding-bottom: 32px
     }
 
@@ -716,7 +666,7 @@ h3 {
     }
 
     .aboutme {
-        line-height: 1.7
+        line-height: 2
     }
 
     .about {
@@ -727,15 +677,14 @@ h3 {
     .about-info {
         width: 100%;
         text-align: left;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .contact {
-        border-left: 8px dotted #2C2C2C;
+        border-left: 4px solid #2C2C2C;
         padding: 0 0 0 24px;
-        margin: 20px 0 0 0;
+        margin: 20px 0;
         align-self: flex-start;
-        font-weight: 600;
     }
 
     .contact p {
@@ -781,7 +730,7 @@ h3 {
     }
 
     .about .section-header {
-        padding: 40px 0 4% 4%;
+        padding: 40px 0 40px 4%;
     }
 
     /* グリッドコンテナー */
@@ -815,19 +764,33 @@ h3 {
 
     .about-info {
         width: 50%;
-        padding-right: 24px;
+    }
+
+    .contact {
+        padding: 0 0 0 40px;
+        margin-left: 40px;
+        border-left: 4px solid #2C2C2C;
+        align-self: flex-start;
     }
 
     .contact a {
-        font-size: 1.8rem;
         margin-bottom: 20px
     }
 }
 
 @media (max-width:450px) {
+    .main-title {
+        font-size: 10vw;
+    }
+
+    .mount {
+        width: 100%;
+        height: 80vh;
+    }
+
     .section-header {
         font-size: 12vw;
-        padding: 8% 0 14%;
+        padding: 8% 0;
     }
 
     .grid-container {
@@ -849,11 +812,6 @@ h3 {
 @media (max-width:340px) {
     .main-title {
         font-size: 3rem;
-    }
-
-    .mount {
-        width: 100%;
-        stroke-width: 16px;
     }
 
 

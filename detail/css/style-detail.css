@@ -31,8 +31,9 @@ project-summary-pc
     display: flex;
     flex-direction: column;
     font-size: 1.4rem;
-    line-height: 1.6;
+    line-height: 2;
     margin: 0 0 20px;
+    font-weight: 600;
 }
 
 .project-summary {
@@ -43,19 +44,11 @@ project-summary-pc
 }
 
 dl {
-    padding-bottom: 3.2vh;
+    padding-bottom: 6vh;
 }
 
-dt {
-    font-weight: 600;
-}
 
-dd a {
-    line-height: 1;
-    vertical-align: bottom;
-}
-
-dt:first-child {
+.url {
     line-height: 1;
 }
 
@@ -64,14 +57,14 @@ dt:first-child {
 }
 
 .summary {
-    padding-bottom: 3.2vh;
+    padding-bottom: 6vh;
 }
 
 .back {
+    font-size: 1.6rem;
     position: absolute;
     padding: 10% 0 0 0;
     font-weight: 600;
-    text-transform: uppercase;
     line-height: 1;
 }
 
@@ -83,7 +76,7 @@ dt:first-child {
     display: inline-block;
     position: absolute;
     right: 0;
-    padding: 16% 0 0 16%;
+    padding: 16% 0 0 0;
     background-color: #E2E2E2;
 }
 
@@ -137,6 +130,7 @@ project-detail-pc
 
 .references {
     font-size: 1rem;
+    font-weight: 300;
     padding: 240px 0 0;
 }
 
