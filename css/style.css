@@ -23,7 +23,7 @@
 
 @keyframes loading {
     from {
-        max-width: 0
+        max-width: 0;
     }
 }
 
@@ -64,14 +64,11 @@
 }
 
 .copy {
-    display: inline-block;
-    position: absolute;
-    bottom: 14px;
-    right: 20px;
+    display: block;
     font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-    font-size: 2.4rem;
     font-weight: 300;
-    text-align: right;
+    font-size: 1.2rem;
+    padding: 20px;
 }
 
 @media (hover:hover) {
@@ -261,10 +258,6 @@ top
     color: #2C2C2C;
 }
 
-.about .section-header {
-    padding: 4% 0 4% 4%;
-}
-
 .works {
     padding-bottom: 8%;
 }
@@ -356,11 +349,11 @@ top
 
 .figure-item:hover img,
 .figure-item:hover video {
-    -webkit-filter: grayscale(100%) contrast(140%);
-    -moz-filter: grayscale(100%) contrast(140%);
-    -ms-filter: grayscale(100%) contrast(140%);
-    -o-filter: grayscale(100%) contrast(140%);
-    filter: grayscale(100%) contrast(140%);
+    -webkit-filter: grayscale(100%) contrast(100%);
+    -moz-filter: grayscale(100%) contrast(100%);
+    -ms-filter: grayscale(100%) contrast(100%);
+    -o-filter: grayscale(100%) contrast(100%);
+    filter: grayscale(100%) contrast(100%);
     animation: skew 4s infinite;
 }
 
@@ -421,7 +414,7 @@ top
 
 .work-info dd,
 .work-info dt {
-    line-height: 1.6
+    line-height: 1.7;
 }
 
 .about {
@@ -429,77 +422,70 @@ top
     padding-bottom: 0;
 }
 
+.aboutme {
+    padding-bottom: 80px;
+    text-align: justify;
+}
+
 .about-info {
-    width: 40%;
-    text-align: left;
+    width: 400px;
     font-size: 1.4rem;
-    margin: 0 0 0 4%;
-    line-height: 2
+    margin: 0 auto;
+    line-height: 2;
+
 }
 
 .about-sub {
-    padding: 40px 0
+    padding-bottom: 80px;
 }
 
 .about-sub dt {
+    padding-bottom: 4px;
     letter-spacing: .08em;
 }
 
 .about-sub dd {
-    padding-bottom: 32px;
+    padding-bottom: 40px;
+    text-align: left;
 }
 
 .name {
-    font-size: 2.8rem;
-    padding-bottom: 6%;
-    line-height: 1;
+    font-size: 2.6rem;
+    padding-bottom: 8%;
 }
 
 .bg-y {
-    z-index: -1;
-    position: absolute;
-    width: 240px;
-    top: 40%;
-    right: 8%;
-}
-
-.about-container {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
+    width: 160px;
+    margin: 40px 0 80px;
 }
 
 h3 {
     letter-spacing: .04em;
     padding-bottom: 16px;
+    vertical-align: middle;
 }
 
 .contact {
-    position: relative;
-    display: inline-block;
-    padding: 0 0 0 40px;
-    margin-left: 40px;
-    border-left: 4px solid #2C2C2C;
+    width: 40%;
+    margin: 0 auto;
+    padding: 48px 0 80px 0;
+    border-top: 4px solid #2C2C2C;
     align-self: flex-start;
 }
 
 .contact p {
-    text-align: left;
     display: inline-block;
     white-space: nowrap;
     margin-bottom: 8px;
     letter-spacing: .04em;
     vertical-align: middle;
-    line-height: 1
+    line-height: 1;
 }
 
-.contact p:last-child {
-    padding: 0;
+.contact-link {
+    display: inline-block;
+    text-align: left;
 }
-
-
 
 
 @media (max-width:767px) {
@@ -518,23 +504,7 @@ h3 {
     }
 
     .section-header {
-        text-align: center;
         padding: 8% 0 14%;
-    }
-
-    .about .section-header {
-        padding: 40px 0 8%;
-        text-align: center;
-    }
-
-    .contact,
-    .about {
-        color: #2C2C2C;
-    }
-
-    .contact {
-        padding: 0 0 0 24px;
-        margin-left: 0;
     }
 
     .onlypc {
@@ -586,32 +556,19 @@ h3 {
 
     .parallax-pagetop {
         font-size: 12vw;
-        padding: 8% 0 8% 14%;
-    }
-
-    .about {
-        padding: 40px 0 0 0;
-        height: auto;
-    }
-
-    .about-container {
-        flex-direction: column;
-        margin: 0 4% 12%;
+        padding: 8% 0 8% 16%;
     }
 
     .about-info {
-        width: 100%;
-        font-size: 1.6rem;
-        margin: 0 auto;
+        width: 396px;
+        font-size: 1.4rem;
         letter-spacing: .08em;
     }
 
-    .bg-y {
-        z-index: 0;
-        position: static;
-        display: block;
-        width: 160px;
-        margin: 0 auto;
+    .contact {
+        width: 100%;
+        max-width: 396px;
+        font-size: 1.6rem;
     }
 }
 
@@ -626,71 +583,6 @@ h3 {
         font-size: 12vw;
         padding: 8% 0;
     }
-
-    .about {
-        margin: 0 4%;
-        padding: 0 0 8% 0;
-        height: auto;
-    }
-
-    .about-container {
-        flex-direction: column;
-
-    }
-
-    .about-info {
-        font-size: 1.6rem;
-        margin: 0 auto;
-        letter-spacing: .08em;
-        line-height: 2;
-    }
-
-    .name {
-        font-size: 3.2rem;
-        padding-bottom: 24px
-    }
-
-    .name::before {
-        content: "";
-        letter-spacing: .24em
-    }
-
-
-    .about-sub dd {
-        font-size: 1.6rem;
-        padding-bottom: 32px
-    }
-
-    .about-sub dd:last-child {
-        padding-bottom: 0
-    }
-
-    .aboutme {
-        line-height: 2
-    }
-
-    .about {
-        padding: 0;
-        height: auto;
-    }
-
-    .about-info {
-        width: 100%;
-        text-align: left;
-        font-size: 1.6rem;
-    }
-
-    .contact {
-        border-left: 4px solid #2C2C2C;
-        padding: 0 0 0 24px;
-        margin: 20px 0;
-        align-self: flex-start;
-    }
-
-    .contact p {
-        margin: 0 0 4%
-    }
-
 }
 
 
@@ -729,10 +621,6 @@ h3 {
         }
     }
 
-    .about .section-header {
-        padding: 40px 0 40px 4%;
-    }
-
     /* グリッドコンテナー */
     .grid-container {
         grid-template-columns: 1fr 1fr;
@@ -745,36 +633,11 @@ h3 {
 
     .parallax-pagetop {
         font-size: 12vw;
-        padding: 10% 12%;
-    }
-
-    .contact,
-    .about {
-        margin: 0
+        padding: 10% 15%;
     }
 
     .work-info {
         padding: 10% 12%
-    }
-
-    .about-img {
-        width: 16%;
-        padding: 4% 0
-    }
-
-    .about-info {
-        width: 50%;
-    }
-
-    .contact {
-        padding: 0 0 0 40px;
-        margin-left: 40px;
-        border-left: 4px solid #2C2C2C;
-        align-self: flex-start;
-    }
-
-    .contact a {
-        margin-bottom: 20px
     }
 }
 
@@ -793,6 +656,11 @@ h3 {
         padding: 8% 0;
     }
 
+    .about .section-header {
+        font-size: 12vw;
+        padding: 10% 0 24%;
+    }
+
     .grid-container {
         grid-template-columns: 1fr;
         grid-gap: 20px;
@@ -805,7 +673,27 @@ h3 {
 
     .parallax-pagetop {
         font-size: 22vw;
-        padding: 10%;
+        padding: 10% 10% 10% 15%;
+    }
+
+    .name {
+        font-size: 2rem;
+        padding-bottom: 8%;
+    }
+
+    .about-info {
+        width: 338px;
+        font-size: 1.2rem;
+        letter-spacing: .08em;
+    }
+
+    .contact {
+        width: 338px;
+        font-size: 1.6rem;
+    }
+
+    .bg-y {
+        width: 120px;
     }
 }
 
@@ -814,8 +702,49 @@ h3 {
         font-size: 3rem;
     }
 
+    .about-info br {
+        display: none;
+    }
+
+    .about-info {
+        width: 90%;
+        font-size: 1.2rem;
+        letter-spacing: .08em;
+    }
+
+    .contact {
+        width: 90%;
+        font-size: 1.6rem;
+    }
 
     .contact a {
-        font-size: 1.5rem;
+        font-size: 5.6vw;
+    }
+
+    .contact .glitch:hover {
+        color: #2C2C2C;
+        background: none;
+    }
+
+    .contact .glitch:hover::after,
+    .contact .glitch:hover::before {
+        content: "";
+        display: none;
+    }
+
+    .contact a:hover {
+        color: #2C2C2C;
+    }
+
+    .glitch p {
+        line-height: 1;
+    }
+
+    .contact-mail {
+        line-height: 1;
+    }
+
+    .bg-y {
+        margin: 32px 0 72px;
     }
 }

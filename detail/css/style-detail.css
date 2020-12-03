@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 .header {
     color: #2C2C2C;
 }
@@ -38,25 +37,32 @@ project-summary-pc
 
 .project-summary {
     position: fixed;
-    padding: 120px 2% 0 32px;
+    padding: 120px 6% 0 40px;
     width: 35%;
     height: 100vh;
+    line-height: 1.4;
 }
 
-dl {
-    padding-bottom: 6vh;
+.project-summary dl {
+    padding-bottom: 2vh;
+    font-size: 1.2rem;
 }
 
+.project-summary dd {
+    padding-bottom: 4vh;
+}
 
 .url {
     line-height: 1;
 }
 
 .category {
-    padding-bottom: 6vh;
+    padding-bottom: 4vh;
+    font-size: 1.2rem;
 }
 
 .summary {
+    font-size: 1.2rem;
     padding-bottom: 6vh;
 }
 
@@ -75,8 +81,8 @@ dl {
 .barcode {
     display: inline-block;
     position: absolute;
-    right: 0;
-    padding: 16% 0 0 0;
+    right: 12%;
+    padding: 40px 0 0;
     background-color: #E2E2E2;
 }
 
@@ -94,13 +100,13 @@ project-detail-pc
 --------------------*/
 .project-detail {
     width: 65%;
-    padding: 0 6% 0;
+    padding: 0 4% 0 6%;
     margin-left: 35%;
 }
 
 .first-img-box {
     width: 65%;
-    padding: 8% 6% 0;
+    padding: 8% 4% 0 6%;
     margin-left: 35%;
 }
 
@@ -119,6 +125,7 @@ project-detail-pc
 }
 
 .project-intention p {
+    padding: 0 1% 0;
     padding-bottom: 16px;
 }
 
@@ -126,12 +133,27 @@ project-detail-pc
     padding-bottom: 40px;
 }
 
+.definition {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1% 0;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
 
+.definition dt {
+    width: 15%;
+}
+
+.definition dd {
+    width: 85%;
+}
 
 .references {
     font-size: 1rem;
     font-weight: 300;
     padding: 240px 0 0;
+    line-height: 1.5;
 }
 
 /*-------------------
@@ -172,8 +194,10 @@ project-summary-sp
         position: static;
         width: 100%;
         height: auto;
-        padding: 72% 0 20% 2%;
-        margin-bottom: 10%;
+        padding: 70% 0 24% 2%;
+        margin-bottom: 24%;
+        font-size: 1.2rem;
+        line-height: 1.8;
     }
 
     .project-detail {
@@ -188,19 +212,15 @@ project-summary-sp
         width: 100%;
         margin: 0;
         padding: 20px 0 0;
-        word-wrap:
     }
 
     .project-img img {
-        padding-bottom: 20px;
+        padding-bottom: 0px;
     }
 
     dl {
-        padding-bottom: 4vh;
-    }
-
-    dt {
-        font-weight: 600;
+        line-height: 1.4;
+        padding-bottom: 2.4vh;
     }
 
     dd a {
@@ -208,10 +228,14 @@ project-summary-sp
         line-height: 1;
     }
 
+
     .category {
-        padding-bottom: 4vh;
+        padding-bottom: 2.4vh;
     }
 
+    .summary {
+        padding-bottom: 2.4vh;
+    }
 
     .back {
         position: static;
@@ -230,6 +254,7 @@ project-summary-sp
     }
 
     .barcode img {
+        width: 24vw;
         text-align: right;
         margin: 0 auto;
     }
@@ -246,26 +271,37 @@ project-detail-sp
         padding-bottom: 2%;
     }
 
+    .project-name {
+        font-size: 2.2rem;
+        padding: 0 0 2px 0;
+    }
+
     .intention-box {
         padding-bottom: 6%;
     }
 
+    .intention-box dl {
+        font-size: 1.2rem;
+    }
+
     .project-img {
         width: 100%;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
     .project-video {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
     .references {
         padding: 160px 0 0;
         word-wrap: break-word;
+        line-height: 1.6;
     }
 
     .project-summary {
-        padding: 0 2% 10%;
+        width: 80%;
+        padding: 0 8% 10%;
     }
 }
 

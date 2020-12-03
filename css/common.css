@@ -428,18 +428,14 @@ h1 {
 
 .hand {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: inherit;
     width: 1.2em;
-    height: 1.1em;
-    margin-right: .18em;
+    height: 1.2em;
     line-height: 1;
+    margin-right: .14em;
     background: url(../images/wavehands.svg) no-repeat;
     background-size: contain;
-
-}
-
-.wavehands:hover {
-    background-color: #2C2C2C;
+    background-position: center center;
 }
 
 .header-contact a:hover {
