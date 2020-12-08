@@ -151,6 +151,9 @@ hoverスタイル
         font-size: 1.4rem
     }
 
+    .glitch-12:hover {
+        font-size: 1.2rem;
+    }
 
     .glitch:hover::after,
     .glitch:hover::before {
@@ -363,6 +366,10 @@ hoverスタイル
 
         .glitch-14:hover {
             font-size: 1.4rem;
+        }
+
+        .glitch-12:hover {
+            font-size: 1.2rem;
         }
     }
 }

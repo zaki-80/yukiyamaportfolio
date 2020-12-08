@@ -19,7 +19,9 @@ h2 {
 }
 
 
-
+.link:hover {
+    cursor: pointer;
+}
 
 /*-------------------
 
@@ -37,10 +39,10 @@ project-summary-pc
 
 .project-summary {
     position: fixed;
-    padding: 120px 6% 0 40px;
-    width: 35%;
+    padding: 160px 10% 0 10%;
+    width: 40%;
     height: 100vh;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .project-summary dl {
@@ -81,7 +83,7 @@ project-summary-pc
 .barcode {
     display: inline-block;
     position: absolute;
-    right: 12%;
+    right: 20%;
     padding: 40px 0 0;
     background-color: #E2E2E2;
 }
@@ -99,15 +101,15 @@ project-detail-pc
 
 --------------------*/
 .project-detail {
-    width: 65%;
-    padding: 0 4% 0 6%;
-    margin-left: 35%;
+    width: 60%;
+    padding: 0 80px 0 0;
+    margin-left: 40%;
 }
 
 .first-img-box {
-    width: 65%;
-    padding: 8% 4% 0 6%;
-    margin-left: 35%;
+    width: 60%;
+    padding: 160px 80px 0 0;
+    margin-left: 40%;
 }
 
 .project-img {
@@ -117,7 +119,6 @@ project-detail-pc
 
 .project-video {
     padding-bottom: 40px;
-
 }
 
 .project-video video {
@@ -179,6 +180,8 @@ project-detail-pc
     }
 
 
+
+
     /*-------------------
 
 project-summary-sp
@@ -218,12 +221,12 @@ project-summary-sp
         padding-bottom: 0px;
     }
 
-    dl {
+    .project-summary dl {
         line-height: 1.4;
         padding-bottom: 2.4vh;
     }
 
-    dd a {
+    .project-summary dd a {
         padding: 0 0.4px;
         line-height: 1;
     }
@@ -301,7 +304,9 @@ project-detail-sp
 
     .project-summary {
         width: 80%;
+        font-size: 1.4rem;
         padding: 0 8% 10%;
+        margin-bottom: 80px;
     }
 }
 
@@ -317,16 +322,36 @@ project-detail-sp
     }
 
     .project-summary {
-        padding: 120px 2% 0 24px;
+        padding: 160px 8% 0 8%;
     }
 
     .first-img-box {
-        width: 65%;
-        padding: 10% 24px 0;
-        margin-left: 35%;
+        width: 60%;
+        padding: 160px 40px 0 0;
+    }
+
+    .project-img {
+        padding-bottom: 20px;
+    }
+
+    .project-video {
+        padding-bottom: 20px;
     }
 
     .project-detail {
-        padding: 0 24px 0;
+        padding: 0 40px 0 0;
+    }
+}
+
+
+
+
+@media (max-width:450px) {
+    .definition dt {
+        width: 25%;
+    }
+
+    .definition dd {
+        width: 75%;
     }
 }
