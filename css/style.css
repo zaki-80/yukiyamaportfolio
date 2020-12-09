@@ -380,9 +380,18 @@ top
 }
 
 /* グリッドアイテム */
-.child3 {
+.child1 {
+    padding: 12px 0;
+    background: #000;
+}
 
+.child3 {
     padding: 24px 0;
+    background: #000;
+}
+
+.child8 {
+    padding: 12px 0;
     background: #000;
 }
 
@@ -391,9 +400,8 @@ top
     background: #000;
 }
 
-
-.child20 {
-    padding: 30px 0;
+.child15 {
+    padding: 12px 0;
     background: #000;
 }
 
