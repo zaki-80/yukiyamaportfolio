@@ -199,8 +199,9 @@
         opacity: .88;
     }
 
-    .parallax-pagetop:hover {
-        font-style: italic;
+    .parallax-pagetop a:hover {
+        text-decoration: underline;
+        text-decoration-color: #2C2C2C;
 
     }
 
@@ -415,6 +416,10 @@ top
     align-self: center;
     height: 100%;
     padding: 0 0 0 14%;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .uparrow {
