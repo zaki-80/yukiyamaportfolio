@@ -406,6 +406,7 @@ menu
     overflow: hidden;
 }
 
+
 /* 2つ目のp */
 .slide p + p {
     display: none;
