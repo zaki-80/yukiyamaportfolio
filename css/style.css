@@ -19,39 +19,33 @@
     height: 20px;
     border-radius: 50%;
     position: absolute;
-    opacity: 1;
     background: #2C2C2C;
-    animation: loading .4s linear infinite;
+    transform: scale(1);
+    opacity: 1;
+    animation: loading .42s linear infinite;
 }
 
 .loading-text {
-    width: 240px;
+    width: 220px;
     margin: 0 auto;
-    padding: 32px;
+    padding: 24px;
     font-size: 4.8rem;
 }
 
 
 
 @keyframes loading {
-    0% {
-        background: #2C2C2C;
-    }
 
-    40% {
-        background: #2C2C2C;
-    }
-
-    50% {
-        background: #E2E2E2;
-    }
-
+    0%,
     60% {
-        background: #2C2C2C;
+        transform: scale(1);
+        opacity: 1;
     }
 
+    61%,
     100% {
-        background: #2C2C2C;
+        transform: scale(0.98);
+        opacity: 0;
     }
 }
 
@@ -527,9 +521,18 @@ h3 {
 
 
 @media (max-width:767px) {
-    #loading-text {
-        font-size: 6.4vw
+    .loading-circle {
+        width: 16px;
+        height: 16px;
     }
+
+    .loading-text {
+        width: 190px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 4rem;
+    }
+
 
     .main-title {
         font-size: 8.8vw;

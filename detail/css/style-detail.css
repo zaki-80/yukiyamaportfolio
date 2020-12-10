@@ -80,18 +80,6 @@ project-summary-pc
     content: "<";
 }
 
-.barcode {
-    display: inline-block;
-    position: absolute;
-    right: 20%;
-    padding: 40px 0 0;
-    background-color: #E2E2E2;
-}
-
-.barcode img {
-    mix-blend-mode: multiply;
-}
-
 
 
 
@@ -198,7 +186,6 @@ project-summary-sp
         width: 100%;
         height: auto;
         padding: 70% 0 24% 2%;
-        margin-bottom: 24%;
         font-size: 1.2rem;
         line-height: 1.8;
     }
@@ -249,19 +236,6 @@ project-summary-sp
         content: "<";
     }
 
-    .barcode {
-        display: inline-block;
-        margin: 0 auto;
-        position: absolute;
-        padding: 0;
-    }
-
-    .barcode img {
-        width: 24vw;
-        text-align: right;
-        margin: 0 auto;
-    }
-
 
 
 
@@ -305,8 +279,7 @@ project-detail-sp
     .project-summary {
         width: 80%;
         font-size: 1.4rem;
-        padding: 0 8% 10%;
-        margin-bottom: 80px;
+        padding: 0 4% 10%;
     }
 }
 
