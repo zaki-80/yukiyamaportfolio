@@ -9,7 +9,10 @@
 
 .biography,
 body {
-    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-family: "Neue Haas Grotesk Display Pro",
+        "Helvetica Neue",
+        -apple-system,
+        BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 }
 
 * {
@@ -145,6 +148,8 @@ hoverスタイル
         font-size: 1.6rem;
         position: relative;
         background: #2C2C2C;
+        transition: .1s;
+        padding: 1px;
     }
 
     .glitch-14:hover {
@@ -162,7 +167,7 @@ hoverスタイル
         color: #FEFEFE;
         background: #2C2C2C;
         overflow: hidden;
-        clip: rect(0, 900px, 0, 0)
+        clip: rect(0, 900px, 0, 0);
     }
 
     .glitch:hover::after {
@@ -479,7 +484,7 @@ h1 {
 
 
 .menu-item {
-    padding: 2px 0;
+    padding: 2px;
     margin-bottom: 12px;
 }
 
