@@ -30,6 +30,7 @@
     margin: 0 auto;
     padding: 24px;
     font-size: 4.8rem;
+    letter-spacing: .02em;
 }
 
 
@@ -566,6 +567,7 @@ h3 {
 
     .section-header {
         padding: 8% 0 14%;
+        letter-spacing: .02em;
     }
 
     .onlypc {
