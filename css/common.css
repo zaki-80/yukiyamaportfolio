@@ -29,7 +29,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    letter-spacing: .08em;
+    letter-spacing: .04em;
     color: #2C2C2C;
     background-color: #E2E2E2;
     font-weight: 600;
@@ -405,7 +405,7 @@ menu
     background: rgba(0, 0, 0, 0);
     padding: 0;
     line-height: 1.2;
-    letter-spacing: .04em;
+    letter-spacing: .02em;
     color: #2C2C2C;
     white-space: nowrap;
     overflow: hidden;
@@ -420,7 +420,7 @@ menu
 .header-contact,
 .menu-list {
     font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-    letter-spacing: .04em;
+    letter-spacing: .02em;
 }
 
 h1 {
