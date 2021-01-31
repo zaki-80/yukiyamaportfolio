@@ -145,6 +145,10 @@ project-detail-pc
     line-height: 1.5;
 }
 
+.references a {
+    color: #666;
+}
+
 /*-------------------
 
 □□□ sp □□□
@@ -183,11 +187,11 @@ project-summary-sp
     .project-summary {
         order: 2;
         position: static;
-        width: 100%;
         height: auto;
-        padding: 70% 0 24% 2%;
-        font-size: 1.2rem;
         line-height: 1.8;
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 0 4% 10%;
     }
 
     .project-detail {
@@ -209,7 +213,7 @@ project-summary-sp
     }
 
     .project-summary dl {
-        line-height: 1.4;
+        line-height: 1.6;
         padding-bottom: 2.4vh;
     }
 
@@ -274,12 +278,6 @@ project-detail-sp
         padding: 160px 0 0;
         word-wrap: break-word;
         line-height: 1.6;
-    }
-
-    .project-summary {
-        width: 80%;
-        font-size: 1.4rem;
-        padding: 0 4% 10%;
     }
 }
 
