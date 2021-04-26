@@ -182,6 +182,10 @@
         animation: skew 4s infinite, flash .1s ease-in infinite;
     }
 
+    .child24 .work-info:hover {
+        cursor: default;
+    }
+
     .work-info:hover dl,
     .work-info:hover p {
         z-index: 0;
@@ -438,6 +442,24 @@ works
 .child15 {
     padding: 12px 0;
     background: #000;
+}
+
+.child24 {
+    text-align: center;
+    line-height: 1;
+    font-size: 2rem;
+    overflow: hidden;
+    background: #FEFEFE;
+    position: relative;
+
+}
+
+.comingsoon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
 }
 
 .trace-container {
