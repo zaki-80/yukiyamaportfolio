@@ -239,31 +239,34 @@ top
 
 .main-title {
     z-index: 10;
-    font-size: 8.2vw;
-    font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    font-size: 1.2vw;
+    font-family: "Trebuchet MS", "Neue Haas Grotesk Display Pro", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     line-height: 1.1;
     display: inline-block;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-    bottom: -6%;
+    bottom: 4%;
     width: 100%;
     white-space: nowrap;
+    color: #D2DC3E;
     text-shadow: 1px 1px 0 #2C2C2C,
         -1px 1px 0 #2C2C2C,
         1px -1px 0 #2C2C2C,
         -1px -1px 0 #2C2C2C;
-    color: #fff;
+    font-style: italic;
 }
 
 .title1 {
     text-transform: lowercase;
 }
 
-.title2 {
-    text-transform: uppercase;
+.main-title::first-letter {
+    text-transform: capitalize;
 }
+
+.title2 {}
 
 .section-header {
     font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
@@ -724,11 +727,10 @@ top-sp
 ----------*/
     .main-title {
         z-index: 10;
-        font-size: 6rem;
-        font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-size: 1rem;
         display: block;
         position: absolute;
-        bottom: -6%;
+        bottom: 3%;
         width: 100%;
     }
 
