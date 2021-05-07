@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="yukiyama portfolio">
+    <title>yukiyama portfolio | work26</title>
+    <link rel="stylesheet" href="../css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style-detail.css">
+    <link rel="stylesheet" href="https://use.typekit.net/stt7ued.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button class="hamburger">
+        <span class="hamburger__line hamburger__line1"></span>
+        <span class="hamburger__line hamburger__line2"></span>
+        <span class="hamburger__line hamburger__line3"></span>
+    </button>
+    <header class="header">
+        <div class="biography">
+            <h1>yukiyama portfolio</h1>
+            <div class="slide">
+                <p>web design | graphic design | typography , Japan</p>
+                <p>web design | graphic design | typography , Japan</p>
+            </div>
+        </div>
+        <div class="header-contact text-center">
+            <p><a href="../about/about.html#contact" class="glitch glitch-header-contact" data-text="contact"><span class="hand"></span>contact</a></p>
+        </div>
+        <div class="menu">
+            <button class="hamburger">
+                <span class="hamburger__line hamburger__line1"></span>
+                <span class="hamburger__line hamburger__line2"></span>
+                <span class="hamburger__line hamburger__line3"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="../index.html">
+                            <span class="glitch" data-text="top">top
+                            </span>
+                        </a>
+
+                    </li>
+                    <li class="menu-item"><a href="../index.html#works">
+                            <span class="glitch" data-text="works">works</span></a>
+                    </li>
+                    <li class="menu-item"><a href="../about/about.html">
+                            <span class="glitch" data-text="about">about</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="work-detail">
+        <div class="project-summary">
+            <h2 class="project-name">ONOONO BOOK STORE webサイト</h2>
+            <p class="category">webデザイン/コーディング</p>
+            <p class="summary">
+                架空の書店「ONOONO BOOK STORE」のwebデザイン制作。
+            </p>
+            <dl>
+                <dt>URL：</dt>
+                <dd><a href="https://onoonobookstore.studio.site/" class="url glitch glitch-12" data-text="https://onoonobookstore.studio.site/">https://onoonobookstore.studio.site/</a></dd>
+                <dt>使用ツール・言語：</dt>
+                <dd>
+                    AdobeXD、STUDIO
+                </dd>
+            </dl>
+            <div class="back onlypc">
+                <a href="../index.html#works" class="glitch" data-text="<back"><span class="lt">back</span></a>
+            </div>
+
+        </div>
+        <div class="first-img-box">
+            <img src="../images/work26-01@3x.jpg" srcset="../images/work26-01@1x.jpg 400w,
+                ../images/work26-01@3x.jpg 800w,
+                ../images/work26-01@3x.jpg 1200w" sizes="100vw" alt="作品画像01" class="project-img first-img">
+        </div>
+        <div class="project-detail">
+            <div class="img-box">
+                <img src="../images/work26-02@1x.jpg" srcset="../images/work26-02@1x.jpg 400w,
+                ../images/work26-02@2x.jpg 800w,
+                ../images/work26-02@3x.jpg 1200w" sizes="100vw" alt="作品画像02" class="project-img">
+                <img src="../images/work26-03@1x.jpg" srcset="../images/work26-03@1x.jpg 400w,
+                ../images/work26-03@2x.jpg 800w,
+                ../images/work26-03@3x.jpg 1200w" sizes="100vw" alt="作品画像03" class="project-img">
+            </div>
+            <div class="project-intention">
+                <div class="intention-box">
+                    <p>「ONOONO BOOK STORE」という架空の書店のwebサイトデザインを制作しました。<br>
+                        ONOONO BOOK STOREという店名の通り、仕事帰りにふと立ち寄ったり、恋人同士や友人同士で本を探したり、各々が自由に立ち寄れる本屋にしたいというコンセプトで考えました。<br>
+                        デザインは親しみやすさや多様性のある自由な印象になるように、イラストを入れたデザインにしています。イラストはOpen Peepsという素材を使用しました。また、雑多な書店のイメージで、漢字を用いた見出しテキストを見出し部分に使用しました。</p>
+                    <p>今回は、ノーコードツールのSTUDIOを使用して実装しました。見た目だけを再現するのではなく、レスポンシブ対応するなど、実際にwebサイトとして運用できるよう考えて制作しました。</p>
+                </div>
+            </div>
+            <div class="back onlysp">
+                <a href="../index.html#works" class="glitch" data-text="<back"><span class=" lt">back</span></a>
+            </div>
+        </div>
+    </section>
+    <div id="stalker"></div>
+    <div id="stalker2"></div>
+    <script>
+        $('.hamburger').on('click', function() {
+            if ($('.nav-menu').is(':visible')) {
+                $(this).removeClass('active');
+                // Close menu
+                $('nav > *').slideUp(function() {
+                    $(this).parent().hide();
+                });
+            } else {
+                $(this).addClass('active');
+                $(this).addClass('active');
+                // Open menu
+                $('.nav-menu > *')
+                    .hide()
+                    .parent().show().end()
+                    .slideDown();
+            }
+        });
+
+    </script>
+    <script type="text/javascript">
+        const stalker = document.getElementById('stalker');
+
+        //上記のdivタグをマウスに追従させる処理
+        document.addEventListener('mousemove', function(e) {
+            stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+
+        const stalker2 = document.getElementById('stalker2');
+
+        //上記のdivタグをマウスに追従させる処理
+        document.addEventListener('mousemove', function(e) {
+            stalker2.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+        $("a").on("mouseenter", function() {
+            $('#cursor').addClass("active");
+            $('#stalker').addClass("active");
+            $('#stalker2').addClass("active");
+        });
+
+        $("a").on("mouseleave", function() {
+            $('#cursor').removeClass("active");
+            $('#stalker').removeClass("active");
+            $('#stalker2').removeClass("active");
+        });
+
+    </script>
+</body>
+
+</html>
