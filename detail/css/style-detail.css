@@ -225,11 +225,11 @@ project-summary-sp
 
 
     .category {
-        padding-bottom: 2.4vh;
+        padding-bottom: 2.6vh;
     }
 
     .summary {
-        padding-bottom: 2.4vh;
+        padding-bottom: 2.6vh;
     }
 
     .back {
@@ -255,7 +255,7 @@ project-detail-sp
 
     .project-name {
         font-size: 2.2rem;
-        padding: 0 0 2px 0;
+        padding: 0 0 10px 0;
     }
 
     .intention-box {
@@ -319,6 +319,14 @@ project-detail-sp
 
 
 @media (max-width:450px) {
+    .project-name {
+        padding: 0 0 10px 0;
+    }
+
+    .summary {
+        padding: 0 0 20px 0;
+    }
+
     .definition dt {
         width: 25%;
     }
