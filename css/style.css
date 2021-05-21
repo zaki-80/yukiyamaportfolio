@@ -182,9 +182,6 @@
         animation: skew 4s infinite, flash .1s ease-in infinite;
     }
 
-    .child24 .work-info:hover {
-        cursor: default;
-    }
 
     .work-info:hover dl,
     .work-info:hover p {
