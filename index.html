@@ -215,7 +215,7 @@
                 </div>
                 <div class="trace-container">
                     <h3 class="category-name text-center">WEBサイト・バナートレース</h3>
-                    <a href="https://tracingarchive.myportfolio.com" class="trace"><img src="images/tracingarchive.jpg" alt="WEBSITETRACINGARCHIVEへのリンク画像"></a>
+                    <a href="https://tracingarchive.myportfolio.com" class="trace" target="_blank"><img src="images/tracingarchive.jpg" alt="WEBSITETRACINGARCHIVEへのリンク画像"></a>
                     <div class="back-txt">
                         <p>WEB SITE TRACING</p>
                         <p>WEB SITE TRACING</p>
@@ -478,8 +478,14 @@
 
     <div id="stalker"></div>
     <div id="stalker2"></div>
-    <script type="text/javascript">
-        $(function() {
+	<script src="js/jquery.cookie.js"></script>
+	<script>
+		$(function(){
+  // 1回目のアクセス
+  if($.cookie("access") == undefined) {
+    //最初にアクセスしたときにはここに書いたアニメーションのJSが動く
+    $.cookie("access","onece");
+	          $(function() {
             var h = $(window).height();
 
             $('#contents').css('display', 'none');
@@ -492,7 +498,7 @@
             $('#contents').css('display', 'block');
         });
 
-        //10秒たったら強制的にロード画面を非表示
+        //秒たったら強制的にロード画面を非表示
         $(function() {
             setTimeout('stopload()', 10000);
         });
@@ -502,6 +508,15 @@
             $('#loader-bg').delay(900).fadeOut(800);
             $('#loader').delay(600).fadeOut(300);
         }
+    $("#loader-bg ,#loader").css("display","block")
+  // 2回目以降は動かないようにするけど最初は動かす
+  } else {
+$("#loader-bg, #loader").css("display","none")
+    // 2回目以降は動かないようにする
+  }
+});</script>
+    <script type="text/javascript">
+
 
     </script>
 
