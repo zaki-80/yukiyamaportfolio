@@ -17,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body>z
     <!-- ローディング用 -->
     <div id="loader-bg">
         <div class="outer">
@@ -215,7 +215,7 @@
                 </div>
                 <div class="trace-container">
                     <h3 class="category-name text-center">WEBサイト・バナートレース</h3>
-                    <a href="https://tracingarchive.myportfolio.com" class="trace" target="_blank"><img src="images/tracingarchive.jpg" alt="WEBSITETRACINGARCHIVEへのリンク画像"></a>
+                    <a href="https://tracingarchive.myportfolio.com" class="trace"><img src="images/tracingarchive.jpg" alt="WEBSITETRACINGARCHIVEへのリンク画像"></a>
                     <div class="back-txt">
                         <p>WEB SITE TRACING</p>
                         <p>WEB SITE TRACING</p>
@@ -478,14 +478,8 @@
 
     <div id="stalker"></div>
     <div id="stalker2"></div>
-	<script src="js/jquery.cookie.js"></script>
-	<script>
-		$(function(){
-  // 1回目のアクセス
-  if($.cookie("access") == undefined) {
-    //最初にアクセスしたときにはここに書いたアニメーションのJSが動く
-    $.cookie("access","onece");
-	          $(function() {
+    <script type="text/javascript">
+        $(function() {
             var h = $(window).height();
 
             $('#contents').css('display', 'none');
@@ -498,9 +492,9 @@
             $('#contents').css('display', 'block');
         });
 
-        //秒たったら強制的にロード画面を非表示
+        //6秒たったら強制的にロード画面を非表示
         $(function() {
-            setTimeout('stopload()', 10000);
+            setTimeout('stopload()', 6000);
         });
 
         function stopload() {
@@ -508,14 +502,6 @@
             $('#loader-bg').delay(900).fadeOut(800);
             $('#loader').delay(600).fadeOut(300);
         }
-  // 2回目以降は動かないようにするけど最初は動かす
-  } else {
-$("#loader-bg, #loader").css("display","none")
-    // 2回目以降は動かないようにする
-  }
-});</script>
-    <script type="text/javascript">
-
 
     </script>
 
