@@ -567,7 +567,8 @@ works
     text-shadow: #3a3839 .8px .8px .2px, #2c2d2e -.8px .8px .2px,
         #3a3839 .8px -.8px .2px, #2c2d2a -.8px -.8px .2px;
     font-size: 1rem;
-    padding-bottom: 6%
+    padding-bottom: 6%;
+	line-height: 1.4;
 }
 
 .work-info dd,
