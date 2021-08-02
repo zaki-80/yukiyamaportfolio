@@ -312,7 +312,7 @@ works
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 8% 10%;
+    padding: 10%;
 }
 
 .switch-box {
@@ -566,7 +566,7 @@ works
     color: #FEFEFE;
     text-shadow: #3a3839 .8px .8px .2px, #2c2d2e -.8px .8px .2px,
         #3a3839 .8px -.8px .2px, #2c2d2a -.8px -.8px .2px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-bottom: 6%
 }
 
