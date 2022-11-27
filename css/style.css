@@ -46,7 +46,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #E2E2E2;
+    background: #E2E2E4;
     z-index: 100
 }
 
@@ -70,8 +70,17 @@
 @media (hover:hover) {
     .trace img:hover {
         opacity: .7;
+        background: linear-gradient(45deg, #f200ff, #020fff);
+        background-blend-mode: overlay;
     }
-
+    .trace img:hover::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        width: 100%;
+        background: #D2DC3E;
+    }
     .work-info:hover::before {
         position: absolute;
         top: 0;
@@ -489,7 +498,7 @@ works
         -1px 1px 0 #000,
         1px -1px 0 #000,
         -1px -1px 0 #000;
-    color: #E2E2E2;
+    color: #E2E2E4;
     white-space: nowrap;
     animation: back-txt 20s linear infinite;
 }
@@ -612,7 +621,7 @@ works
 
 .about-sub dd {
     padding-bottom: 80px;
-    text-align: left;
+    text-align: justify;
 }
 
 .name {
@@ -666,7 +675,7 @@ h3 {
 
 .hr {
     width: 400px;
-    border-top: 4px solid #000;
+    border-top: 3px solid #000;
     margin: 0 auto;
     padding: 80px 0 0;
 }
