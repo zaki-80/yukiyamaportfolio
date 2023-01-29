@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-201817695-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-201817695-1');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="yukiyama portfolio">
+    <title>yukiyama portfolio | work30</title>
+    <link rel="stylesheet" href="../css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style-detail.css">
+    <link rel="stylesheet" href="https://use.typekit.net/stt7ued.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+</head>
+
+<body>
+    <button class="hamburger">
+        <span class="hamburger__line hamburger__line1"></span>
+        <span class="hamburger__line hamburger__line2"></span>
+        <span class="hamburger__line hamburger__line3"></span>
+    </button>
+    <header class="header">
+        <div class="biography">
+            <h1>yukiyama portfolio</h1>
+            <div class="slide">
+                <p>web design | graphic design | typography , Japan</p>
+                <p>web design | graphic design | typography , Japan</p>
+            </div>
+        </div>
+        <div class="header-contact text-center">
+            <p><a href="../about/about.html#contact" class="glitch glitch-header-contact" data-text="contact"><span class="hand"></span>contact</a></p>
+        </div>
+        <div class="menu">
+            <button class="hamburger">
+                <span class="hamburger__line hamburger__line1"></span>
+                <span class="hamburger__line hamburger__line2"></span>
+                <span class="hamburger__line hamburger__line3"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="../index.html">
+                            <span class="glitch" data-text="top">top
+                            </span>
+                        </a>
+
+                    </li>
+                    <li class="menu-item"><a href="../index.html#works">
+                            <span class="glitch" data-text="works">works</span></a>
+                    </li>
+                    <li class="menu-item"><a href="../about/about.html">
+                            <span class="glitch" data-text="about">about</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="work-detail">
+        <div class="project-summary">
+            <h2 class="project-name">「Super Music Festival 2022」ロゴ制作</h2>
+            <p class="category">ロゴデザイン</p>
+            <p class="summary">
+                音楽フェス「Super Music Festival 2022」のロゴ制作。
+            </p>
+            <dl>
+                <!-- <dt>URL：</dt>
+                <dd><a href="https://www.cheer-supports.com/" class="url glitch glitch-12" data-text="https://www.cheer-supports.com/" target="_blank">https://www.cheer-supports.com/</a></dd> -->
+                <dt>使用ツール・言語：</dt>
+                <dd>
+                    AdobeXD、Illustrator、Photoshop
+                </dd>
+            </dl>
+            <div class="back onlypc">
+                <a href="../index.html#works" class="glitch" data-text="<back"><span class="lt">back</span></a>
+            </div>
+
+        </div>
+        <div class="first-img-box">
+            <img src="../images/work30-01@3x.png" srcset="../images/work30-01@1x.png 400w,
+                ../images/work30-01@3x.png 800w,
+                ../images/work30-01@3x.png 1200w" siz   es="100vw" alt="作品画像01" class="project-img first-img">
+        </div>
+        <div class="project-detail">
+            <div class="project-intention">
+                <div class="intention-box">
+                    <p>音楽フェス「Super Music Festival 2022」のロゴデザイン制作。<br>
+                        開催地がお台場ということもあり、1980年代まだ開発前の埋め立て地帯だったお台場をあえて、80~90年代風のデザインで表現するというコンセプトでデザインを考えました。
+                    </p>
+                </div>
+            </div>
+            <div class="back onlysp">
+                <a href="../index.html#works" class="glitch" data-text="<back"><span class=" lt">back</span></a>
+            </div>
+        </div>
+    </section>
+    <div id="stalker"></div>
+    <div id="stalker2"></div>
+    <script>
+        $('.hamburger').on('click', function() {
+            if ($('.nav-menu').is(':visible')) {
+                $(this).removeClass('active');
+                // Close menu
+                $('nav > *').slideUp(function() {
+                    $(this).parent().hide();
+                });
+            } else {
+                $(this).addClass('active');
+                $(this).addClass('active');
+                // Open menu
+                $('.nav-menu > *')
+                    .hide()
+                    .parent().show().end()
+                    .slideDown();
+            }
+        });
+
+    </script>
+    <script type="text/javascript">
+        const stalker = document.getElementById('stalker');
+
+        //上記のdivタグをマウスに追従させる処理
+        document.addEventListener('mousemove', function(e) {
+            stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+
+        const stalker2 = document.getElementById('stalker2');
+
+        //上記のdivタグをマウスに追従させる処理
+        document.addEventListener('mousemove', function(e) {
+            stalker2.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+        $("a").on("mouseenter", function() {
+            $('#cursor').addClass("active");
+            $('#stalker').addClass("active");
+            $('#stalker2').addClass("active");
+        });
+
+        $("a").on("mouseleave", function() {
+            $('#cursor').removeClass("active");
+            $('#stalker').removeClass("active");
+            $('#stalker2').removeClass("active");
+        });
+
+    </script>
+</body>
+
+</html>
