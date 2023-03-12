@@ -11,7 +11,7 @@
     height: 20px;
     border-radius: 50%;
     position: absolute;
-    background: #000;
+    background: #121214;
     transform: scale(1);
     opacity: 1;
     animation: loading .42s linear infinite;
@@ -69,9 +69,10 @@
 
 @media (hover:hover) {
     .trace img:hover {
-        opacity: .7;
+        transform: scale(98%);
         background: linear-gradient(45deg, #f200ff, #020fff);
         background-blend-mode: overlay;
+        transition: .4s ease;
     }
     .trace img:hover::before {
         position: absolute;
@@ -198,15 +199,25 @@
         opacity: .88;
     }
 
-    .contact a:hover {
-        color: #FFF;
+    . {
+        color: #121214;
     }
 
     .uparrow:hover {
-        opacity: .7;
+        animation: pagetop linear .9s infinite;
+    }
+    @keyframes pagetop {
+        0% {
+            transform: translate(0,0);
+        }
+        60% {
+            transform: translate(0,-14px);
+        }
+        100% {
+            transform: translate(0,0);
     }
 }
-
+}
 
 
 
@@ -231,16 +242,16 @@ top
     max-width: 1080px;
     width: 80%;
     height: auto;
-    background: #000;
+    background: #121214;
 }
 
 .motel {
-    border: 1px solid #000;
+    border: 1px solid #121214;
 }
 
 .oldcar {
     margin-top: 20px;
-    border: 1px solid #000;
+    border: 1px solid #121214;
 }
 
 .main-title {
@@ -272,8 +283,8 @@ top
 .section-header {
     font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     font-size: 8rem;
-    padding: 80px 0;
-    color: #000;
+    padding: 64px 0;
+    color: #121214;
 }
 
 
@@ -286,7 +297,7 @@ works
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 .light {
@@ -307,12 +318,13 @@ works
 
 .category-name {
     display: inline-block;
-    padding: 18px 18px 16px;
-    margin: 0 auto 80px;
+    padding: 18px 24px 16px;
+    margin: 0 0 48px;
     line-height: 1;
     color: #fff;
-    background: #000;
+    background: #121214;
     border-radius: 40px;
+    text-align: left;
 }
 
 .work-info {
@@ -425,27 +437,27 @@ works
 /* グリッドアイテム */
 .child1 {
     padding: 12px 0;
-    background: #000;
+    background: #121214;
 }
 
 .child3 {
     padding: 24px 0;
-    background: #000;
+    background: #121214;
 }
 
 .child8 {
     padding: 12px 0;
-    background: #000;
+    background: #121214;
 }
 
 .child12 {
     padding: 0 20px;
-    background: #000;
+    background: #121214;
 }
 
 .child15 {
     padding: 12px 0;
-    background: #000;
+    background: #121214;
 }
 
 .child24 {
@@ -475,29 +487,36 @@ works
 .trace-container img {
     display: block;
     margin: 0 auto;
-    border: 1px solid #000;
+    border: 1px solid #121214;
+    border-radius: 24px;
 }
 
 .trace {
     width: 100%;
 }
 
+.trace img {
+    transition: .3s ease;
+}
+
 .back-txt {
-    z-index: -1;
+    z-index: 2;
     position: absolute;
-    top: 35%;
+    top: 45%;
     white-space: nowrap;
+    mix-blend-mode: exclusion;
+    pointer-events: none;
 }
 
 .back-txt p {
     display: inline-block;
     padding-right: 16%;
-    font-size: 24rem;
-    letter-spacing: .04em;
-    text-shadow: 1px 1px 0 #000,
-        -1px 1px 0 #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000;
+    font-size: 18rem;
+    letter-spacing: .05em;
+    /* text-shadow: 1px 1px 0 #121214,
+        -1px 1px 0 #121214,
+        1px -1px 0 #121214,
+        -1px -1px 0 #121214; */
     color: #E2E2E4;
     white-space: nowrap;
     animation: back-txt 20s linear infinite;
@@ -616,11 +635,11 @@ works
     padding: 8px;
     line-height: 1;
     color: #fff;
-    background: #000;
+    background: #121214;
 }
 
 .about-sub dd {
-    padding-bottom: 80px;
+    padding-bottom: 64px;
     text-align: justify;
 }
 
@@ -675,9 +694,9 @@ h3 {
 
 .hr {
     width: 400px;
-    border-top: 3px solid #000;
+    border-top: 3px solid #121214;
     margin: 0 auto;
-    padding: 80px 0 0;
+    padding:64px 0 0;
 }
 
 
@@ -742,7 +761,7 @@ top-sp
         margin: 0 auto;
         width: 90%;
         height: auto;
-        background: #000;
+        background: #121214;
     }
 
     .motel {
@@ -751,7 +770,7 @@ top-sp
 
     .oldcar {
         margin-top: 10px;
-        border: 1px solid #000;
+        border: 1px solid #121214;
     }
 
     .section-header {
@@ -761,7 +780,7 @@ top-sp
 
     .about .section-header {
         font-size: 6.4rem;
-        padding: 10% 0 24%;
+        padding: 12% 0 26%;
     }
 
     .onlypc {
@@ -788,7 +807,7 @@ works-sp
     .category-name {
         display: inline-block;
         font-size: 1.4rem;
-        padding: 3% 2.8% 2.6%;
+        padding: 3% 4% 2.6%;
         margin: 0 auto 40px;
     }
 
@@ -810,7 +829,7 @@ works-sp
         grid-gap: 10px;
         width: 100%;
         height: 100%;
-        margin: 0 0 80px 0;
+        margin: 0 0 40px 0;
     }
 
     .figure-item {
@@ -828,13 +847,13 @@ works-sp
     }
 
     .back-txt {
-        top: 45%;
+        top: 46%;
     }
 
     .back-txt p {
         display: inline-block;
         padding-right: 16%;
-        font-size: 10rem;
+        font-size: 12rem;
     }
 
     .about-info {
@@ -858,7 +877,7 @@ works-sp
         padding: 0 20px 20px 0;
     }
 }
-}
+
 
 
 
@@ -990,7 +1009,7 @@ works-sp
         padding: 8px;
         line-height: 1;
         color: #fff;
-        background: #000;
+        background: #121214;
     }
 
     .contact {
@@ -1049,7 +1068,7 @@ works-sp
     }
 
     .contact .glitch:hover {
-        color: #000;
+        color: #121214;
         background: none;
     }
 
@@ -1059,9 +1078,9 @@ works-sp
         display: none;
     }
 
-    .contact a:hover {
-        color: #000;
-    }
+    /* .contact-header {
+        color: #121214;
+    } */
 
     .glitch p {
         line-height: 1;
