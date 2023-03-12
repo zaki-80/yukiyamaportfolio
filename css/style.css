@@ -843,7 +843,7 @@ works-sp
     }
 
     .trace img {
-        width: 90%;
+        border-radius: 16px;
     }
 
     .back-txt {
