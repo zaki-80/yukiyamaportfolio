@@ -706,6 +706,18 @@ h3 {
     background: #121214;
     color: #fff;
 } 
+.works-private.top-pr {
+    width: 33%;
+    max-width: 200px;
+    margin: 0 auto;
+    text-align:center;
+}
+.works-private.top-pr a {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 8px;
+    font-size: 13px
+}
 
 .hr {
     width: 400px;
@@ -723,10 +735,12 @@ footer
 .footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .copy {
     display: block;
+    width: 33.33%;
     font-size: 1.6rem;
     font-weight: 600;
     padding: 0 0 20px 20px;
@@ -736,9 +750,13 @@ footer
 }
 
 .about .copy {
+    width: 100%;
     padding: 0 0 20px 0;
 }
-
+.uparrow-box {
+    width: 33.33%;
+    text-align:right;
+}
 .uparrow {
     width: 80px;
     padding: 0 20px 20px 0;
