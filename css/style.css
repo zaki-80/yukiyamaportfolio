@@ -878,7 +878,9 @@ works-sp
     .trace img {
         border-radius: 16px;
     }
-
+    .trace-container img {
+        width: 100%;
+    }
     .back-txt {
         top: 46%;
     }
