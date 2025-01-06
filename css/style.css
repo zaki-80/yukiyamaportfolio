@@ -668,9 +668,8 @@ h3 {
 .contact p {
     display: inline-block;
     white-space: nowrap;
-    margin-bottom: 8px;
     letter-spacing: .04em;
-    vertical-align: middle;
+    vertical-align: bottom;
     line-height: 1;
     padding: 1px;
 }
@@ -698,14 +697,15 @@ h3 {
     display: inline-block;
     width: 80%;
     max-width: 200px;
-    padding: 20px 10px;
+    padding: 8px 12px 10px 8px;
     margin: 40px auto;
     border: 1px solid #121214;
     border-radius: 40px;
 }
 .works-private a:hover{
-    background: #121214;
-    color: #fff;
+    background: #fff;
+    color: #000;
+    mix-blend-mode: difference;
 } 
 .works-private.top-pr {
     width: 33%;
@@ -716,11 +716,26 @@ h3 {
 .works-private.top-pr a {
     text-align: center;
     margin: 0 auto;
-    padding: 10px 8px;
+    padding: 8px 12px 12px 8px;
     font-size: 13px
 }
-
-.hr {
+.key {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1.1em;
+    height: 1.1em;
+    line-height: 1;
+    margin-top: .2em;
+    margin-right: .16em;
+    background: url(../images/key.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.works-private:hover .key {
+    transform: rotate(16deg);
+    transition: .1s;
+}
+    .hr {
     width: 400px;
     border-top: 1px solid #777;
     margin: 0 auto;
