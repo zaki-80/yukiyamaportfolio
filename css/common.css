@@ -174,14 +174,14 @@ hoverスタイル
 
     .glitch:hover::after {
         left: -.9px;
-        text-shadow: .9px 0 #f00;
+        text-shadow: .9px 0 #00f;
         top: 0;
         animation: noise-anim 1.8s infinite linear alternate-reverse;
     }
 
     .glitch:hover::before {
         left: -.9px;
-        text-shadow: .9px 0 #00f;
+        text-shadow: .9px 0 #F2E635;
         top: 0;
         animation: noise-anim-2 1.5s infinite linear alternate-reverse;
     }
@@ -367,7 +367,7 @@ hoverスタイル
         .menu-item:hover::after {
             /* color: #FEFEFE; */
             left: .2px;
-            text-shadow: -.7px 0 red;
+            text-shadow: -.7px 0 #F2E635;
             top: .2px;
         }
 

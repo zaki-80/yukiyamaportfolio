@@ -231,7 +231,7 @@ top
 
 .top-container {
     position: relative;
-    margin: 120px auto;
+    margin: 90px auto;
     width: 100%;
     height: auto;
 }
@@ -619,13 +619,13 @@ works
 .aboutme {
     width: 398px;
     padding-bottom: 80px;
-    text-align: justify;
+    text-align: left;
     margin: 0 auto;
+
 }
 
 .about-info {
     line-height: 2;
-
 }
 
 .about-sub {
@@ -673,7 +673,9 @@ h3 {
     line-height: 1;
     padding: 1px;
 }
-
+.contact-link p {
+    margin-bottom: 8px;
+}
 .contact h3 {
     font-size: 2rem;
     padding-right: 24px;
@@ -716,7 +718,7 @@ h3 {
 .works-private.top-pr a {
     text-align: center;
     margin: 0 auto;
-    padding: 8px 12px 12px 8px;
+    padding: 8px 12px 12px 0px;
     font-size: 13px
 }
 .key {
@@ -726,13 +728,65 @@ h3 {
     height: 1.1em;
     line-height: 1;
     margin-top: .2em;
-    margin-right: .16em;
+    margin-right: .4em;
     background: url(../images/key.svg) no-repeat;
     background-size: contain;
     background-position: center center;
+    transition: .2s;
 }
-.works-private:hover .key {
-    transform: rotate(16deg);
+.works-private a:hover .key {
+    transform: rotate(-45deg);
+    transition: .2s;
+}
+.contact-link a:hover {
+    text-decoration: underline;
+}
+.mail {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.1em;
+    line-height: 1;
+    margin-right: .4em;
+    background: url(../images/mail.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    color: #E2E2E4;
+}
+.contact-link a:hover .mail {
+    transform: rotate(8deg);
+    transition: .1s;
+}
+.x {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.1em;
+    height: 1.1em;
+    line-height: 1;
+    margin-right: .4em;
+    background: url(../images/x.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    color: #E2E2E4;
+}
+.contact-link a:hover .x {
+    transform: rotate(10deg);
+    transition: .1s;
+}
+.instagram {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.1em;
+    height: 1.1em;
+    line-height: 1;
+    margin-right: .4em;
+    background: url(../images/instagram.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    color: #E2E2E4;
+}
+.contact-link a:hover .instagram {
+    transform: rotate(15deg);
     transition: .1s;
 }
     .hr {
